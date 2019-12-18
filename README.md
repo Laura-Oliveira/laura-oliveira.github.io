@@ -9,3 +9,8 @@
 Inglês (fluente) |
 Português (nativo) |
 Espanhol (básico)
+
+
+Para acessar o portfólio online entre no seguinte link:
+
+### **https://laura-oliveira.github.io/ ** 
