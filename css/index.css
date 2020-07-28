@@ -1,0 +1,90 @@
+@media screen and (max-width: 100em),(max-width: 1920px), (max-width: 1080px)
+{
+    body
+    {
+        background: linear-gradient(-0.2turn,#FFA726,#7B1FA2);
+    }
+    .navbar 
+    {
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    
+    .navbar a 
+    {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    
+    .navbar a:hover 
+    {
+        background: #ddd;
+        color: black;
+    }
+
+    #home
+    {
+        position:relative;
+        width: 100%;
+        border: 2px solid black;
+        
+    }
+
+    .apresentation
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        margin: 0;
+        transform: translate(-50%, -50%);
+        margin-top: 20%;
+        border: 2px solid white;
+        color: white;
+        border-radius: 3%;
+        width: 30%;
+    }
+
+    hr
+    {
+        color: white;
+    }
+    .img-circle
+    {
+        display: block;
+        border-radius: 50%;
+        margin-left: 20%;
+        margin-top: 5%;
+    }
+
+    #text_name
+    {
+        display: block;
+        padding-right: 25%;
+        padding-left: 25%;
+        margin-bottom: 6.5%;
+    }
+
+    #about_me
+    {
+        margin-top: 37.5%;
+       /* background-color: #F5F5F5; */
+       color: white;
+        padding: 1.5%;
+        padding-top: 0.1%;
+        padding-bottom: 0.1%;
+        font-size: 14pt;
+    }
+}
+
+
+ 
+

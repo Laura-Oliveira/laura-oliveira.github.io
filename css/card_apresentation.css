@@ -1,0 +1,50 @@
+@media screen and (max-width: 100em)
+{
+    body
+    {
+        background: linear-gradient(-0.2turn,#4527A0,#7B1FA2,#FFA726);
+    }
+    
+    #home
+    {
+        position:relative;
+        width: 100%;
+        border: 2px solid black;
+        
+    }
+  
+    .apresentation
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        margin: 0;
+        transform: translate(-50%, -50%);
+        margin-top: 20%;
+        border: 2px solid white;
+        color: white;
+        border-radius: 3%;
+        width: 30%;
+    }
+  
+    hr
+    {
+        color: white;
+    }
+    .img-circle
+    {
+      display: block;
+      border-radius: 50%;
+      margin-left: 20%;
+      margin-top: 5%;
+    }
+  
+    #text_name
+    {
+        display: block;
+        padding-right: 25%;
+        padding-left: 25%;
+        margin-bottom: 6.5%;
+    }
+}
