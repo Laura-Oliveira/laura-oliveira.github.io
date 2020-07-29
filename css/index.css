@@ -46,7 +46,7 @@
         border: 2px solid white;
         color: white;
         border-radius: 3%;
-        width: 30%;
+        width: 31%;
     }
 
     hr
@@ -114,8 +114,8 @@
         color: #F8BBD0;
     }
 
-    /* Service Section */
-    #service_section
+    /* Skills Section */
+    #skills_section
     {
         color: white;
         padding-bottom: 2.5%;
@@ -133,6 +133,43 @@
         background-color: #D81B60;
     }
 
+    #skills_list
+    {
+        overflow: hidden;
+        width: 100%;
+        text-align: center;
+    }
+    
+    #skills_list div 
+    {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    .img_skills
+    {
+        width: 85px;
+        height: 85px;
+        color: white;
+        border-radius: 10px;
+    }
+
+    .fa-mobile
+    {
+        color:white;
+    }
+
+    /* Section Video Presentation */
+    #section_video_presentation
+    {
+        background-color: #AB47BC;
+        
+    }
 }
 
 
