@@ -2,18 +2,21 @@
 {
     body
     {
-        background: linear-gradient(-0.2turn,#FFA726,#7B1FA2);
+        background: linear-gradient(-0.2turn,#6A1B9A,#7B1FA2);
+        margin: 0;
+        padding-top: 0;
     }
-    .navbar 
+    .menu 
     {
         overflow: hidden;
         background-color: #333;
         position: fixed;
         top: 0;
         width: 100%;
+        z-index: 3;
     }
     
-    .navbar a 
+    .menu a 
     {
         float: left;
         display: block;
@@ -24,18 +27,10 @@
         font-size: 17px;
     }
     
-    .navbar a:hover 
+    .menu a:hover 
     {
         background: #ddd;
         color: black;
-    }
-
-    #home
-    {
-        position:relative;
-        width: 100%;
-        border: 2px solid black;
-        
     }
 
     .apresentation
@@ -46,7 +41,6 @@
         margin-right: -50%;
         margin: 0;
         transform: translate(-50%, -50%);
-        margin-top: 20%;
         border: 2px solid white;
         color: white;
         border-radius: 3%;
@@ -75,13 +69,35 @@
 
     #about_me
     {
-        margin-top: 37.5%;
-       /* background-color: #F5F5F5; */
-       color: white;
+        margin-top: 40%;
+        background-color: #AB47BC;
+        color: white;
         padding: 1.5%;
-        padding-top: 0.1%;
-        padding-bottom: 0.1%;
+        padding-top: 2%;
+        padding-bottom: 2.5%;
         font-size: 14pt;
+    }
+    #about_me_title
+    {
+        margin-top: 0;
+    }
+    #txt_about_me
+    {
+       /* color: black; */
+    }
+    .service
+    {
+        border: 2px solid white;
+        border-radius: 15px;
+        width: 300px;
+        height: 200px;
+        margin-top: 5%;
+        padding-top: 5%;
+        background-color: #D81B60;
+    }
+    .fa
+    {
+        color: #F8BBD0;
     }
 }
 

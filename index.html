@@ -43,12 +43,26 @@
 
     <!--Modal -->
     <link href="./css/modal.css" rel="stylesheet" type="text/css">
+
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.2.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/jasny-bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
 </head>
 
 <body>
    
     <!--- Menu  -->
-    <div class="navbar">
+    <div class="menu">
         <a href="#home" class="page-scroll">Início</a>
         <a href="#about_me" class="page-scroll">Sobre mim</a>
         <a href="#services" class="page-scroll">Serviços</a>
@@ -74,33 +88,52 @@
     </div>
     
 
-    <!-- Meet Us Section -->
+    <!-- About Me -->
     <div id="about_me">
-        <hr>
-        <div class="section-title">
-            <h2>Um pouco sobre mim</h2>    
-        </div>
-        <p>
-            Programadora Mobile que:
-        </p>
-        <ul>
-            <li>
-                Trabalha sempre visando a usabilidade das aplicações
-            </li>
-            <li>
-                Acredita que uma boa paleta de cores pode ser tão inclusiva quanto tamanho de telas e fontes
-            </li>
-            <li>
-                Acredita que a tecnologia é uma forma de mudar o mundo
-            </li>
-        </ul>
-        <hr>
-    </div>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2" id="txt_about_me">
+                    <div class="section-title">
+                        <h2 id="about_me_title">Um Pouco Sobre Mim</h2>
+                    </div>
+                    <p>
+                        Programadora Mobile sediada em Recife. Atualmente focada nos estudos de Desenvolvimento
+                        Mobile para Android Nativo utilizando Java. 
+                    </p>
+                    <p>
+                        Alguns princípios que sigo:
+                    </p>
+                </div>
+            
 
-    <!-- Call-to-Action Section -->
-    <div id="cta">
-        <p>
-        </p>
+                <div class="row container text-center">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="service">
+                            <span class="fa fa-mobile fa-3x"></span>
+                            <h4><b>Usabilidade</b></h4>
+                            <div> Inclusão de diferentes usuários em diferentes telas </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4">
+                        <div class="service">
+                            <span class="fa fa fa-eye fa-3x"></span>
+                            <h4><b>Paleta de Cores</b></h4>
+                            <div>Inclusão entre pessoas com problemas de visão</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4">
+                        <div class="service">
+                            <span class="fa fa-globe fa-3x"></span>
+                            <h4><b>Tecnologia & Impacto</b></h4>
+                            <div>Tecnologia como forma mudar o mundo</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Services Section -->
