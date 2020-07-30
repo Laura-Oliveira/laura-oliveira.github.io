@@ -53,11 +53,12 @@
     {
         color: white;
     }
+
     .img-circle
     {
         display: block;
         border-radius: 50%;
-        margin-left: 20%;
+        margin-left: 22%;
         margin-top: 5%;
     }
 
@@ -164,11 +165,68 @@
         color:white;
     }
 
-    /* Section Video Presentation */
-    #section_video_presentation
+    /* Projects Section */
+    #projects_section
     {
         background-color: #AB47BC;
-        
+        color:white;
+        font-size: 14pt;
+    }
+
+    #video_achei_aqui
+    {
+        width: 600px;
+        height: 400px;
+    }
+
+    .projects_description
+    {
+        padding: 3%;
+        padding-top: 1%;
+    }
+
+    .projects_description p
+    {
+        padding-top: 1%;
+    }
+
+    #project_achei_aqui
+    {
+        border: 2px solid white;
+        border-radius: 10px;
+        padding: 20px;
+        padding-top: 0;
+        width: 50%;
+    }
+
+    #carousel
+    {
+        width: 50%;
+        height: 20%;
+        height: 100px;
+        display: block;
+        float: right;
+    }
+
+    .carousel carousel-item
+    {
+        height: 30%;
+    }
+
+    #technologies_list div 
+    {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 12pt;
+        padding: 10px;
+        margin-right: 10px;
+        background-color: #D81B60;
+        border-radius: 10px;
+        font-weight: bold;
     }
 }
 
