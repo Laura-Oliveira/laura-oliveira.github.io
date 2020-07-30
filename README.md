@@ -3,13 +3,14 @@
 
 ## Desenvolvedora Mobile | Aspirante a Palestrante
 
- Brasileira com 3 anos de experiência no mercado de Tecnologia desenvolvendo aplicações Mobile, Front End e atualmente trabalhando com Análise de Dados (**Business Intelligence**)
+ Brasileira com experiência no mercado de Tecnologia desenvolvendo aplicações Mobile e Front End.
+ Atualmente estudando Desenvolvimento Mobile para Android Nativo com Java, para buscar recolocação no mercado de trabalho.
 
 **Línguas** 
 
 Inglês (fluente) |
 Português (nativo) |
-Espanhol (básico)
+Espanhol (intermediário)
 
 
 Para acessar o portfólio online entre no seguinte link:
