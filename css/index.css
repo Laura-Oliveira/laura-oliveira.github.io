@@ -33,6 +33,18 @@
         color: black;
     }
 
+    .title
+    {
+        font-size: 20pt;
+    }
+
+    .subtitle
+    {
+        font-size: 16pt;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+
     #apresentation_section 
     {
         color: white;
@@ -76,9 +88,9 @@
     }
 
     /* About Me Section */
-    #about_me_section
+    #about_me_section 
     {
-        margin-top: 1%;
+        margin-top: 0;
         background-color: #AB47BC;
         color: white;
         padding: 1.5%;
@@ -86,9 +98,11 @@
         font-size: 14pt;
     }
 
-    #about_me_title
+    #about_me_description
     {
-        margin-top: 0;
+        width: 100%;
+        padding-right: 3%;
+        padding-left: 3%;
     }
   
     .card_about_me
@@ -110,7 +124,7 @@
     /* Skills Section */
     #skills_section
     {
-        margin-top: 1%;
+        margin-top: 1.7%;
         color: white;
         padding-bottom: 2.5%;
         font-size: 14pt;
@@ -161,7 +175,7 @@
     /* Projects Section */
     #projects_section
     {
-        padding-top: 1%;
+        padding-top: 1.5%;
         background-color: #AB47BC;
         color:white;
         font-size: 14pt;

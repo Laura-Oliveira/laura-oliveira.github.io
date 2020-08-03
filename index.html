@@ -14,9 +14,7 @@
     ================================================== -->
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    <style>
-        @import url(css/project_description_responsive.css) (min-height:100em);
-    </style>
+   
 
 
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
@@ -42,6 +40,13 @@
     <link rel="stylesheet" type="text/css"  href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="font-awesome-4.2.0/css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="css/jasny-bootstrap.min.css">
+
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) 
+    ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+      <script type="text/javascript" src="js/bootstrap.js"></script>
+      <script type="text/javascript" src="js/jasny-bootstrap.min.js"></script>
 
     <!-- Carousel 
     ================================================== -->
@@ -76,7 +81,7 @@
 
                 <div id="apresentation_text_name"> 
                     <hr>
-                    <h2>Laura Oliveira</h2> 
+                    <div class="title">Laura Oliveira</div> 
                     <hr>
                     <h3> Android Developer </h3>
                 </div>
@@ -120,22 +125,26 @@
 
     <!-- About Me -->
     <div id="about_me_section">
-        <div class="container text-center">
+        <div class="container">
             <div class="row">
 
                 <div class="col-md-8 col-md-offset-2">
-                    <div class="section-title">
-                        <h2 id="about_me_title">Um Pouco Sobre Mim</h2>
-                    </div>
+                    <div class="title text-center">Um Pouco Sobre Mim</div>
+                </div>
+
+                <div id="about_me_description">
                     <p>
                         <b>Programadora Mobile</b> sediada em Recife. Atualmente focada nos estudos de Desenvolvimento
                         Mobile para Android Nativo utilizando Java. 
                     </p>
-                    <p> Buscando recolocação no mercado de Desenvolvimento Mobile Android</p>
+                    <p> 
+                        Buscando recolocação no mercado de Desenvolvimento Mobile Android. 
+                    </p>
                     <p>
                         Alguns princípios que sigo:
                     </p>
                 </div>
+            </div>
             
                 <div class="row container text-center">
                     <div class="col-md-4 col-sm-4">
@@ -174,9 +183,9 @@
             <div class="row">
 
                 <div class="col-md-8 col-md-offset-2">
-                    <div class="section-title">
-                        <h2>Habilidades</h2>
-                    </div>
+                    
+                    <div class="title">Habilidades</div>
+                    
                 </div>
             </div>
 
@@ -232,9 +241,7 @@
                 <div class="row">
 
                     <div class="col-md-8 col-md-offset-2">
-                        <div class="section-title">
-                            <h2>Projetos</h2>
-                        </div>
+                        <div class="title">Projetos</div>
                     </div>
                 </div>
             </div>
@@ -244,7 +251,7 @@
 
                 <!-- Projeto Mobile Achei Aqui -->
                 <div id="project_achei_aqui">
-                    <h3>Achei Aqui</h3>
+                    <div class="subtitle">Achei Aqui</div>
 
                     <div class="row container-fluid technologies_list">
                         <div class="technology_item"> Adroid Nativo </div>
@@ -278,7 +285,7 @@
      
                 <!-- Projeto Front End Mundau -->
                     <div id="project_mundau">
-                        <h3>Rios Mundaú</h3>
+                        <div class="subtitle">Rios Mundaú</div>
         
                         <div class="row container-fluid technologies_list">
                             <div class="technology_item"> HTML5 </div>
@@ -306,13 +313,13 @@
                             <!-- The slideshow -->
                             <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="img/portfolio/mundau1.png" class="img-responsive" alt="print aplicacao mundau">
+                                <img src="img/projects/rios_mundau/mundau1.png" class="img-responsive" alt="print aplicacao mundau">
                             </div>
                             <div class="carousel-item">
-                                <img src="img/portfolio/mundau2.png" class="img-responsive" alt="print aplicacao mundau 1">
+                                <img src="img/projects/rios_mundau/mundau2.png" class="img-responsive" alt="print aplicacao mundau 1">
                             </div>
                             <div class="carousel-item">
-                                <img src="./img/portfolio/mudau3.png" class="img-responsive" alt="print aplicacao mundau 2">                        
+                                <img src="./img/projects/rios_mundau/mudau3.png" class="img-responsive" alt="print aplicacao mundau 2">                        
                             </div>
                             </div>
                             
@@ -331,54 +338,8 @@
             <hr/>
             
         </div>
-            <!-- End Projects List -->
+        <!-- End Projects List -->
 
-                <!-- Clients Section -->
-                <div id="clients">
-                    <div class="overlay">
-                        <div class="container text-center">
-                            <div class="section-title">
-                                <h2>Por onde passei</h2>
-                                <hr>
-                            </div>
-
-                            <ul class="clients">
-                                <li>
-                                    <a href="#"><img src="img/clients/ibm.png" class="img-responsive" alt="ibm" width="150" height="150"></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="img/clients/accenture.jpg" class="img-responsive" alt="accenture" width="110" height="100"></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="img/clients/ifpe.png" class="img-responsive" alt="ifpe" width="110" height="100"></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-                <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
-                <!-- Include all compiled plugins (below), or include individual files as needed -->
-                <script type="text/javascript" src="js/bootstrap.js"></script>
-                <script type="text/javascript" src="js/SmoothScroll.js"></script>
-                <script type="text/javascript" src="js/jasny-bootstrap.min.js"></script>
-
-                <!-- Javascripts
-                ================================================== -->
-                <script type="text/javascript" src="js/main.js"></script>
-
-                <nav id="footer">
-                    <div class="container">
-                        <div class="pull-left">
-                            <p>Laura Oliveira © 2020</p>
-                        </div>
-                        <div class="pull-right">
-                            <a href="#home" class="page-scroll">Back to Top <span class="fa fa-angle-up"></span></a>
-                        </div>
-                    </div>
-                </nav>
 </body>
 
 </html>
