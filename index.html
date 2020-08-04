@@ -60,14 +60,20 @@
 <body>
    
     <!--- Menu  -->
-    <div class="menu">
+    <div class="menu nav-collapse">
         <a href="#apresentation_section" class="page-scroll">Início</a>
         <a href="#about_me_section" class="page-scroll">Sobre mim</a>
         <a href="#skills_section" class="page-scroll">Tecnologias</a>
         <a href="#projects_section" class="page-scroll">Projetos</a>
-        <a href="#contact_section" class="page-scroll">Contato</a>
+        <div>
+        <a 
+            id="btn_download_cv" 
+            href="https://drive.google.com/file/d/1ekKQtukIJam8w20Pq99Pay5T7DJLI_LY/view?usp=sharing" 
+            role="button"
+            target="_blank">Download Curríulo </a>
+        </div>
     </div>
-    <!--- End Menu  -->
+    <!-- End Menu  -->
 
     <!-- Home Section -->
     <div id="apresentation_section">
@@ -83,7 +89,7 @@
                     <hr>
                     <div class="title">Laura Oliveira</div> 
                     <hr>
-                    <h3> Android Developer </h3>
+                    <div class="subtitle"> Android Developer </div>
                 </div>
 
                 <div class="list_contacts">
@@ -150,7 +156,7 @@
                     <div class="col-md-4 col-sm-4">
                         <div class="card_about_me">
                             <span class="fa fa-mobile fa-3x"></span>
-                            <h4><b>Usabilidade</b></h4>
+                            <div class="title_card_about_me">Usabilidade</div>
                             <div> Inclusão de diferentes usuários em diferentes telas </div>
 
                         </div>
@@ -159,7 +165,7 @@
                     <div class="col-md-4 col-sm-4">
                         <div class="card_about_me">
                             <span class="fa fa fa-eye fa-3x"></span>
-                            <h4><b>Paleta de Cores</b></h4>
+                            <div class="title_card_about_me">Paleta de Cores</div>
                             <div>Inclusão entre pessoas com problemas de visão</div>
                         </div>
                     </div>
@@ -167,7 +173,7 @@
                     <div class="col-md-4 col-sm-4">
                         <div class="card_about_me">
                             <span class="fa fa-globe fa-3x"></span>
-                            <h4><b>Tecnologia & Impacto</b></h4>
+                            <div class="title_card_about_me">Tecnologia & Impacto</div>
                             <div>Tecnologia como forma mudar o mundo</div>
                         </div>
                     </div>
@@ -179,57 +185,59 @@
 
     <!-- Skills Section -->
     <div id="skills_section">
-        <div class="container text-center">
+        <div class="container-fluid">
             <div class="row">
 
                 <div class="col-md-8 col-md-offset-2">
-                    
-                    <div class="title">Habilidades</div>
-                    
+                    <div class="title text-center">Habilidades</div>
                 </div>
             </div>
 
-            <div class="row" id="skills_list">
+            <div id="skills_list">
                 <div>
                     <i class="fa fa fa-mobile fa-5x" aria-hidden="true"></i>
-                    <h4><b>Adroid Nativo</b></h4>
+                    <p class="txt_card">Adroid Nativo</p>
                 </div>
 
                 <div>
                     <img src="img/icons/java.jpg" alt="Java icon" class="img_skills"/>
-                    <h4><b>Java</b></h4>
+                    <p class="txt_card">Java</p>
                 </div>
 
                 <div>
                     <img src="img/icons/firebase.svg" alt="Firebase icon" class="img_skills"/>
-                    <h4><b>Firebase</b></h4>
+                    <p class="txt_card">Firebase</p>
                 </div>
 
                 <div>
                     <img src="img/icons/material_design.jpg" alt="Material Design icon" class="img_skills"/>
-                    <h4><b>Material Design</b></h4>
+                    <p class="txt_card">Material Design</p>
                 </div>
 
                 <div>
                     <img src="img/icons/html.svg" alt="html5 icon" class="img_skills"/>
-                    <h4><b>HTML5</b></h4>
+                    <p class="txt_card">HTML5</p>
                 </div>
 
                 <div>
                     <img src="img/icons/css3.svg" alt="CSS3 icon" class="img_skills"/>
-                    <h4><b>CSS3</b></h4>
+                    <p class="txt_card">CSS3</p>
                 </div>
 
                 <div>
                     <img src="img/icons/javascript.png" alt="JavaScript icon" class="img_skills"/>
-                    <h4><b>JavaScript</b></h4>
+                    <p class="txt_card">JavaScript</p>
                 </div>
 
                 <div>
                     <img src="img/icons/bootstrap.png" alt="Bootstrap icon" class="img_skills"/>
-                    <h4><b>Bootstrap 4</b></h4>
+                    <p class="txt_card">Bootstrap 4</p>
                 </div>
 
+                <div>
+                        <img src="img/icons/materialize.png" alt="Bootstrap icon" class="img_skills"/>
+                        <p class="txt_card">Materialize</p>
+                    </div>
             </div> 
         </div>
     </div>
@@ -335,8 +343,6 @@
                         <!-- End Projeto Front End Mundau -->
                
                 </div>
-            <hr/>
-            
         </div>
         <!-- End Projects List -->
 

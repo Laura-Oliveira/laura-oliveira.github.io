@@ -9,11 +9,12 @@
     .menu 
     {
         overflow: hidden;
-        background-color: #333;
+        background-color: #eb7077;
         position: fixed;
         top: 0;
         width: 100%;
         z-index: 3;
+        font-weight: bold;
     }
     
     .menu a 
@@ -29,18 +30,35 @@
     
     .menu a:hover 
     {
-        background: #ddd;
-        color: black;
+        background: #f6a2ad;
+        color: white;
+        text-decoration-line: none;
+    }
+
+    #btn_download_cv
+    {
+        background-color:#0288D1;
+        font-weight: bold;
+        text-decoration-line: none;
+    }
+
+    .menu a:last-child 
+    {
+        color: white;
+        font-weight: bold;
+        text-decoration-line: none;
     }
 
     .title
     {
         font-size: 20pt;
+        font-weight: bold;
     }
 
     .subtitle
     {
         font-size: 16pt;
+        font-weight: bold;
         margin-top: 1%;
         margin-bottom: 1%;
     }
@@ -77,7 +95,7 @@
 
     .list_contacts 
     {
-        margin-bottom: 20px;
+        margin-bottom: 3%;
         text-align: center;
     }
 
@@ -116,6 +134,12 @@
         background-color: #D81B60;
     }
 
+    .title_card_about_me
+    {
+        font-size: 16pt;
+        font-weight: bold;
+    }
+
     .fa
     {
         color: #F8BBD0;
@@ -146,6 +170,7 @@
         overflow: hidden;
         width: 100%;
         text-align: center;
+        padding-left: 5%;
     }
     
     #skills_list div 
@@ -170,6 +195,23 @@
     #skills_list .fa-mobile
     {
         color:white;
+    }
+
+    .txt_card
+    {
+        font-size: 14pt;
+        font-weight: bold;
+    }
+
+    #skills_list div a
+    {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
     }
 
     /* Projects Section */
