@@ -1,4 +1,4 @@
-# =========== UPDATING ==================
+# =========== UPDATING ================
 # Portfólio de Laura Oliveira
 
 ## Desenvolvedora Mobile | Aspirante a Palestrante
