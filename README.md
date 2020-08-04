@@ -9,8 +9,8 @@
 **Línguas** 
 
 Inglês (fluente) |
-Português (nativo) |
-Espanhol (intermediário)
+Espanhol (intermediário) |
+Português (nativo) 
 
 
 Para acessar o portfólio online entre no seguinte link:
