@@ -6,57 +6,12 @@
         margin: 0;
         padding-top: 0;
     }
-    
-    /* .menu 
-    {
-        overflow: hidden;
-        background-color: #eb7077;
-        position: fixed;
-        top: 0;
-        padding: 0;
-        width: 100%;
-        z-index: 3;
-        font-weight: bold;
-        margin-bottom:10%;
-    }
-    
-    .menu a 
-    {
-        float: left;
-        display: block;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-    }
-    
-    .menu a:hover 
-    {
-        background: #f6a2ad;
-        color: white;
-        text-decoration-line: none;
-    }
 
-    #btn_download_cv
-    {
-        background-color:#0288D1;
-        font-weight: bold;
-        text-decoration-line: none;
-    }
 
-    .menu a:last-child 
-    {
-        color: white;
-        font-weight: bold;
-        text-decoration-line: none;
-    } 
-*/
-
-    /* Menu */
+    /* ============================   MENU   =========================== */
     #menu 
     {
-        background-color: #eb7077;
+        background-color: #9575CD;
         position: fixed;
         top: 0;
         padding: 0;
@@ -78,23 +33,8 @@
     
     #menu a:hover 
     {
-        background: #f6a2ad;
+        background: #D1C4E9;
         color: white;
-        text-decoration-line: none;
-    }
-
-    #btn_download_cv
-    {
-        background-color:#0288D1;
-        font-weight: bold;
-        text-decoration-line: none;
-    }
-
-    #menu a:hover  #btn_download_cv
-    {
-        color: white;
-        background-color:#0288D1;
-        font-weight: bold;
         text-decoration-line: none;
     }
 
@@ -102,8 +42,10 @@
     {
         color:white;
     }
-    /*End Menu */
+    /* ============================   END MENU   =========================== */
+
     
+    /* ============================   PRESENTATION SECTION   =========================== */
     .title
     {
         font-size: 20pt;
@@ -159,8 +101,10 @@
         width: 100%;
         margin: 25px;
     }
+    /* ============================   END PRESENTATION SECTION   =========================== */
 
-    /* About Me Section */
+
+    /* ============================   ABOUT ME SECTION   =========================== */
     #about_me_section 
     {
         margin-top: 0;
@@ -199,8 +143,10 @@
     {
         color: #F8BBD0;
     }
+    /* ============================   END ABOUT ME SECTION   =========================== */
 
-    /* Skills Section */
+
+    /* ============================   SKILLS SECTION   =========================== */
     #skills_section
     {
         margin-top: 1.7%;
@@ -268,8 +214,10 @@
         text-decoration: none;
         font-size: 17px;
     }
+    /* ============================   END SKILLS SECTION   =========================== */
 
-    /* Projects Section */
+
+    /* ============================   PROJECTS SECTION   =========================== */
     #projects_section
     {
         padding-top: 1.5%;
@@ -292,24 +240,6 @@
         padding-top: 1%;
     }
 
-    /*Project Achei Aqui */
-    #project_achei_aqui
-    {
-        border: 2px solid white;
-        border-radius: 10px;
-        padding: 20px;
-        padding-top: 0;
-        width: 50%;
-        height: 100%;
-    }
-
-    #video_achei_aqui iframe
-    {
-        width: 100%;
-        height: 350px;
-    }
-    /*End Project Achei Aqui */
-
     .technologies_list div 
     {
         float: left;
@@ -325,8 +255,27 @@
         border-radius: 10px;
         font-weight: bold;
     }
+    
+    /* ============================   PROJECT ACHEI AQUI   =========================== */
+    #project_achei_aqui
+    {
+        border: 2px solid white;
+        border-radius: 10px;
+        padding: 20px;
+        padding-top: 0;
+        width: 50%;
+        height: 100%;
+    }
 
-    /* Project Mundau */
+    #video_achei_aqui iframe
+    {
+        width: 100%;
+        height: 350px;
+    }
+    /* ============================   END PROJECT ACHEI AQUI   =========================== */
+
+
+    /* ============================   PROJECT RIOS MUNDAU   =========================== */
     #project_mundau
     {
         display: block;
@@ -347,7 +296,11 @@
         width: 100%;
         height: 350px;
     }
-    /* End Project Mundau */
+    /* ============================   END PROJECT RIOS MUNDAU   =========================== */
+    
+
+    /* ============================   END PROJECTS SECTION   =========================== */
+
 }
 
 
