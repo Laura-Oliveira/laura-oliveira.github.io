@@ -31,9 +31,9 @@
         font-size: 17px;
     }
     
-    #menu a:hover 
+    #menu li:hover
     {
-        background: #D1C4E9;
+        background: #B39DDB;
         color: white;
         text-decoration-line: none;
     }
