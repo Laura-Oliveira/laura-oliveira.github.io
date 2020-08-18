@@ -1,4 +1,6 @@
-@media screen and (max-width: 100em),(max-width: 1920px), (max-width: 1080px)
+@media screen and (min-width: 320px), (min-width: 480px),
+(min-width: 600px), (min-width:801px),
+(min-width: 1080px),(min-width: 1920px), (min-width:2340px)
 {
     body
     {
@@ -72,7 +74,7 @@
     #apresentation_section #div_img_profile
     {
         display: block;
-        margin-top: 10%;
+        margin-top: 15%;
         margin-bottom: 2%;
     }
     
@@ -112,11 +114,11 @@
     /* ============================   ABOUT ME SECTION   =========================== */
     #about_me_section 
     {
-        margin-top: 0;
+        margin-top: 3%;
         background-color: #AB47BC;
         color: white;
-        padding: 1.5%;
-        padding-bottom: 2.5%;
+        padding-top: 3%;
+        padding-bottom: 4%;
         font-size: 14pt;
     }
 
@@ -154,9 +156,9 @@
     /* ============================   SKILLS SECTION   =========================== */
     #skills_section
     {
-        margin-top: 1.7%;
+        margin-top: 4%;
         color: white;
-        padding-bottom: 2.5%;
+        padding-bottom: 4%;
         font-size: 14pt;
     }
 
@@ -225,7 +227,8 @@
     /* ============================   PROJECTS SECTION   =========================== */
     #projects_section
     {
-        padding-top: 1.5%;
+        padding-top: 3%;
+        padding-bottom: 1.5%;
         background-color: #AB47BC;
         color:white;
         font-size: 14pt;
