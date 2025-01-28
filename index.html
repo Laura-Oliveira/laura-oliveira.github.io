@@ -45,8 +45,8 @@
     <script type="text/javascript" src="js/jasny-bootstrap.min.js"></script>
 
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5528872139130815"
-crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5528872139130815"
+        crossorigin="anonymous"></script>
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -146,18 +146,26 @@ crossorigin="anonymous"></script>
         </div>
 
         <!-- <button id="btn_modal_spanish" class="btn_modal" onclick="openPageSpanish()">Español</button>
-        <script type="text/javascript">
-            function openPageSpanish() {
-                document.getElementById('btn_modal_spanish').onclick(window.location = 'spanish_page.html');
-            }
-        </script> -->
+    <script type="text/javascript">
+        function openPageSpanish() {
+            document.getElementById('btn_modal_spanish').onclick(window.location = 'spanish_page.html');
+        }
+    </script> -->
 
+        <!-- <button id="btn_modal_english" class="btn_modal" onclick="openPageEnglish()">English</button>
+    <script type="text/javascript">
+
+
+        function openPageEnglish() {
+            document.getElementById('btn_modal_english').onclick(window.location = 'english_page.html');
+        }
+    </script> -->
+
+        <!-- Botão para a página em inglês -->
         <button id="btn_modal_english" class="btn_modal" onclick="openPageEnglish()">English</button>
         <script type="text/javascript">
-
-
             function openPageEnglish() {
-                document.getElementById('btn_modal_english').onclick(window.location = 'english_page.html');
+                window.location = 'english_page.html'; // Redireciona diretamente
             }
         </script>
 
@@ -228,41 +236,41 @@ crossorigin="anonymous"></script>
                     <div id="about_me_description">
                         <p>
                             Olá! Me chamo <b>Laura Oliveira</b> e sou <b> Mobile Developer </b>
-                            com <b> 3 anos de experiência desenvolvendo apps </b>.
+                            com <b> 4 anos de experiência desenvolvendo apps </b>.
                         </p>
 
                         <p> <b>Trabalho com tecnlogia desde de 2015</b>, e possuo as seguintes <b>formações</b>:</p>
 
                         <p>
-                            <ul>
-                                <li>
-                                    <b> Superior em Análise e Desenvolvimento de Sistemas </b> - Instituto Federal de
-                                    Pernambuco (IFPE) | <b>Formada em 2021</b>.
-                                </li>
-                                <li>
-                                    <b>Técnico/Médio em Administração </b> - Escola Técnica Estadual Maria
-                                    Eduarda
-                                    Ramos de Barros | <b>Formada em 2013</b>.
-                                </li>
-                            </ul>
+                        <ul>
+                            <li>
+                                <b> Superior em Análise e Desenvolvimento de Sistemas </b> - Instituto Federal de
+                                Pernambuco (IFPE) | <b>Formada em 2021</b>.
+                            </li>
+                            <li>
+                                <b>Técnico/Médio em Administração </b> - Escola Técnica Estadual Maria
+                                Eduarda
+                                Ramos de Barros | <b>Formada em 2013</b>.
+                            </li>
+                        </ul>
                         </p>
 
                         <p class="subtille"> Mochileira </p>
                         <p>
-                            <p>
-                                <b>Morei em 2 lugares</b> através de <b>bolsas de estudo:</b>
-                            <ul>
-                                <li>Nova Zelândia (6 meses);</li>
-                                <li>Argentina (1 mês); </li>
-                            </ul>
-                            <p>
+                        <p>
+                            <b>Morei em 2 países</b> através de <b>bolsas de estudo:</b>
+                        <ul>
+                            <li>Nova Zelândia (6 meses);</li>
+                            <li>Argentina (1 mês); </li>
+                        </ul>
+                        <p>
 
                             <b> Línguas: </b>
-                            <ul>
-                                <li> <b>Inglês:</b> Fluente (C1);</li>
-                                <li> <b>Espanhol:</b> Intermediário (B2);</li>
-                                <li> <b>Português:</b> Nativo (C2).</li>
-                            </ul>
+                        <ul>
+                            <li> <b>Inglês:</b> Fluente (C2);</li>
+                            <li> <b>Espanhol:</b> Intermediário (B2);</li>
+                            <li> <b>Português:</b> Nativo (C2).</li>
+                        </ul>
                         </p>
                     </div>
 
@@ -368,14 +376,104 @@ crossorigin="anonymous"></script>
             </div>
 
             <!-- PROJECTS LIST
+            ================================================== -->
+
+            <div class="container-fluid-projects">
+
+                <!-- PROJECT COMPOSTAR APP
 ================================================== -->
-            <div class="container-fluid">
+                <div class="container-fluid" id="project_compostar">
+                    <div class="container" class="flex-container">
+
+                        <div class="projetct_title">Compostar App</div>
+
+                        <div class="project_skills_list">
+                            <div>
+                                <img src="assets/img/icons/android_icon.png" alt="Android icon" class="img_skills" />
+                                <p class="txt_card">Android</p>
+                            </div>
+                            <div>
+                                <img src="assets/img/icons/kotlin.png" alt="Kotlin icon" class="img_skills" />
+                                <p class="txt_card">Kotlin</p>
+                            </div>
+                        </div>
+
+                        <p class="paragraph">
+                        <p class="objetivo_content">
+                            <b>Compostar App</b> é um aplicativo Android de ponta que <b>desenvolvi totalmente do
+                                zero</b>,
+                            <b>projetado para simplificar o gerenciamento de resíduos orgânicos em Recife</b>,
+                            capacitando iniciativas eco-conscientes e <b>promovendo a sustentabilidade
+                                por meio de recursos intuitivos e tecnologia robusta.</b>
+                        </p>
+                        </p>
+                        </p>
+
+                        <p>
+                            <b>✨ Principais Funcionalidades:</b>
+                        <ul class="no-bullet-points">
+                            <li> <b>✔️ Tela Inicial Dinâmica: </b>Uma introdução personalizada com o logo da empresa.
+                            </li>
+                            <li> <b>✔️ Gestão de Ilhas Verdes:</b> Adicione e edite detalhes como nome da escola,
+                                endereço e principais métricas ambientais.</li>
+                            <li> <b>✔️ Acompanhamento de Dados:</b> Monitore as quantidades de resíduos coletados,
+                                composto gerado e compensação de carbono.</li>
+                            <li> <b>✔️ Filtros Inteligentes:</b> Filtre as ilhas verdes por orgânicos, composto ou
+                                descarbonização com base nos dados disponíveis.</li>
+                            <li> <b>✔️ Funcionalidade de Busca:</b> Localize rapidamente as ilhas verdes pelo nome da
+                                escola.</li>
+                            <li> <b>✔️ Integração com Mapa:</b> Visualize a localização das ilhas verdes utilizando o
+                                Open Maps.</li>
+                            <li> <b>✔️ Seção Sobre:</b> Explore detalhes da empresa, créditos de desenvolvimento e links
+                                externos.</li>
+                        </ul>
+                        </p>
+
+                        <p> <b>💻Technologia: </b> </p>
+                        <ul>
+                            <li>Android;</li>
+                            <li>Kotlin;</li>
+                            <li>Android SDK;</li>
+                            <li>Firebase Firestore;</li>
+                            <li>Clean Architecture + hashtag#mvvm + Feature-Oriented Architecture for scalability and
+                                modular design;</li>
+                            <li>Conceitos de UI/UX;</li>
+                            <li> Material Design;</li>
+                            <li>Temas personalizados (padrão and dark);</li>
+
+                            <li>XML & Constraintlayout;</li>
+                            <li>libs.version.toml;</li>
+                            <li>Gradle.</li>
+
+                        </ul>
+
+                        <p> <b>🛠️Ferramentas: </b> </p>
+                        <ul>
+                            <li> Android Studio; </li>
+                            <li> Git/Github. </li>
+                        </ul>
+
+                        <p> <b>⏱️Metodologias Ágeis: </b> </p>
+                        <ul>
+                            <li> Kanban. </li>
+                        </ul>
+
+                        <div id="video_compostar" class="flex-container">
+                            <iframe width="100%" height="550" src="https://www.youtube.com/embed/wlg6qj-URA4"
+                                title="YouTube video player" frameborder="0" allowfullscreen
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <!-- END PROJECT COMPOSTAR APP
+================================================== -->
 
                 <!-- PROJECT TIMER APP
 ================================================== -->
                 <div class="container-fluid" id="project_timer">
                     <div class="container" class="flex-container">
-                        
+
                         <div class="projetct_title">Timer App</div>
 
                         <div class="project_skills_list">
@@ -390,17 +488,32 @@ crossorigin="anonymous"></script>
                         </div>
 
                         <p class="paragraph">
-                            <p class="objetivo_content">
-                                <b>Timer App</b> é um aplicativo Android que permite 
-                                <b>ativar vários contadores simultaneamente para uma determinada tarefa.</b>
-                            </p>
+                        <p class="objetivo_content">
+                            <b>Timer App</b> é um aplicativo Android que <b>desenvolvi totalmente do zero</b>,
+                            projetado para permitir a <b>ativação de vários contadores simultaneamente para diferentes
+                                atividades</b>,
+                            proporcionando uma maneira prática de <b>gerenciar o tempo gasto em diversas tarefas por
+                                funcionários do setor
+                                logístico de uma empresa.</b>
 
-                            <p> 
-                                De modo que essas atividades podem ser adicionadas ou removidas, e ser possível ver o tempo
-                                gasto em atividades a partir de um gráfico.
-                            </p>
+                        <p>Com funcionalidades intuitivas e tecnologia robusta,
+                            o Timer App oferece um controle eficiente e organizado das suas atividades diárias.
+                        </p>
                         </p>
 
+                        <p>
+                            <b>✨ Principais Funcionalidades:</b>
+                        <ul class="no-bullet-points">
+                            <li> <b> ✔️ Tela Inicial Dinâmica:</b> Introdução personalizada com o logo do aplicativo.
+                            </li>
+                            <li> <b> ✔️ Gestão de Atividades: </b>Adicione e remova atividades, visualizando facilmente
+                                o tempo gasto em cada uma.</li>
+                            <li> <b> ✔️ Acompanhamento de Tempo: </b>Monitore o tempo acumulado em atividades por meio
+                                de gráficos.</li>
+                            <li> <b> ✔️ Gráficos de Desempenho: </b>Visualize o tempo gasto em atividades de maneira
+                                clara e eficiente.</li>
+                        </ul>
+                        </p>
 
                         <p> <b>💻Technologia: </b> </p>
                         <ul>
@@ -442,7 +555,7 @@ crossorigin="anonymous"></script>
 
                         <div id="video_timer" class="flex-container">
                             <iframe width="100%" height="550"
-                                src="https://www.youtube.com/embed/chJKAHjLU_g?si=QA0IfqZPhMT67GEF"
+                                src="https://www.youtube.com/embed/4QeF8S3jBHQ"
                                 title="YouTube video player" frameborder="0" allowfullscreen
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
                             </iframe>
@@ -452,143 +565,11 @@ crossorigin="anonymous"></script>
                 <!-- END PROJECT TIMER APP
 ================================================== -->
 
-
-                <!-- PROJECT HABITUS APP
-================================================== -->
-                <div class="container-fluid" id="project_habitus">
-                    <div class="container" class="flex-container">
-                        
-                        <div class="projetct_title">Habitus App</div>
-
-                        <div class="project_skills_list">
-                            <div>
-                                <img src="assets/img/icons/android_icon.png" alt="Android icon" class="img_skills" />
-                                <p class="txt_card">Android</p>
-                            </div>
-                            <div>
-                                <img src="assets/img/icons/java_icon.jpg" alt="Kotlin icon" class="img_skills" />
-                                <p class="txt_card">Java</p>
-                            </div>
-                        </div>
-
-                        <p class="paragraph">
-                            <p class="objetivo_content">
-                                O objetivo do <b>Habitus App</b> era <b>reformular o layout do app</b> e <b>implementar a
-                                    comunicação</b> entre o #app e um <b>servidor externo</b>.
-                            </p>
-                        </p>
-
-
-                        <p> <b>💻Technologia: </b> </p>
-                        <ul>
-                            <li> Android; </li>
-                            <li> Java; </li>
-                            <li> Retrofit;</li>
-                            <li> API REST Creation | Bilioteca OkHttp3 | Gson</li>
-                            <li> Android SDK; </li>
-                            <li> Gradle; </li>
-                            <li> UI/UX Concepts; </li>
-                            <li> Material Design; </li>
-                            <li> XML & Constraintlayout. </li>
-                        </ul>
-
-                        <p> <b>🛠️Ferramentas: </b> </p>
-                        <ul>
-                            <li> Trello; </li>
-                            <li> Git/Github; </li>
-                            <li> Android Studio. </li>
-                        </ul>
-
-                        <p> <b>⏱️Agile Methodology: </b> </p>
-                        <ul>
-                            <li> Kanban. </li>
-                        </ul>
-
-                        <div id="div_video_habitus" class="flex-container">
-                            <video id="video_habitus" width="100%" height="565px" controls>
-                                <source src="assets/img/projects/habitus/demo_habitus.mp4" type="video/mp4">
-                                Seu navegador não suporta o elemento de vídeo.
-                            </video>
-                        </div>
-                    </div>
-                </div>
-                <!-- END PROJECT HABITUS
-================================================== -->
-
-
-                <!-- PROJECT LINKS PRO
-================================================== -->
-                <div class="container-fluid" id="project_links_pro">
-                    <div class="container" class="flex-container">
-                        
-                        <div class="projetct_title">Links Pro</div>
-
-                        <div class="project_skills_list">
-                            <div>
-                                <img src="assets/img/icons/android_icon.png" alt="Android icon" class="img_skills" />
-                                <p class="txt_card">Android</p>
-                            </div>
-                            <div>
-                                <img src="assets/img/icons/kotlin.png" alt="Kotlin icon" class="img_skills" />
-                                <p class="txt_card">Kotlin</p>
-                            </div>
-                        </div>
-
-                        <p class="paragraph">
-                            <p class="objetivo_content">
-                                O <b>Links Pro App</b> foi um aplicativo Android criado do zero, focado em <b>enviar links
-                                    para um servidor aws</b> sem a necessidade de abrir uma tela do app.
-                            </p>
-                        </p>
-
-                        <p> <b> 💻 Estes links podem ser provenientes: </b> </p>
-                        <ul>
-                            <li> Instagram; </li>
-                            <li> Browser; </li>
-                            <li> Google Page; </li>
-                            <li> Quick share do sistema operacional android. </li>
-                        </ul>
-
-                        <p> <b>💻Technologia: </b> </p>
-                        <ul>
-                            <li> Android; </li>
-                            <li> Kotlin; </li>
-                            <li> Arquitetura MVC; </li>
-                            <li> Retrofit; </li>
-                            <li> Criação de API | GSON | Okhttp3; </li>
-                            <li> UI/UX Concepts; </li>
-                            <li> Material Design; </li>
-                            <li> XML & Constraintlayout. </li>
-                            <li> Gradle; </li>
-                            <li> Android SDK. </li>
-                        </ul>
-
-                        <p> <b>🛠️Ferramentas: </b> </p>
-                        <ul>
-                            <li> Git/Github; </li>
-                            <li> Android Studio. </li>
-                        </ul>
-
-                        <p> <b>⏱️Metodologia Ágil: </b> </p>
-                        <ul>
-                            <li> Kanban. </li>
-                        </ul>
-
-                        <div>
-                            <iframe id="screenshot_links_pro" src="./assets/pdf/Links-Pro.pdf" width="600" height="780"
-                                style="border: none;"></iframe>
-                        </div>
-                    </div>
-                </div>
-                <!-- END PROJECT LINKS PRO
-================================================== -->
-
-
                 <!-- PROJECT QRCODE MAKER
 ================================================== -->
                 <div class="container-fluid" id="project_qrcode_maker">
                     <div class="container" class="flex-container">
-                        
+
                         <div class="projetct_title">QRCode Maker App</div>
 
                         <div class="project_skills_list">
@@ -604,12 +585,25 @@ crossorigin="anonymous"></script>
 
 
                         <p class="paragraph">
-                            <p class="objetivo_content">
-                                <b>QRCode Maker App </b> é um aplicativo Android <b>focado em ajudar pessoas a compartilhar
-                                    informações durante eventos presenciais.</b>
+                        <p class="objetivo_content">
+                            <b>QRCode Maker App </b> é um aplicativo Android que <b>desenvolvi totalmente do zero</b>,
+                            focado em <b>gerar e salvar códigos QR a partir de qualquer link</b>,
+                            facilitando o <b>compartilhamento presencial durante eventos</b>.
+                        </p>
+                        </p>
 
-                                <p>O aplicativo permite a <b>criação de um qrcode a partir de qualquer link.</b></p>
-                            </p>
+                        <p>
+                            <b>✨ Principais Funcionalidades:</b>
+                        <ul class="no-bullet-points">
+                            <li> <b> ✔️ Geração de Códigos QR:</b> Crie códigos QR a partir de qualquer link em apenas
+                                alguns cliques, aumentando a acessibilidade e a usabilidade.</li>
+                            <li> <b> ✔️ Aplicações Empresariais: </b> Gere códigos QR para finalidades empresariais,
+                                como campanhas de marketing ou compartilhamento de informações sobre produtos.</li>
+                            <li> <b> ✔️ Compartilhamento de Contatos: </b>Facilite a troca de informações de contato
+                                durante eventos presenciais gerando códigos QR.</li>
+                            <li> <b> ✔️ Interface Dinâmica: </b>Desenvolvido com os princípios do Material Design, o
+                                aplicativo oferece uma experiência intuitiva e visualmente atraente.</li>
+                        </ul>
                         </p>
 
                         <p> <b>💻Technologia: </b> </p>
@@ -638,7 +632,7 @@ crossorigin="anonymous"></script>
                         </ul>
 
                         <div id="video_qrcode_maker" class="flex-container">
-                            <iframe width="100%" height="550" src="https://www.youtube.com/embed/vAVemUcGxrA"
+                            <iframe width="100%" height="550" src="https://www.youtube.com/embed/nDz_QD-xhlo"
                                 title="YouTube video player" frameborder="0" allowfullscreen
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
                             </iframe>
@@ -646,7 +640,11 @@ crossorigin="anonymous"></script>
                     </div>
                 </div>
 
-                                        <!-- <p>
+                <!-- 
+
+ src="https://www.youtube.com/embed/vAVemUcGxrA"
+
+<p>
 <b>
 Download Playstore:
 <a target="_blank"
@@ -656,6 +654,174 @@ Clique Aqui </a>
 </p> -->
 
                 <!-- END PROJECT QRCODE MAKER
+================================================== -->
+
+
+                <!-- PROJECT LINKS PRO
+================================================== -->
+                <div class="container-fluid" id="project_links_pro">
+                    <div class="container" class="flex-container">
+
+                        <div class="projetct_title">Links Pro App</div>
+
+                        <div class="project_skills_list">
+                            <div>
+                                <img src="assets/img/icons/android_icon.png" alt="Android icon" class="img_skills" />
+                                <p class="txt_card">Android</p>
+                            </div>
+                            <div>
+                                <img src="assets/img/icons/kotlin.png" alt="Kotlin icon" class="img_skills" />
+                                <p class="txt_card">Kotlin</p>
+                            </div>
+                        </div>
+
+                        <p class="paragraph">
+                        <p class="objetivo_content">
+                            <b>Links Pro App</b> é um aplicativo Android que <b>desenvolvi totalmente do zero</b>,
+                            focado em <b>compartilhar links diretamente com um servidor AWS através do
+                                recurso de quick share do Android, sem precisar abrir o aplicativo.</b>
+
+                        </p>
+                        </p>
+
+                        <p> <b> 💻 Estes links podem ser provenientes: </b> </p>
+                        <ul>
+                            <li> Instagram; </li>
+                            <li> Browser; </li>
+                            <li> Google Page; </li>
+                            <li> Quick share do sistema operacional android. </li>
+                        </ul>
+
+                        <p>
+                            <b>✨ Principais Funcionalidades:</b>
+                        <ul class="no-bullet-points">
+                            <li> <b> ✔️ Compartilhamento Automático de Links:</b> Envie links diretamente para um
+                                servidor AWS sem abrir o aplicativo.</li>
+                            <li> <b> ✔️ Compatibilidade com Múltiplas Fontes: </b>Compartilhe links de diferentes
+                                fontes, como Instagram, navegadores, Google Search e o menu de compartilhamento rápido
+                                do sistema operacional Android.</li>
+                        </ul>
+                        </p>
+
+                        <p> <b>💻Technologia: </b> </p>
+                        <ul>
+                            <li> Android; </li>
+                            <li> Kotlin; </li>
+                            <li> Arquitetura MVC; </li>
+                            <li> Retrofit; </li>
+                            <li> Criação de API | GSON | Okhttp3; </li>
+                            <li> UI/UX Concepts; </li>
+                            <li> Material Design; </li>
+                            <li> XML & Constraintlayout. </li>
+                            <li> Gradle; </li>
+                            <li> Android SDK. </li>
+                        </ul>
+
+                        <p> <b>🛠️Ferramentas: </b> </p>
+                        <ul>
+                            <li> Git/Github; </li>
+                            <li> Android Studio. </li>
+                        </ul>
+
+                        <p> <b>⏱️Metodologia Ágil: </b> </p>
+                        <ul>
+                            <li> Kanban. </li>
+                        </ul>
+
+                        <div>
+                            <iframe id="screenshot_links_pro" src="./assets/pdf/Links-Pro-App.pdf" width="600" height="780"
+                                style="border: none;"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <!-- END PROJECT LINKS PRO
+================================================== -->
+
+
+                <!-- PROJECT HABITUS APP
+================================================== -->
+                <div class="container-fluid" id="project_habitus">
+                    <div class="container" class="flex-container">
+
+                        <div class="projetct_title">Habitus App</div>
+
+                        <div class="project_skills_list">
+                            <div>
+                                <img src="assets/img/icons/android_icon.png" alt="Android icon" class="img_skills" />
+                                <p class="txt_card">Android</p>
+                            </div>
+                            <div>
+                                <img src="assets/img/icons/java_icon.jpg" alt="Kotlin icon" class="img_skills" />
+                                <p class="txt_card">Java</p>
+                            </div>
+                        </div>
+
+                        <p class="paragraph">
+                            <p class="objetivo_content">
+                                <b>Habitus App</b> é um aplicativo Android focado em <b>auxiliar
+                                profissionais da saúde no monitoramento e organização de atividades diárias</b>.
+                            
+                                <p> <b>Atuei na manutenção, 
+                                melhorias e implementação de novas funcionalidades</b>
+                                </p>
+                            </p>
+                        </p>
+
+                        <p>
+                            <b>✨ Principais Funcionalidades:</b>
+                            <ul class="no-bullet-points">
+                                <li> <b> ✔️ Migrado para AndroidX:</b> Atualização do app para a versão mais recente do
+                                    AndroidX.</li>
+                                <li> <b> ✔️ Redesenhado a UI:</b> Redesenhado seis telas do aplicativo para melhorar a
+                                    experiência do usuário.</li>
+                                <li> <b> ✔️ Comunicação com o Servidor:</b> Implementação de comunicação com o servidor AWS
+                                    através da criação de APIs REST.</li>
+                                <li> <b> ✔️ Melhoria de Performance:</b> Melhoria de performance e engajamento do usuário através
+                                    da implementação da biblioteca Material Design.</li>
+                            </ul>
+                        </p>
+
+                        <p> <b>💻Technologia: </b> </p>
+                        <ul>
+                            <li> Android; </li>
+                            <li> Java; </li>
+                            <li> Retrofit;</li>
+                            <li> API REST Creation | Bilioteca OkHttp3 | Gson</li>
+                            <li> Android SDK; </li>
+                            <li> Gradle; </li>
+                            <li> UI/UX Concepts; </li>
+                            <li> Material Design; </li>
+                            <li> XML & Constraintlayout. </li>
+                        </ul>
+
+                        <p> <b>🛠️Ferramentas: </b> </p>
+                        <ul>
+                            <li> Trello; </li>
+                            <li> Git/Github; </li>
+                            <li> Android Studio. </li>
+                        </ul>
+
+                        <p> <b>⏱️Agile Methodology: </b> </p>
+                        <ul>
+                            <li> Kanban. </li>
+                        </ul>
+
+                        <div id="video_qrcode_maker" class="flex-container">
+                            <iframe width="100%" height="550" src="https://www.youtube.com/embed/mWCT57srmsc"
+                                title="YouTube video player" frameborder="0" allowfullscreen
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+                            </iframe>
+                        </div>
+<!--                         
+                        <div id="div_video_habitus" class="flex-container">
+                            <video id="video_habitus" width="100%" height="565px" controls>
+                                <source src="assets/img/projects/habitus/demo_habitus.mp4" type="video/mp4">
+                                Seu navegador não suporta o elemento de vídeo.
+                            </video>
+                        </div> -->
+                    </div>
+                </div>
+                <!-- END PROJECT HABITUS
 ================================================== -->
 
 
@@ -882,7 +1048,7 @@ Clique Aqui </a>
 
                 <!-- SERVICE ONLINE COURSE
 ================================================== -->
-    <!-- <div id="card_service_online_course">
+                <!-- <div id="card_service_online_course">
         <div id="service_online_course">
             <div class="service_title"> ✨ Mentoria LinkedIn Profissional: Construindo uma Marca de Sucesso ✨</div>
 
@@ -913,7 +1079,7 @@ Clique Aqui </a>
         </div>
     </div> -->
 
-<!-- END SERVICE ONLINE COURSE
+                <!-- END SERVICE ONLINE COURSE
 ================================================== -->
 
 
@@ -974,9 +1140,9 @@ Clique Aqui </a>
 
                             <p class="paragraph">
                                 <b> O que você vai aprender: </b>
-                                <p class="description_content">
+                            <p class="description_content">
                                 Mentoria focada em te ajudar a criar conteúdo para o Linkedin.
-                                </p>
+                            </p>
                             </p>
 
                             <br />
@@ -984,8 +1150,7 @@ Clique Aqui </a>
                             <br />
 
                             <div id="paragraph_button_mentoria">
-                                <a target="_blank" href="https://forms.gle/Bc1oGAb6vvDuePfBA"
-                                    id="button_mentoria">
+                                <a target="_blank" href="https://forms.gle/Bc1oGAb6vvDuePfBA" id="button_mentoria">
                                     Inscreva-se Hoje!
                                 </a>
                             </div>
@@ -1012,6 +1177,5 @@ Clique Aqui </a>
             <!-- END SERVICES SECTION
 ================================================== -->
 </body>
-
 
 </html>

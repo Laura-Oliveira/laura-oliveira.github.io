@@ -293,6 +293,39 @@
     /* ============================   END SKILLS SECTION   =========================== */
 
     /* ============================   PROJECTS SECTION   =========================== */
+    /* Container principal dos projetos */
+    .container-fluid-projects
+     {
+        display: flex;
+        flex-wrap: wrap; /* Permite que os itens se organizem em linhas */
+        justify-content: space-between; /* Espaçamento igual entre os projetos */
+        gap: 20px; /* Espaçamento entre os projetos */
+    }
+
+    /* Box de cada projeto */
+    .container-projects
+    {
+        flex: 1 1 calc(33.333% - 20px); /* Define largura proporcional e com margem */
+        max-width: calc(33.333% - 20px); /* Limita a largura máxima */
+        min-width: 300px; /* Define uma largura mínima */
+        background-color: #f9f9f9; /* Cor de fundo do box (opcional) */
+        border: 1px solid #ddd; /* Borda do box (opcional) */
+        border-radius: 10px; /* Bordas arredondadas */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+        padding: 20px; /* Espaçamento interno */
+        display: flex;
+        flex-direction: column; /* Organização vertical */
+        justify-content: space-between; /* Espaçamento interno balanceado */
+        box-sizing: border-box;
+    }
+
+    /* Alinhamento de elementos dentro do box */
+    .flex-container-projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
     #projects_section 
     {
         padding-top: 3%;
@@ -394,6 +427,29 @@
     li {
         list-style-type: none;
       } */
+
+       /* ============================   PROJECT COMPOSTAR   =========================== */
+    #project_compostar
+    {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        background-color: #f2f2f2;
+        border-radius: 1%;
+        color: black;
+        padding: 1%;
+        width: 75%;
+        height: 50%;
+        margin-bottom: 3%;
+    }
+
+    #video_compostar iframe 
+    {
+        display: flex;
+        margin: 0;
+        margin-bottom: 3%;
+    }
+
 
        /* ============================   PROJECT TIMER   =========================== */
     #project_timer
@@ -506,7 +562,7 @@
         padding: 1%;
         width: 75%;
         height: 50%;
-        margin-top: 3%;
+     /*   margin-top: 3%; */
     }
 
     #video_qrcode_maker iframe 
@@ -576,6 +632,17 @@
         margin-bottom: 3%;
     }
 
+    .no-bullet-points 
+    {
+        list-style-type: none; /* Remove as bolinhas */
+        padding: 0; /* Remove o recuo padrão */
+        margin: 0; /* Remove margens extras */
+    }
+    
+    .no-bullet-points li 
+    {
+        margin-bottom: 10px; /* Adiciona espaçamento entre os itens da lista */
+    }
     /* .technologies_list_links_pro
     {
         display: flex;
