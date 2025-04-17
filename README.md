@@ -2,7 +2,7 @@
 
 ## Desenvolvedora Mobile | Criadora de Conteúdo | Palestrante | Mentora
 
-Olá! Me **chamo Laura Oliveira** e sou **Mobile Developer com 2 anos de experiência desenvolvendo apps**.
+Olá! Me **chamo Laura Oliveira** e sou **Mobile Developer com 4 anos de experiência desenvolvendo apps**.
 
 **Trabalho com tecnlogia desde de 2015**, e possuo as seguintes **formações**:
 
