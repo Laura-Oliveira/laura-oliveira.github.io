@@ -1,0 +1,7 @@
+*.html linguist-detectable=html
+*.css linguist-detectable=CSS
+*.javaScript linguist-detectable=javaScript
+
+*.html linguist-detectable=true
+*.css linguist-detectable=true
+*.javaScript linguist-detectable=true
