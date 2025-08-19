@@ -1,0 +1,60 @@
+/* ============================   FOOTER   =========================== */
+/* Rodapé clean e moderno */
+.footer {
+  background: linear-gradient(180deg, #F20574, #1A2B60);
+  color: whitesmoke;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.footer-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.footer-tagline {
+  font-size: 0.9rem;
+  opacity: 0.85;
+  margin-bottom: 1rem;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-social img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.2s ease, filter 0.3s ease;
+}
+
+.footer-social img:hover {
+  transform: scale(1.2);
+  filter: brightness(1) invert(0.1);
+}
+
+.footer-copy {
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .footer-name {
+    font-size: 1.2rem;
+  }
+
+  .footer-tagline {
+    font-size: 0.8rem;
+  }
+}
+
+/* ============================   END FOOTER   =========================== */

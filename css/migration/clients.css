@@ -1,0 +1,92 @@
+/* ============================   CLIENTS   =========================== */
+#clients_section {
+  width: 90%;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+
+  background: linear-gradient(to bottom,
+      #F20574 -20%,
+      /* topo */
+      #1A2B60 50%,
+      /* topo até meio */
+      #F20574 50%,
+      /* bottom começa no meio */
+      #1A2B60 0%
+      /* bottom */
+    );
+
+  color: whitesmoke;
+  padding: 4rem 2rem;
+  border-radius: 20px;
+  margin: 2rem auto;
+  max-width: 1000px;
+  box-shadow: 0 8px 20px whitesmoke;
+  /* display: flex;
+  flex-wrap: wrap; */
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+}
+
+#clients_section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.clients-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-card {
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 150px;
+  max-width: 200px;
+}
+
+.client-card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.client-card:hover {
+  transform: translateY(-5px) scale(1.05);
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .clients-logos {
+    gap: 1rem;
+  }
+
+  .client-card {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .clients-logos {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .client-card {
+    max-width: 200px;
+  }
+}
+
+
+/* ============================   END CLIENTS   =========================== */

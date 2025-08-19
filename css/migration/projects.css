@@ -1,0 +1,290 @@
+/* ============================   PROJECTS   =========================== */
+#projects_section {
+  width: 90%;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+#projects_section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 40px auto;
+  max-width: 900px;
+  background-color: whitesmoke;
+  border-radius: 30px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+/* .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+} */
+
+/* Quando a tela for menor que 768px, vira 1 coluna */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project-card {
+  overflow: hidden;
+  border-radius: 20px;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  padding: 3%;
+  flex-direction: column;
+}
+
+.project-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: #4657AA; */
+  color: whitesmoke;
+  padding: 0.75rem 1rem;
+  border-radius: 20px 20px 0 0;
+  flex-wrap: wrap;
+
+  background: linear-gradient(250deg, #F20574 -30%, #1A2B60);
+
+
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.project-skills-list {
+  display: flex;
+  gap: 0.5rem;
+  background-color: #263777;
+  border-radius: 30px;
+  padding: 0.4rem 0.8rem;
+  border: solid 1px #0F1B40;
+}
+
+.project-image {
+  width: 100%;
+  background-color: whitesmoke;
+  border-radius: 0 0 20px 20px;
+  padding: 1rem;
+}
+
+.project-image img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border: 1px solid whitesmoke;
+  border-radius: 20px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  /* evita sobreposição */
+  gap: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .project-header {
+    flex-direction: column;
+    /* empilha título e ícones */
+    align-items: center;
+    text-align: center;
+  }
+
+  .project-title {
+    margin-bottom: 0.5rem;
+  }
+
+  .project-skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* se tiver muitos ícones, eles quebram linha */
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0;
+  }
+}
+
+/* Header Projetos .project-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #4657AA;
+  color: whitesmoke;
+  padding: 0.75rem 1rem;
+  border-radius: 20px 20px 0 0;
+} */
+
+.project-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+  padding: 0 1rem;
+  background-color: whitesmoke;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.project-card.expanded .project-body {
+  max-height: 1000px;
+  /* suficiente para todo conteúdo */
+  padding: 1rem;
+}
+
+.project-body-genyo {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+  padding: 0 1rem;
+  background-color: whitesmoke;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.project-card.expanded .project-body-genyo {
+  max-height: 1500px;
+  /* suficiente para todo conteúdo */
+  padding: 1rem;
+}
+
+md-top-app-bar-title {
+  font-size: 20pt;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.center-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #4657AA;
+  border-radius: 20px;
+
+}
+
+.project-title {
+  font-size: 1.5rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: whitesmoke;
+  margin: 0;
+}
+
+.project-skills-list {
+  display: flex;
+  margin-left: auto;
+  gap: 0.5rem;
+  padding: 1.5%;
+  min-width: 5%;
+  height: 30px;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  margin: 1%;
+  border-radius: 30px;
+  border: solid 1px #0F1B40;
+  background-color: #263777;
+  color: whitesmoke;
+}
+
+.project-skills-list-java {
+  display: flex;
+  gap: 0.5rem;
+  padding: 1.5%;
+  min-width: 25%;
+  height: 30px;
+  margin: 1%;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  border-radius: 30px;
+  border: solid 1px #0F1B40;
+  background-color: #263777;
+  color: whitesmoke;
+}
+
+
+/* Botão estilo Material Design 3 */
+.md3-button {
+  background-color: #0F1B40;
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.md3-button:hover {
+  background-color: #F20574;
+}
+
+.md3-button:active {
+  background-color: #F20574;
+}
+
+/* Container expansível */
+.expandable {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+  margin-top: 10px;
+  border-radius: 30px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.expandable img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+}
+
+/* Estado expandido */
+.expandable.show {
+  max-height: 500px;
+  opacity: 1;
+}
+
+.project-video {
+  margin-top: 20px;
+}
+
+/* ============================   END PROJECT   =========================== */

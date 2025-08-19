@@ -1,0 +1,119 @@
+/* ============================   FEEDBACK   =========================== */
+.feedbacks-section {
+  background-color: #0F1B40;
+  color: whitesmoke;
+  padding: 4rem 2rem;
+   text-align: center;
+
+  border-radius: 20px;
+  /* max-width: 1200px; */
+  /* width: 90%; */
+  margin: 0 auto 4rem auto;
+}
+
+.feedbacks-title {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.feedbacks-subtitle {
+  font-size: 1rem;
+  margin-bottom: 3rem;
+  opacity: 0.8;
+}
+
+.feedback-group {
+  margin-bottom: 4rem;
+   
+  align-content: center;
+}
+
+.feedback-group h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #F20574;
+}
+
+.feedback-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.feedback-card {
+  background-color: #1A2B60;
+  border-radius: 20px;
+  padding: 0.5rem;
+  /* max-width: 300px; */
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.feedback-card:hover {
+  transform: scale(1.05);
+}
+
+.feedback-card img {
+  width: 600px;
+  height: 200px;
+  border-radius: 15px;
+}
+
+.feedback-card-big
+{
+   background-color: #1A2B60;
+  border-radius: 20px;
+  padding: 0.5rem;
+  /* max-width: 300px; */
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.feedback-card-big:hover {
+  transform: scale(1.05);
+}
+
+.feedback-card-big img {
+  width: 600px;
+  height: 280px;
+  border-radius: 15px;
+}
+
+.feedback-cta {
+  margin-top: 2rem;
+}
+
+.feedback-cta p {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.btn-primary {
+  background: #FFD700;
+  color: #0F1B40;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  padding: 1rem;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 12pt;
+  text-decoration: none;
+}
+.btn-primary:hover {
+  background: #f2c200;
+}
+
+@media (max-width: 768px) {
+  .feedback-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* ============================   END FEEDBACK   =========================== */

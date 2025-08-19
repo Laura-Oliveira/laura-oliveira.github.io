@@ -1,0 +1,127 @@
+/* ============================   INTRO   =========================== */
+.title {
+  font-size: 20pt;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.subtille {
+  font-size: 13pt;
+  font-weight: bold;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.subtitle-catch {
+  font-size: 13pt;
+  font-weight: bold;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.subtitle,
+#email {
+  font-size: 16pt;
+  font-weight: bold;
+  margin-top: 3%;
+  margin-bottom: 1%;
+  color: whitesmoke;
+}
+
+.profile-info {
+  color: whitesmoke;
+}
+
+.profile-headline {
+  margin: 2%;
+  font-size: 14pt;
+  color: whitesmoke;
+}
+
+@keyframes fadeSlide {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.profile-photo img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px #00000033;
+}
+
+
+/* Fade-in ao carregar a página */
+.list_contacts {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlide 0.8s ease forwards;
+  animation-delay: 0.3s;
+  /* começa 0.3s após carregar */
+}
+
+@keyframes fadeSlide {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Botões de contato */
+.contact-buttons a {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  background-color: #3b4a90;
+}
+
+/* Hover: zoom leve + sombra + background */
+.contact-buttons a:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 20px whitesmoke;
+  background-color: #4657aa1a;
+}
+
+/* Ripple effect simples */
+.contact-buttons a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  border-radius: inherit;
+}
+
+.contact-buttons a:active::after {
+  opacity: 1;
+  transition: opacity 0s;
+}
+
+.contact-wpp {
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  background-image: url('./assets/img/icons/whatsapp.png');
+  background-size: cover;
+  transition: background-image 0.3s ease;
+}
+
+.contact-wpp:hover {
+  background-image: url('./assets/img/icons/wp-dark.png');
+
+  .normal {
+    display: none;
+  }
+}
+
+/* ============================   END INTRO   =========================== */

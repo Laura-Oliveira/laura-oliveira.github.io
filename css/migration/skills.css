@@ -1,0 +1,43 @@
+/* ============================   SKILLS   =========================== */
+
+#skills_section {
+  width: 90%;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+#skills_section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.title {
+  text-align: center;
+}
+
+.skills-icon {
+  width: 120px;
+  text-align: center;
+}
+
+.skills-icon div img {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  background-color: #3b4a90;
+
+  width: 120px;
+  text-align: center;
+}
+
+.skill-img {
+  width: 50px;
+  height: 50px;
+}
+
+/* ============================   END SKILLS   =========================== */

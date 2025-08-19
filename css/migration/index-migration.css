@@ -1,0 +1,32 @@
+/* Foundation Design - Material Design 3 - Custom CSS */
+:root {
+  --md-sys-color-primary: #0F1B40;
+  --md-sys-color-surface: #F20574;
+  --md-sys-color-on-surface: #1c1b1f;
+  --md-sys-color-background: #0F1B40;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0F1B40;
+  color: var(--md-sys-color-on-background);
+  transition: background-color 0.3s, color 0.3s;
+  overflow-x: hidden;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* Chrome, Edge, Safari */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+header,
+section,
+footer {
+  padding: 2rem;
+  margin: auto;
+}

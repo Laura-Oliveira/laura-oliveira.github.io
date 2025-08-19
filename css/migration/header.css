@@ -1,0 +1,14 @@
+/* ============================   HEADER   =========================== */
+header {
+  background: linear-gradient(180deg, #F20574, #1A2B60);
+  color: whitesmoke;
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+#menuToggle {
+  color: whitesmoke;
+}
+
+/* ============================   END HEADER   =========================== */
