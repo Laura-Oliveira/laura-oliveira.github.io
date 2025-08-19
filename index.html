@@ -1323,6 +1323,21 @@
     </script>
 
     <!-- SCRIPT: Submit Info Orçamento | EmailJS Script -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("YxvxIpoEvVfEVUcpi");
+        })();
+
+        document.getElementById("contact-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            emailjs.sendForm('Sservice_78nb0lp', 'template_78yejp7', this)
+                .then(() => alert("Mensagem enviada com sucesso!"),
+                    () => alert("Erro ao enviar a mensagem, tente novamente."))
+        });
+    </script>
+
+    <!-- SCRIPT: Submit Info Orçamento | EmailJS Script -->
     <!-- <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
         (function () {
@@ -1339,7 +1354,7 @@
 
     <!-- Importa o SDK do EmailJS via CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-        <!-- EmailJS CDN -->
+    <!-- EmailJS CDN -->
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
     <script>
@@ -1365,7 +1380,7 @@
 
 
     <!-- Seu arquivo JS -->
-    <script src="js/migration/index-migration.js"></script>
+    <!-- <script src="js/migration/index-migration.js"></script> -->
 </body>
 
 </html>
