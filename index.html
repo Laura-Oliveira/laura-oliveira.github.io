@@ -1091,8 +1091,8 @@
 
             <!-- Formulário de Contato -->
             <form class="contact-form">
-                <input type="text" name="name" placeholder="Seu Nome" required />
-                <input type="email" name="email" placeholder="Seu E-mail" required />
+                <input type="text" name="from_name" placeholder="Seu Nome" required />
+                <input type="email" name="from_email" placeholder="Seu E-mail" required />
                 <textarea name="message" rows="5" placeholder="Descreva brevemente sua ideia" required></textarea>
                 <button type="submit" class="btn-primary">📩 Solicitar Orçamento</button>
             </form>
@@ -1337,8 +1337,32 @@
         });
     </script> -->
 
-    <!-- EmailJS CDN -->
+    <!-- Importa o SDK do EmailJS via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <!-- EmailJS CDN -->
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <script>
+        (function () {
+            // Substitua pelo seu PUBLIC KEY (não o secret)
+            emailjs.init("YxvxIpoEvVfEVUcpi");
+        })();
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.getElementById("contact-form");
+            if (form) {
+                form.addEventListener("submit", function (event) {
+                    event.preventDefault();
+
+                    emailjs.sendForm("service_78nb0lp", "template_78yejp7", this)
+                        .then(() => alert("Mensagem enviada com sucesso!"))
+                        .catch((error) => alert("Erro ao enviar a mensagem: " + JSON.stringify(error)));
+                });
+            }
+        });
+    </script>
+
+
 
     <!-- Seu arquivo JS -->
     <script src="js/migration/index-migration.js"></script>

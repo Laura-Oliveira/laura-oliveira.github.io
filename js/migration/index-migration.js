@@ -144,12 +144,12 @@ document.querySelectorAll(".feedback-toggle").forEach(button => {
 //     }
 // });
 
-emailjs.sendForm("service_78nb0lp", "template_78yejp7", this)
-    .then((response) => {
-        console.log("SUCCESS!", response.status, response.text);
-        alert("Mensagem enviada com sucesso!");
-    })
-    .catch((error) => {
-        console.error("FAILED Email...", error);
-        alert("Erro ao enviar a mensagem, tente novamente.");
-    });
+// emailjs.sendForm("service_78nb0lp", "template_78yejp7", this)
+//     .then((response) => {
+//         console.log("SUCCESS!", response.status, response.text);
+//         alert("Mensagem enviada com sucesso!");
+//     })
+//     .catch((error) => {
+//         console.error("FAILED Email...", error);
+//         alert("Erro ao enviar a mensagem, tente novamente.");
+//     });
