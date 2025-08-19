@@ -129,17 +129,27 @@ document.querySelectorAll(".feedback-toggle").forEach(button => {
 //             () => alert("Erro ao enviar a mensagem, tente novamente."));
 // });
 
-document.addEventListener("DOMContentLoaded", function () {
-    emailjs.init("YxvxIpoEvVfEVUcpi"); // Seu User ID
+// document.addEventListener("DOMContentLoaded", function () {
+//     emailjs.init("YxvxIpoEvVfEVUcpi"); // Seu User ID
 
-    const form = document.getElementById("contact-form");
-    if (form) {
-        form.addEventListener("submit", function (event) {
-            event.preventDefault();
+//     const form = document.getElementById("contact-form");
+//     if (form) {
+//         form.addEventListener("submit", function (event) {
+//             event.preventDefault();
 
-            emailjs.sendForm("service_78nb0lp", "template_78yejp7", this)
-                .then(() => alert("Mensagem enviada com sucesso!"))
-                .catch(() => alert("Erro ao enviar a mensagem, tente novamente."));
-        });
-    }
-});
+//             emailjs.sendForm("service_78nb0lp", "template_78yejp7", this)
+//                 .then(() => alert("Mensagem enviada com sucesso!"))
+//                 .catch(() => alert("Erro ao enviar a mensagem, tente novamente."));
+//         });
+//     }
+// });
+
+emailjs.sendForm("service_78nb0lp", "template_78yejp7", this)
+    .then((response) => {
+        console.log("SUCCESS!", response.status, response.text);
+        alert("Mensagem enviada com sucesso!");
+    })
+    .catch((error) => {
+        console.error("FAILED Email...", error);
+        alert("Erro ao enviar a mensagem, tente novamente.");
+    });
