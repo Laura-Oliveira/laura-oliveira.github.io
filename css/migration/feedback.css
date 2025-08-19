@@ -82,6 +82,27 @@
   border-radius: 15px;
 }
 
+.feedback-card-clients
+{
+   background-color: #1A2B60;
+  border-radius: 20px;
+  padding: 0.5rem;
+  /* max-width: 300px; */
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.feedback-card-clients:hover {
+  transform: scale(1.05);
+}
+
+.feedback-card-clients img {
+  width: 600px;
+  height: 230px;
+  border-radius: 15px;
+}
+
 .feedback-cta {
   margin-top: 2rem;
 }
@@ -109,11 +130,55 @@
   background: #f2c200;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .feedback-cards {
     flex-direction: column;
     align-items: center;
   }
+} */
+
+
+
+/* Responsivo: telas pequenas */
+@media (max-width: 768px) {
+
+  /* Container de cards */
+.feedback-cards {
+  display: flex;
+  flex-wrap: wrap;       /* permite quebrar linhas em telas pequenas */
+  gap: 1rem;             /* espaço entre as imagens */
+  justify-content: center; /* centraliza horizontalmente */
 }
 
+/* Cards individuais */
+.feedback-card,
+.feedback-card-big,
+.feedback-card-clients {
+  flex: 1 1 30%;       /* cresce e encolhe, largura mínima 200px */
+  max-width: 300px;      /* largura máxima do card */
+   /* background: wheat;
+    height: 30px; */
+}
+
+.feedback-card img,
+.feedback-card-big img,
+.feedback-card-clients img {
+  width: 100%;           /* imagem ocupa 100% do card */
+  height: auto;         
+  border-radius: 10px;   /* opcional: bordas arredondadas */
+  display: block;
+}
+
+  .feedback-cards {
+    flex-direction: column;  /* empilha cards verticalmente */
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .feedback-card,
+  .feedback-card-big,
+  .feedback-card-clients {
+    max-width: 100%;   /* ocupa quase toda a largura da tela */
+  }
+}
 /* ============================   END FEEDBACK   =========================== */

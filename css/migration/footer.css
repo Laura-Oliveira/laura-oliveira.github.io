@@ -3,7 +3,7 @@
 .footer {
   background: linear-gradient(180deg, #F20574, #1A2B60);
   color: whitesmoke;
-  padding: 2rem 1rem;
+  /* padding: 2rem 1rem; */
   text-align: center;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;

@@ -14,18 +14,34 @@
 }
 
 #about_me_section .about-photo.visible {
-  animation: fadeInRight .7s ease .1s forwards; /* leve delay para escalonar */
+  animation: fadeInRight .7s ease .1s forwards;
+  /* leve delay para escalonar */
 }
 
 /* Animações */
 /* Keyframes já estavam ok, mantive os seus */
 @keyframes fadeInLeft {
-  from { opacity: 0; transform: translateX(-20px); }
-  to   { opacity: 1; transform: translateX(0); }
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
+
 @keyframes fadeInRight {
-  from { opacity: 0; transform: translateX(20px); }
-  to   { opacity: 1; transform: translateX(0); }
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 #about_me_section {
@@ -102,14 +118,13 @@
 }
 
 /* Responsividade */
-@media (max-width: 768px) 
-{
+@media (max-width: 768px) {
   #about_me_section {
     flex-direction: column;
     padding: 3rem;
   }
 
-   .about-container {
+  .about-container {
     flex-direction: column-reverse;
     text-align: center;
   }
@@ -122,6 +137,14 @@
 
   .about-photo img {
     max-width: 300px;
+  }
+}
+
+
+@media (min-width: 480px) {
+
+  #about_me_section {
+    width: 70%;
   }
 }
 
