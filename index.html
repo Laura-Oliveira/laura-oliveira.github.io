@@ -1124,7 +1124,8 @@
                 <input type="text" name="name" placeholder="Seu Nome" required />
                 <input type="email" name="email" placeholder="Seu E-mail" required />
                 <textarea name="message" rows="5" placeholder="Descreva brevemente sua ideia" required></textarea>
-                <button type="submit" class="btn-primary">📩 Solicitar Orçamento</button>
+                <input type="submit" value="📩 Solicitar Orçamento " class="btn-primary"> 
+                <!-- <button type="submit" class="btn-primary"> 📩 Solicitar Orçamento </button> -->
             </form>
 
             <!-- CTAs Alternativos -->
@@ -1162,9 +1163,8 @@
     <!-- Contact -->
 
 
-    <!-- <form id="contact-form"> -->
-        <!-- To simplify the tutorial, the value is static. -->
-        <!-- <input type="hidden" name="time" value="Mar 10 2025 08:46">
+    <form id="contact-form">
+        <input type="hidden" name="time" value="Mar 10 2025 08:46">
         <label>Name</label>
         <input type="text" name="name" required>
         <label>Email</label>
@@ -1173,8 +1173,8 @@
         <input type="text" name="title" required>
         <label>Message</label>
         <textarea name="message" required></textarea>
-        <input type="submit" value="Send"> -->
-    <!-- </form> -->
+        <input type="submit" value="Send">
+    </form>
 
 
     <!-- Footer -->
@@ -1224,10 +1224,10 @@
             document.getElementById('contact-form').addEventListener('submit', function (event) {
                 event.preventDefault();
                 // these IDs from the previous steps
-                emailjs.sendForm('contact_section', 'contact_form', this)
+                emailjs.sendForm('contact_service', 'contact_form', this)
                     .then(() => {
                         console.log('SUCCESS!');
-                        alert("Mensagem enviada com sucesso!")
+                        
                     }, (error) => {
                         console.log('FAILED EMAIL...', error);
                     });
