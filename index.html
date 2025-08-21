@@ -1210,7 +1210,32 @@
     </footer>
     <!-- Footer -->
 
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        emailjs.init("YxvxIpoEvVfEVUcpi"); // sua Public Key
+
+        window.onload = function () {
+            const form = document.getElementById('contact-form');
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                // 1️⃣ Envia para você (template principal)
+                emailjs.sendForm('service_78nb0lp', 'template_emwi24p', this)
+                    .then(() => {
+                        console.log('✅ Mensagem enviada para você!');
+
+                        // 2️⃣ Envia auto-reply para o usuário
+                        emailjs.sendForm('service_78nb0lp', 'template_78yejp7', this)
+                            .then(() => console.log('✅ Auto-reply enviado!'))
+                            .catch(err => console.log('❌ Auto-reply falhou:', err));
+
+                    })
+                    .catch(err => console.log('❌ Falha no envio:', err));
+            });
+        }
+    </script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script>
         emailjs.init("YxvxIpoEvVfEVUcpi");
 
@@ -1225,7 +1250,7 @@
                     console.log('FAILED EMAIL...', error);
                 });
         });
-    </script>
+    </script> -->
 
 
     <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
