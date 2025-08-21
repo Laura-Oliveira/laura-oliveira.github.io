@@ -1224,13 +1224,13 @@
                     .then(() => {
                         alert('Mensagem enviada com sucesso!');
                         console.log('✅ Mensagem enviada para você!');
+                        form.reset()
 
                         // 2️⃣ Envia auto-reply para o usuário
                         emailjs.sendForm('service_78nb0lp', 'template_78yejp7', this)
                             .then(() => 
                             console.log('✅ Auto-reply enviado!'))
                             alert('Erro ao enviar mensagem:')
-                            form.reset()
                             .catch(err => console.log('❌ Auto-reply falhou:', err));
                     })
                     .catch(err => console.log('❌ Falha no envio:', err));
