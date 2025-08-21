@@ -5,10 +5,83 @@ header {
   text-align: center;
   padding-top: 4rem;
   padding-bottom: 4rem;
+
 }
 
 #menuToggle {
   color: whitesmoke;
+}
+
+/* .navbar {
+  background: #222;
+  padding: 1rem;
+} */
+
+/* .menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+} */
+
+.menu li a,
+.dropbtn {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #1A2B60;
+  /* padding: 10px; */
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  border-radius: 5px;
+  padding: 0.5rem;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown {
+  position: relative;
+  list-style-type: none;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: whitesmoke;
+  min-width: 150px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 0.5rem 0;
+   z-index: 1;
+}
+
+.dropdown-content li {
+  list-style: none;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 0.5rem 1rem;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* .dropdown-content a:hover {
+  background: #f1f1f1;
+} */
+
+/* Mostrar menu ao passar o mouse */
+/* .dropdown:hover .dropdown-content {
+  display: block;
+} */
+
+.dropdown-content.show {
+  display: block;
+  /* só mostra quando tiver a classe "show" */
 }
 
 /* ============================   END HEADER   =========================== */

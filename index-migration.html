@@ -70,13 +70,14 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin: 0;
+            /* margin: 0; */
             height: 64px;
         }
 
         .nav-links {
             display: flex;
             gap: 16px;
+            align-items: center;
         }
 
         .nav-link {
@@ -148,6 +149,17 @@
                 <a href="#feedbacks_section" class="nav-link">Feedbacks</a>
                 <a href="#services_section" class="nav-link">Serviços</a>
                 <a href="#contact_section" class="nav-link">Contato</a>
+
+                <!-- Dropdown de idiomas -->
+                <li class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown()">🌐 Idioma</button>
+                    <ul id="myDropdown" class="dropdown-content">
+                        <li><a href="https://laura-oliveira.github.io/index.html?lang=en">🇬🇧 English</a></li>
+                        <li><a href="https://laura-oliveira.github.io/portuguese_page.html?lang=pt">🇧🇷 Português</a>
+                        </li>
+                        <li><a href="https://laura-oliveira.github.io/spanish_page.html?lang=es">🇪🇸 Español</a></li>
+                    </ul>
+                </li>
             </div>
         </nav>
     </header>
@@ -1136,15 +1148,15 @@
                     <img src="assets/img/icons/logo-banco-do-nordeste.png" alt="Cliente 2" />
                     <img src="assets/img/icons/natura.png" alt="Cliente 3" />
                     <img src="assets/img/icons/client.png" alt="Cliente 4" />
-                </div> 
-
                 </div>
 
             </div>
 
-            <!-- Gatilho de Urgência -->
-            <p class="urgency">⚡ Atendo apenas <strong>2 novos projetos por mês</strong> para garantir qualidade.
-                Reserve sua vaga!</p>
+        </div>
+
+        <!-- Gatilho de Urgência -->
+        <p class="urgency">⚡ Atendo apenas <strong>2 novos projetos por mês</strong> para garantir qualidade.
+            Reserve sua vaga!</p>
         </div>
     </section>
     <!-- Contact -->
@@ -1181,6 +1193,14 @@
         </div>
     </footer>
     <!-- Footer -->
+
+    <!-- SCRIPT: Toggle Language Menu -->
+    <script>
+        function toggleDropdown() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+    </script>
 
     <!-- SCRIPT: Toggle menu mobile -->
     <script>
