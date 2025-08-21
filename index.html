@@ -1215,7 +1215,7 @@
         (function () {
             // https://dashboard.emailjs.com/admin/account
             emailjs.init({
-                publicKey: "YOUR_PUBLIC_KEY",
+                publicKey: "YxvxIpoEvVfEVUcpi",
             });
         })();
     </script>
@@ -1227,6 +1227,7 @@
                 emailjs.sendForm('contact_service', 'contact_form', this)
                     .then(() => {
                         console.log('SUCCESS!');
+                        alert("Mensagem enviada com sucesso!")
                     }, (error) => {
                         console.log('FAILED...', error);
                     });
