@@ -1210,14 +1210,53 @@
     </footer>
     <!-- Footer -->
 
-     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script>
-        emailjs.init("YxvxIpoEvVfEVUcpi"); 
+        emailjs.init("YxvxIpoEvVfEVUcpi");
 
         window.onload = function () {
             const form = document.getElementById('contact-form');
-            form.addEventListener('submit', function (event) 
-            {
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                const formData = new FormData(form);
+                const userName = formData.get('name');   // Nome do usuário
+                const userEmail = formData.get('email'); // Email do usuário
+                const userMessage = formData.get('message'); // Mensagem do usuário
+
+                // 1️⃣ Envia para você (template principal)
+                emailjs.sendForm('service_78nb0lp', 'template_emwi24p', form)
+                    .then(() => {
+                        console.log('✅ Mensagem enviada para você!');
+
+                        // 2️⃣ Envia auto-reply para o usuário usando send() com parâmetros
+                        return emailjs.send('service_78nb0lp', 'template_78yejp7', {
+                            user_name: userName,
+                            user_email: userEmail,
+                            message: userMessage
+                        });
+                    })
+                    .then(() => {
+                        console.log('✅ Auto-reply enviado!');
+                        alert('Mensagem enviada com sucesso!');
+                        form.reset(); // Só reseta após ambos os envios
+                    })
+                    .catch(err => {
+                        console.error('❌ Falha no envio:', err);
+                        alert('Ocorreu um erro ao enviar a mensagem. Tente novamente.');
+                    });
+            });
+        }
+    </script>
+<!-- 
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        emailjs.init("YxvxIpoEvVfEVUcpi");
+
+        window.onload = function () {
+            const form = document.getElementById('contact-form');
+            form.addEventListener('submit', function (event) {
                 event.preventDefault();
 
                 // 1️⃣ Envia para você (template principal)
@@ -1233,10 +1272,10 @@
                     })
                     .catch(err => console.log('❌ Falha no envio:', err));
 
-                    form.reset();
+                form.reset();
             });
         }
-    </script>
+    </script> -->
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script>
