@@ -1124,7 +1124,7 @@
                 <input type="text" name="name" placeholder="Seu Nome" required />
                 <input type="email" name="email" placeholder="Seu E-mail" required />
                 <textarea name="message" rows="5" placeholder="Descreva brevemente sua ideia" required></textarea>
-                <input type="submit" value="📩 Solicitar Orçamento " class="btn-primary">
+                <input type="submit" value="📩 Solicitar Orçamento " id="submit-btn" class="btn-primary">
                 <!-- <button type="submit" class="btn-primary"> 📩 Solicitar Orçamento </button> -->
             </form>
 
@@ -1210,7 +1210,7 @@
     </footer>
     <!-- Footer -->
 
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script>
         emailjs.init("YxvxIpoEvVfEVUcpi");
 
@@ -1248,34 +1248,47 @@
                     });
             });
         }
-    </script>
-<!-- 
+    </script> -->
+
+    <!-- FontAwesome para ícone de loading -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script>
-        emailjs.init("YxvxIpoEvVfEVUcpi");
+        emailjs.init("YxvxIpoEvVfEVUcpi"); // sua Public Key
 
         window.onload = function () {
             const form = document.getElementById('contact-form');
+            const submitBtn = document.getElementById('submit-btn');
+
             form.addEventListener('submit', function (event) {
                 event.preventDefault();
+
+                // Desabilita botão e muda texto para carregando
+                submitBtn.disabled = true;
+                // submitBtn.innerHTML = `<i class="fas fa-spinner fa-spin"></i> Enviando Orçamento...`;
 
                 // 1️⃣ Envia para você (template principal)
                 emailjs.sendForm('service_78nb0lp', 'template_emwi24p', this)
                     .then(() => {
-                        alert('Mensagem enviada com sucesso!');
                         console.log('✅ Mensagem enviada para você!');
 
                         // 2️⃣ Envia auto-reply para o usuário
-                        emailjs.sendForm('service_78nb0lp', 'template_78yejp7', this)
-                            .then(() => console.log('✅ Auto-reply enviado!'))
-                            .catch(err => console.log('❌ Auto-reply falhou:', err));
+                        emailjs.sendForm('service_78nb0lp', 'template_omkp6fd', this)
+                            // .then(() => console.log('✅ Auto-reply enviado!'))
+                            // .catch(err => console.log('❌ Auto-reply falhou:', err));
+
+                            .then(() => {
+                                console.log('✅ Auto-reply enviado!');
+                                alert('Mensagem enviada com sucesso!');
+                                form.reset(); // Só reseta após ambos os envios
+                            })
+
                     })
                     .catch(err => console.log('❌ Falha no envio:', err));
-
-                form.reset();
             });
         }
-    </script> -->
+    </script>
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script>
