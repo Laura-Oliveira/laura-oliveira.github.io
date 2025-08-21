@@ -1212,7 +1212,7 @@
 
      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script>
-        emailjs.init("YxvxIpoEvVfEVUcpi"); // sua Public Key
+        emailjs.init("YxvxIpoEvVfEVUcpi"); 
 
         window.onload = function () {
             const form = document.getElementById('contact-form');
@@ -1222,13 +1222,15 @@
                 // 1️⃣ Envia para você (template principal)
                 emailjs.sendForm('service_78nb0lp', 'template_emwi24p', this)
                     .then(() => {
+                        alert('Mensagem enviada com sucesso!');
                         console.log('✅ Mensagem enviada para você!');
 
                         // 2️⃣ Envia auto-reply para o usuário
                         emailjs.sendForm('service_78nb0lp', 'template_78yejp7', this)
-                            .then(() => console.log('✅ Auto-reply enviado!'))
+                            .then(() => 
+                            console.log('✅ Auto-reply enviado!'))
+                            alert('Erro ao enviar mensagem: ' + JSON.stringify(error))
                             .catch(err => console.log('❌ Auto-reply falhou:', err));
-
                     })
                     .catch(err => console.log('❌ Falha no envio:', err));
             });
