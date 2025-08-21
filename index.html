@@ -1216,7 +1216,8 @@
 
         window.onload = function () {
             const form = document.getElementById('contact-form');
-            form.addEventListener('submit', function (event) {
+            form.addEventListener('submit', function (event) 
+            {
                 event.preventDefault();
 
                 // 1️⃣ Envia para você (template principal)
@@ -1224,15 +1225,15 @@
                     .then(() => {
                         alert('Mensagem enviada com sucesso!');
                         console.log('✅ Mensagem enviada para você!');
-                        form.reset()
 
                         // 2️⃣ Envia auto-reply para o usuário
                         emailjs.sendForm('service_78nb0lp', 'template_78yejp7', this)
                             .then(() => console.log('✅ Auto-reply enviado!'))
                             .catch(err => console.log('❌ Auto-reply falhou:', err));
-                            // alert('Erro ao enviar mensagem:')
                     })
                     .catch(err => console.log('❌ Falha no envio:', err));
+
+                    form.reset();
             });
         }
     </script>
