@@ -1,1221 +1,1293 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
-    <!-- Basic Page Needs
-        ================================================== -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-    <title>Laura Oliveira - Portfólio</title>
-    <meta name="description" content="Lading Page como Portfólio de Laura Oliveira">
+    <meta charset="utf-8" />
+    <title>✨ Laura Oliveira - Portfolio ✨</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="css/responsive.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="css/index_english.css">
-    <link rel="stylesheet" type="text/css" href="css/index_spanish.css">
+    <!-- Estilos personalizados Material Design 3 - Migration -->
+    <link rel="stylesheet" href="css/migration/index.css" />
+    <link rel="stylesheet" href="css/migration/about.css" />
+    <link rel="stylesheet" href="css/migration/clients.css" />
+    <link rel="stylesheet" href="css/migration/contact.css" />
+    <link rel="stylesheet" href="css/migration/feedback.css" />
+    <link rel="stylesheet" href="css/migration/footer.css" />
+    <link rel="stylesheet" href="css/migration/header.css" />
+    <link rel="stylesheet" href="css/migration/intro.css" />
+    <link rel="stylesheet" href="css/migration/projects.css" />
+    <link rel="stylesheet" href="css/migration/services.css" />
+    <link rel="stylesheet" href="css/migration/skills.css" />
 
-    <!-- Favicons -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+    <!-- Fonte para os ícones -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Import Material Design 3 -->
+    <script type="module" src="https://unpkg.com/@material/web/all.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@material/web/styles/typography.css">
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="font-awesome-4.2.0/css/font-awesome.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/4.0.0/css/jasny-bootstrap.min.css">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@material/web/all.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
 
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="js/jasny-bootstrap.min.js"></script>
+    <!-- Importação JS Files -->
+    <script type="module" src="js/index.js"></script>
+
+    <!-- EmailJS CDN -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <!-- Seu arquivo JS -->
+    <script src="js/migration/index-migration.js"></script>
 
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5528872139130815"
-        crossorigin="anonymous"></script>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var habitusVideo = document.getElementById('video_habitus');
-
-            habitusVideo.addEventListener('click', function () {
-                if (habitusVideo.pause) {
-                    habitusVideo.play();
-                }
-
-                else if (habitusVideo.play) {
-                    habitusVideo.pause();
-                }
-                else {
-                    habitusVideo.pause();
-                }
-            });
-        });
+    <!-- Importação dos Web Components via JS -->
+    <script type="module">
+        import '@material/web/button/filled-button.js';
+        import '@material/web/icon/icon.js';
+        import '@material/web/iconbutton/icon-button.js';
+        import '@material/web/card/elevated-card.js';
+        import '@material/web/card/card.js';
+        import '@material/web/elevation/elevation.js';
+        import '@material/web/typography/typography.js';
+        import '@material/web/checkbox/checkbox.js';
+        import '@material/web/checkbox/checkbox.js';
+        import '@material/web/checkbox/checkbox.js';
+        import '@material/web/checkbox/checkbox.js';
+        import '@material/web/checkbox/checkbox.js';
+        import '@material/web/checkbox/checkbox.js';
+        import '@material/web/checkbox/checkbox.js';
+        import '@material/web/checkbox/checkbox.js';                
     </script>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var habitusVideo = document.getElementById('video_chama_ela');
+    <style>
+        header {
+            background-color: #F20574;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 0 16px;
+        }
 
-            habitusVideo.addEventListener('click', function () {
-                if (habitusVideo.pause) {
-                    habitusVideo.play();
-                }
+        nav {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /* margin: 0; */
+            height: 64px;
+        }
 
-                else if (habitusVideo.play) {
-                    habitusVideo.pause();
-                }
-                else {
-                    habitusVideo.pause();
-                }
-            });
-        });
-    </script>
+        .nav-links {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: whitesmoke;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            margin-top: 1%;
+            background-color: #102040;
+        }
+
+
+        .menu-button {
+            display: none;
+            color: black;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background: #F20574;
+                position: absolute;
+                top: 64px;
+                left: 0;
+                right: 0;
+                padding: 16px;
+                z-index: 9999;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .menu-button {
+                display: block;
+            }
+
+            .nav-link {
+                color: whitesmoke;
+                padding: 3%;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- MENU
-    ================================================== -->
+    <!-- Menu -->
     <header>
-        <nav class="navbar navbar-expand-lg" id="menu">
+        <nav>
+            <md-icon-button class="menu-button" id="menuToggle">
+                <md-icon class="material-symbols-outlined">menu</md-icon>
+            </md-icon-button>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- Links do menu -->
+            <div class="nav-links" id="navLinks">
+                <a href="#apresentation_section" class="nav-link">Laura Oliveira</a>
+                <hr class="nav-hr">
+                <a href="#about_me_section" class="nav-link">About</a>
+                <a href="#skills_section" class="nav-link">Technology</a>
+                <a href="#projects_section" class="nav-link">Projects</a>
+                <a href="#clients_section" class="nav-link">Clients</a>
+                <a href="#feedbacks_section" class="nav-link">Feedbacks</a>
+                <a href="#services_section" class="nav-link">Services</a>
+                <a href="#contact_section" class="nav-link">Contact</a>
 
-                <span class="navbar-toggler-icon"> </span>
-                Menu
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a href="#apresentation_section" class="nav-link">Homepage<span
-                                class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about_me_section" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#skills_section" class="nav-link">Technologies</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#projects_section" class="nav-link">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#feedbacks_section" class="nav-link">Feedbacks</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#services_section" class="nav-link">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="btn_download_cv"
-                            href="https://drive.google.com/file/d/1-mV8v7tuBqVpGWiVjfP8R9-Zh45r8Og3/view?usp=sharing"
-                            role="button" target="_blank">Download CV
-                        </a>
-                    </li>
-                </ul>
+                <!-- Dropdown de idiomas -->
+                <li class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown()">
+                        <img src="assets/img/icons/google-translate.png" alt="Language" width="40" height="20">
+                        Language
+                    </button>
+                    <ul id="myDropdown" class="dropdown-content">
+                        <li><a href="https://laura-oliveira.github.io/english_page.html?lang=en">🇬🇧 English</a></li>
+                        <li><a href="https://laura-oliveira.github.io/index.html?lang=pt">🇧🇷 Português</a>
+                        </li>
+                        <!-- <li><a href="https://laura-oliveira.github.io/spanish_page.html?lang=es">🇪🇸 Español</a></li> -->
+                    </ul>
+                </li>
             </div>
         </nav>
     </header>
-    <!-- END MENU
-    ================================================== -->
 
-    <!-- MODAL LANGUAGES
-    ==================================================
-    <div id="modal_languages" class="w3-modal-content w3-animate-top w3-container">
-        <div>
-            <p id="modal_title"> Choose your Language </p>
-        </div>
-
-        <button id="btn_modal_spanish" class="btn_modal" onclick="openPageSpanish()">Español</button>
-        <script type="text/javascript">
-            function openPageSpanish() {
-                document.getElementById('btn_modal_spanish').onclick(window.location = 'spanish_page.html');
-            }
-        </script>
-
-        <button id="btn_modal_english" class="btn_modal" onclick="openPageEnglish()">English</button>
-        <script type="text/javascript">
-
-            function openPageEnglish() {
-                document.getElementById('btn_modal_english').onclick(window.location = 'english_page.html');
-            }
-        </script>
-
-        <button class="btn_modal"
-            onclick="document.getElementById('modal_languages').style.display='none'">Português</button>
-    </div>
-     END MODAL LANGUAGES
-    ================================================== -->
-
-
-    <!-- PRESENTATION SECTION
-    ================================================== -->
-    <setion id="apresentation_section">
-        <div class="container text-center">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <div class="text-center">
-                            <div id="div_img_profile">
-                                <img id="img_profile" src="assets/img/selfie/prof.jpg" alt="foto perfil"
-                                    class="img-fluid rounded-circle d-block mx-auto" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- Headline Intro -->
+    <section id="intro_section">
+        <md-elevated-card class="intro-card" style="text-align: center;">
+            <div class="profile-photo">
+                <img src="assets/img/selfie/prof.jpg" alt="Laura Oliveira" width="45%"
+                    style="border-radius: 50%; border: 3px solid whitesmoke; margin-top: 7%;" />
             </div>
 
-            <div id="apresentation_text_name">
-                <hr>
-                <div class="title">Laura Oliveira</div>
-                <hr>
-                <div class="subtitle"> Mobile Developer </div>
+            <div class="profile-info">
+                <h1 class="profile-name">Laura Oliveira</h1>
+                <hr style="width: 20%;">
+                <h2 class="profile-title">Mobile Developer</h2>
+                <p class="profile-headline">
+                    👩🏻‍💻 Impactful Apps. Robust. Scalable. Secure
+                </p>
             </div>
 
-            <div class="list_contacts">
-                <a class="contact" target="_blank" href="https://linkedin.com/in/laura-oliveira-mobile">
-                    <img src="assets/img/icons/linkedin.svg" alt="Linkedin icon" />
-                </a>
-
-                <a class="contact" target="_blank" href="https://github.com/Laura-Oliveira">
-                    <img src="assets/img/icons/github.svg" alt="Github icon" />
-                </a>
-
-                <a class="contact" target="_blank" href="mailto:laura.regina.cp@gmail.com">
-                    <img src="assets/img/icons/email.svg" alt="Email icon" />
-                </a>
-
-                <a class="contact" target="_blank"
-                    href="https://wa.me/5581997207924?text=Quero tirar minha ideia do papel! [pt]">
-                    <img src="assets/img/icons/telegram.svg" alt="Telegram icon" />
-                </a>
-                <p id="email"> <b>laura.oliveira.tech@gmail.com </b> </p>
-            </div>
-        </div>
-        </div>
-        </section>
-        <!-- END PRESENTATION SECTION
-        ================================================== -->
-
-
-        <!-- ABOUT ME SECTION
-        ================================================== -->
-        <section id="about_me_section">
-            <div class="container">
-                <div id="container_section" class="flex-container">
-                    <div id="about_me_description">
-                        <p>
-                            Hello! My name is <b>Laura Oliveira</b> and I'm a <b> Mobile Developer </b>
-                            with <b> 4 years of experience developing apps </b>.
-                        </p>
-
-                        <p> <b>I work with technology since 2015</b>, and I have the following <b>degrees</b>:</p>
-
-                        <p>
-                        <ul>
-                            <li>
-                                <b> Bachelor Degree in Systems Analysis and Development </b> - Instituto Federal de
-                                Pernambuco (IFPE) | <b>Graduated in 2021</b>.
-                            </li>
-                            <li>
-                                <b>High School/Technical Studies in Administration </b> - Escola Técnica Estadual Maria
-                                Eduarda
-                                Ramos de Barros | <b>Graduated in 2013</b>.
-                            </li>
-                        </ul>
-                        </p>
-
-                        <p class="subtille"> Backpacker </p>
-
-                        <p>
-                        <p>
-                            <b>I lived in 2 countries</b> through <b>exchanges programs:</b>
-                        <ul>
-                            <li>Nova Zelândia (6 months);</li>
-                            <li>Argentina (1 month); </li>
-                        </ul>
-                        <p>
-
-                            <b> Languages: </b>
-                        <ul>
-                            <li> <b>English:</b> Fluent (C1);</li>
-                            <li> <b>Spanish:</b> Intermediate (B2);</li>
-                            <li> <b>Portuguese:</b> Native (C2).</li>
-                        </ul>
-                        </p>
-                    </div>
-
-                    <div id="div_img_viagem">
-                        <!-- <div class="title text-center" id="name_profile_picture"></div> -->
-                        <img src="./assets/img/selfie/foto_viagem.jpg" alt="foto perfil" class="img-circle"
-                            id="img_viagem" />
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- END ABOUT ME SECTION
-        ================================================== -->
-
-        <!-- SKILLS SECTION
-================================================== -->
-        <div class="container flex-container">
-            <div class="row justify-content-center">
-                <div class="col-md-8 text-center">
-                    <div class="title skills_title">Tecnologias</div>
-                </div>
-            </div>
-        </div>
-
-        <section id="skills_section">
-            <div class="container-flex text-center">
-
-                <div id="skills_list">
-                    <div>
-                        <img src="assets/img/icons/android_icon.png" alt="Android icon" class="img_skills" />
-                        <p class="txt_card">Android</p>
-                    </div>
-
-                    <div>
-                        <img src="assets/img/icons/java_icon.jpg" alt="Java icon" class="img_skills" />
-                        <p class="txt_card">Java</p>
-                    </div>
-
-                    <div>
-                        <img src="assets/img/icons/kotlin.png" alt="Kotlin icon" class="img_skills" />
-                        <p class="txt_card">Kotlin</p>
-                    </div>
-
-                    <div>
-                        <img src="assets/img/icons/javascript_icon.png" alt="JavaScript icon" class="img_skills" />
-                        <p class="txt_card">JavaScript</p>
-                    </div>
-
-                    <div>
-                        <img src="assets/img/icons/firebase_icon.svg" alt="Firebase icon" class="img_skills" />
-                        <p class="txt_card">Firebase</p>
-                    </div>
-
-                    <div>
-                        <img src="assets/img/icons/gradle_icon.png" alt="Gradle icon" class="img_skills" />
-                        <p class="txt_card">Gradle</p>
-                    </div>
-
-                    <div>
-                        <img src="assets/img/icons/material_design_icon.jpg" alt="Material Design icon"
-                            class="img_skills" />
-                        <p class="txt_card">Material Design</p>
-                    </div>
-
-                    <div>
-                        <img src="assets/img/icons/github_icon.png" alt="Github icon" class="img_skills" />
-                        <p class="txt_card">Github</p>
-                    </div>
-
-                    <div>
-                        <img src="assets/img/icons/azure_devops_icon.png" alt="Azure Devops icon" class="img_skills" />
-                        <p class="txt_card">Azure Devops</p>
-                    </div>
-
-                    <div>
-                        <img src="assets/img/icons/scrum_icon.png" alt="Scrum icon" class="img_skills" />
-                        <p class="txt_card"> Scrum </p>
-                    </div>
-
-                    <div>
-                        <img src="assets/img/icons/mvvm.png" alt="MVVM icon" class="img_skills" />
-                        <p class="txt_card">MVVM</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- END SKILLS SECTION
-================================================== -->
-
-
-        <!-- PROJECTS SECTION
-        ================================================== -->
-        <section id="projects_section">
-
-            <div class="container flex-container">
-                <div class="row justify-content-center">
-                    <div class="col-md-8 text-center">
-                        <div class="title">Projects</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PROJECTS LIST
-            ================================================== -->
-
-            <div class="container-fluid-projects">
-
-                <!-- PROJECT COMPOSTAR APP
-================================================== -->
-                <div class="container-fluid" id="project_compostar">
-                    <div class="container" class="flex-container">
-
-                        <div class="projetct_title">Compostar App</div>
-
-                        <div class="project_skills_list">
-                            <div>
-                                <img src="assets/img/icons/android_icon.png" alt="Android icon" class="img_skills" />
-                                <p class="txt_card">Android</p>
-                            </div>
-                            <div>
-                                <img src="assets/img/icons/kotlin.png" alt="Kotlin icon" class="img_skills" />
-                                <p class="txt_card">Kotlin</p>
-                            </div>
-                        </div>
-
-                        <p class="paragraph">
-                        <p class="objetivo_content">
-                            <b>Compostar App</b> is a cutting-edge Android App I <b>developed entirely from scratch</b>,
-                            designed to <b>simplify the management of organic waste in Recife,
-                            empowering eco-conscious initiatives and promoting sustainability</b>
-                            through intuitive features and robust technology.
-                        </p>
-                        </p>
-
-                        <p>
-                            <b>✨ Key Features:</b>
-                        <ul class="no-bullet-points">
-                            <li> <b>✔️ Dynamic Splash Screen: </b>A branded introduction with the company logo. </li>
-                            <li> <b>✔️ Green Island Management:</b> Add and edit details such as school name, address,
-                                and key environmental metrics.</li>
-                            <li> <b>✔️ Data Tracking:</b> Monitor quantities of waste collected, compost generated, and
-                                carbon offset.</li>
-                            <li> <b>✔️ Smart Filters:</b> Filter green islands by organics, compost, or decarbonization
-                                based on available data.</li>
-                            <li> <b>✔️ Search Functionality:</b> Quickly locate green islands by their school name.</li>
-                            <li> <b>✔️ Map Integration:</b> Visualize the location of green islands using Open Maps.
-                            </li>
-                            <li> <b>✔️ About Section:</b> Explore company details, development credits, and external
-                                links.</li>
-                        </ul>
-                        </p>
-
-                        <p> <b>💻Technology: </b> </p>
-                        <ul>
-                            <li>Android;</li>
-                            <li>Kotlin;</li>
-                            <li>Android SDK;</li>
-                            <li>Firebase Firestore;</li>
-                            <li>Clean Architecture + MVVM + Feature-Oriented Architecture for scalability and
-                                modular design;</li>
-                            <li>UI/UX Concepts;</li>
-                            <li> Material Design;</li>
-                            <li>Personalized Themes (default and dark);</li>
-
-                            <li>XML & Constraintlayout;</li>
-                            <li>libs.version.toml;</li>
-                            <li>Gradle.</li>
-
-                        </ul>
-
-                        <p> <b>Tools: </b> </p>
-                        <ul>
-                            <li> Android Studio; </li>
-                            <li> Git/Github. </li>
-                        </ul>
-
-                        <p> <b>⏱️Agile Methodologies: </b> </p>
-                        <ul>
-                            <li> Kanban. </li>
-                        </ul>
-
-                        <div id="video_compostar" class="flex-container">
-                            <iframe width="100%" height="550" src="https://www.youtube.com/embed/wlg6qj-URA4"
-                                title="YouTube video player" frameborder="0" allowfullscreen
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
-                            </iframe>
-                        </div>
-                    </div>
-                </div>
-                <!-- END PROJECT COMPOSTAR APP
-================================================== -->
-
-                <!-- PROJECT TIMER APP
-            ================================================== -->
-                <div class="container-fluid" id="project_timer">
-                    <div class="container" class="flex-container">
-
-                        <div class="projetct_title">Timer App</div>
-
-                        <div class="project_skills_list">
-                            <div>
-                                <img src="assets/img/icons/android_icon.png" alt="Android icon" class="img_skills" />
-                                <p class="txt_card">Android</p>
-                            </div>
-                            <div>
-                                <img src="assets/img/icons/kotlin.png" alt="Kotlin icon" class="img_skills" />
-                                <p class="txt_card">Kotlin</p>
-                            </div>
-                        </div>
-
-                        <p class="paragraph">
-                        <p class="objetivo_content">
-                            <b>Timer App</b> is a cutting-edge Android App I <b>developed entirely from scratch</b>,
-                            designed to empower users with the ability to <b>manage multiple real-time timers
-                                simultaneously</b>,
-                            streamlining <b>task organization and enhancing productivity</b> through intuitive features
-                            and
-                            advanced functionality.
-                        </p>
-                        </p>
-
-                        <p>
-                            <b>✨ Key Features:</b>
-                        <ul class="no-bullet-points">
-                            <li> <b>✔️ Multi-Timer Activation: </b>Set and track up to 4 timers at once for various
-                                tasks or activities. </li>
-                            <li> <b>✔️ Real-Time Tracking: </b> Monitor elapsed and remaining time for each task in
-                                real-time. </li>
-                            <li> <b>✔️ Dynamic Buttons: </b> Timers and controls are dynamically created on the screen
-                                for a seamless user experience. </li>
-                            <li> <b>✔️ Data Visualization:</b> View task completion metrics with detailed bar charts
-                                powered by MPAndroidChart. </li>
-                            <li> <b>✔️ Orientation Adaptability:</b> Keep timers running smoothly when switching between
-                                portrait and landscape modes. </li>
-                            <li> <b>✔️ Dropdown Menus: </b> Interactive menus dynamically created with icons and images
-                                for easy task selection. </li>
-                            <li> <b>✔️ Personalization: </b> Choose between default and dark themes, designed with
-                                Material Design principles.</li>
-                        </ul>
-                        </p>
-
-                        <p> <b>💻Technology: </b> </p>
-                        <ul>
-                            <li>Android;</li>
-                            <li>Kotlin;</li>
-                            <li>Android SDK;</li>
-                            <li>Arquitetura MVC;</li>
-                            <li>Firebase database;</li>
-                            <li>Firebase Authentication (User Register and Login);</li>
-                            <li>Android states to keep live data on the screen even when the screen orientation is
-                                changed
-                                (portrait -> landscape | vertical -> horizontal);</li>
-                            <li>Biblioteca MPAndroidChart (BarChart);</li>
-                            <li>Dropdown dynamic created with icons/images;</li>
-                            <li>Buttons dynamic created on the screen;</li>
-                            <li>Shared Preferences;</li>
-                            <li>Live info dynamic created and updated on the screen;</li>
-                            <li>Personalized themes (default and dark);</li>
-                            <li>Personalized design patterns created from Material Design;</li>
-                            <li>UI/UX Concepts;</li>
-                            <li>Material Design;</li>
-                            <li>XML & Constraintlayout;</li>
-                            <li>Gradle.</li>
-                        </ul>
-
-                        <p> <b>🛠️Tools: </b> </p>
-                        <ul>
-                            <li> Git/Github; </li>
-                            <li> Android Studio. </li>
-                        </ul>
-
-                        <p> <b>⏱️Agile Methodology: </b> </p>
-                        <ul>
-                            <li> Kanban. </li>
-                        </ul>
-
-                        <div id="video_timer" class="flex-container">
-                            <iframe width="100%" height="550" src="https://www.youtube.com/embed/4QeF8S3jBHQ"
-                                title="YouTube video player" frameborder="0" allowfullscreen
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
-                            </iframe>
-                        </div>
-                    </div>
-                </div>
-                <!-- END PROJECT TIMER APP
-================================================== -->
-
-                <!-- PROJECT QRCODE MAKER 
-                ================================================== -->
-                <div class="container-fluid" id="project_qrcode_maker">
-                    <div class="container" class="flex-container">
-
-                        <div class="projetct_title">QRCode Maker App</div>
-
-                        <div class="project_skills_list">
-                            <div>
-                                <img src="assets/img/icons/android_icon.png" alt="Android icon" class="img_skills" />
-                                <p class="txt_card">Android</p>
-                            </div>
-                            <div>
-                                <img src="assets/img/icons/kotlin.png" alt="Kotlin icon" class="img_skills" />
-                                <p class="txt_card">Kotlin</p>
-                            </div>
-                        </div>
-
-                        <p class="paragraph">
-                        <p class="objetivo_content">
-                            <b>QRCode Maker App</b> is a cutting-edge Android App I <b>developed entirely from
-                                scratch</b>,
-                            designed to simplify the process of <b>generating and saving QR codes from any link,
-                                simplifying sharing contacts info
-                                during in-person events</b>.
-                        </p>
-                        </p>
-
-                        <p>
-                            <b>✨ Key Features:</b>
-                        <ul class="no-bullet-points">
-                            <li> <b>✔️ QR Code Generation: </b>Create QR codes from any link in just a few clicks,
-                                enhancing
-                                accessibility and usability. </li>
-                            <li> <b>✔️ Business Applications: </b>Generate QR codes for business purposes, such as
-                                marketing campaigns or product information sharing. </li>
-                            <li> <b>✔️ Contact Sharing:</b> Simplify the exchange of contact information during
-                                in-person events by generating QR codes. </li>
-                            <li> <b>✔️ Dynamic User Interface:</b> Designed with Material Design principles, the app
-                                provides an intuitive and visually appealing experience.</li>
-                        </ul>
-                        </p>
-                        </p>
-
-                        <p> <b>💻Technology: </b> </p>
-                        <ul>
-                            <li> Android; </li>
-                            <li> Kotlin; </li>
-                            <li> Android SDK; </li>
-                            <li> Gradle; </li>
-                            <li> Native File System Access; </li>
-                            <li> QRGenearator Library; </li>
-                            <li> UI/UX Concepts; </li>
-                            <li> Material Design; </li>
-                            <li> XML & Constraintlayout. </li>
-                        </ul>
-
-                        <p> <b>🛠️Tools: </b> </p>
-                        <ul>
-                            <li> Notion; </li>
-                            <li> Git/Github; </li>
-                            <li> Android Studio. </li>
-                        </ul>
-
-                        <p> <b>⏱️Agile Methodology: </b> </p>
-                        <ul>
-                            <li> Kanban. </li>
-                        </ul>
-
-                        <div id="video_qrcode_maker" class="flex-container">
-                            <iframe width="100%" height="550" src="https://www.youtube.com/embed/nDz_QD-xhlo"
-                                title="YouTube video player" frameborder="0" allowfullscreen
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
-                            </iframe>
-                        </div>
-                    </div>
-                </div>
-                <!-- <p>
-                            <b>
-                                Download Playstore:
-                                <a target="_blank"
-                                    href="https://play.google.com/store/apps/details?id=com.code.maker">
-                                    Clique Aqui </a>
-                            </b>
-                        </p> -->
-                <!-- END PROJECT QRCODE MAKER
-            ================================================== -->
-
-
-                <!-- PROJECT LINKS PRO
-            ================================================== -->
-                <div class="container-fluid" id="project_links_pro">
-                    <div class="container" class="flex-container">
-
-                        <div class="projetct_title">Links Pro</div>
-
-                        <div class="project_skills_list">
-                            <div>
-                                <img src="assets/img/icons/android_icon.png" alt="Android icon" class="img_skills" />
-                                <p class="txt_card">Android</p>
-                            </div>
-                            <div>
-                                <img src="assets/img/icons/kotlin.png" alt="Kotlin icon" class="img_skills" />
-                                <p class="txt_card">Kotlin</p>
-                            </div>
-                        </div>
-
-                        <p class="paragraph">
-                        <p class="objetivo_content">
-                            <b>Links Pro App</b> is a cutting-edge Android App I <b>developed entirely from scratch</b>,
-                            designed to automate the process of <b>share links directly to an AWS server via Android's internal 
-                                operational system, without opening the app</b>.
-                        </p>
-                        </p>
-
-                        <p> <b> 💻 These links can have different sources: </b> </p>
-                        <ul>
-                            <li> Instagram; </li>
-                            <li> Browser; </li>
-                            <li> Google Page; </li>
-                            <li> Quick share of the #android operating system. </li>
-                        </ul>
-
-                        <p>
-                            <b>✨ Key Features:</b>
-                        <ul class="no-bullet-points">
-                            <li> <b>✔️ Automatic Link Sharing: </b>Send links directly to an AWS server without opening
-                                the app.</li>
-                            <li> <b>✔️ Multi-Source Compatibility: </b>Generate QR codes for business purposes, such as
-                                marketing campaigns or product information sharing. </li>
-                            <li> <b>✔️ Share links from: </b> Instagram, Web Browsers, Google Search, Quick Share menu
-                                of the Android operating system. </li>
-                        </ul>
-                        </p>
-
-                        <p> <b>💻Technology: </b> </p>
-                        <ul>
-                            <li> Android; </li>
-                            <li> Kotlin; </li>
-                            <li> Arquitetura MVC; </li>
-                            <li> Retrofit; </li>
-                            <li> API REST Creation from scratch;</li>
-                            <li> GSON and JSON; </li> 
-                            <li> Okhttp3; </li>
-                            <li> UI/UX Concepts; </li>
-                            <li> Material Design; </li>
-                            <li> XML & Constraintlayout. </li>
-                            <li> Gradle; </li>
-                            <li> Android SDK. </li>
-                        </ul>
-
-                        <p> <b>🛠️Tools: </b> </p>
-                        <ul>
-                            <li> Git/Github; </li>
-                            <li> Android Studio. </li>
-                        </ul>
-
-                        <p> <b>⏱️Agile Methodology: </b> </p>
-                        <ul>
-                            <li> Kanban. </li>
-                        </ul>
-
-                        <div>
-                            <iframe id="screenshot_links_pro" src="./assets/pdf/Links-Pro-App.pdf" width="100%"
-                                height="100%" style="border: none;"></iframe>
-                        </div>
-                    </div>
-                </div>
-                <!-- END PROJECT LINKS PRO
-            ================================================== -->
-
-
-                <!-- PROJECT HABITUS APP
-                ================================================== -->
-                <div class="container-fluid" id="project_habitus">
-                    <div class="container" class="flex-container">
-
-                        <div class="projetct_title">Habitus App</div>
-
-                        <div class="project_skills_list">
-                            <div>
-                                <img src="assets/img/icons/android_icon.png" alt="Android icon" class="img_skills" />
-                                <p class="txt_card">Android</p>
-                            </div>
-                            <div>
-                                <img src="assets/img/icons/java_icon.jpg" alt="Kotlin icon" class="img_skills" />
-                                <p class="txt_card">Java</p>
-                            </div>
-                        </div>
-
-                        <p class="paragraph">
-                            <p class="objetivo_content">
-                                <b>Habitus App</b> is a Android App focused in <b>helping healthcare workers
-                                    to monitor and organize their daily tasks</b>.
-                                <p>
-                                    <b>Led the maintenance and improvements on the project to revamp the Android App</b>,
-                                focusing on <b>enhancing usability and modernizing its architecture</b>.
-                                </p>
-                            </p>
-                        </p>
-
-                        <p>
-                            <b>✨ Key Features:</b>
-                        <ul class="no-bullet-points">
-                            <li> <b>✔️ Migration to AndroidX: </b>Successfully updated the app to utilize the latest
-                                AndroidX libraries for better compatibility and maintainability. </li>
-                            <li> <b>✔️ Redesigned Screens: </b>Enhanced the user interface by redesigning six key
-                                screens for improved navigation and aesthetics. </li>
-                            <li> <b>✔️ Backend Integration: </b>Integrated robust backend services to streamline data
-                                processing and functionality. </li>
-                            <li> <b>✔️ Transition to Internet Communication: </b>Replaced Bluetooth communication with
-                                internet-based connectivity for greater reliability and scalability. </li>
-                            <li> <b>✔️ REST API Implementation: </b>Developed and integrated REST APIs to enable
-                                seamless interaction with AWS servers. </li>
-                        </ul>
-                        </p>
-
-                        <p> <b>💻Technology: </b> </p>
-                        <ul>
-                            <li> Android; </li>
-                            <li> Java; </li>
-                            <li> Retrofit;</li>
-                            <li> API REST Creation; </li>
-                            <li> OkHttp3; </li>
-                            <li> GSON | JSON;</li>
-                            <li> Android SDK; </li>
-                            <li> Gradle; </li>
-                            <li> UI/UX Concepts; </li>
-                            <li> Material Design; </li>
-                            <li> XML & Constraintlayout. </li>
-                        </ul>
-
-                        <p> <b>🛠️Tools: </b> </p>
-                        <ul>
-                            <li> Trello; </li>
-                            <li> Git/Github; </li>
-                            <li> Android Studio. </li>
-                        </ul>
-
-                        <p> <b>⏱️Agile Methodology: </b> </p>
-                        <ul>
-                            <li> Kanban. </li>
-                        </ul>
-
-                        <div id="video_habitus" class="flex-container">
-                            <iframe width="100%" height="550" src="https://www.youtube.com/embed/mWCT57srmsc"
-                                title="YouTube video player" frameborder="0" allowfullscreen
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
-                            </iframe>
-                        </div>
-
-                        <!-- <div id="div_video_habitus" class="flex-container">
-                            <video id="video_habitus" width="100%" height="565px" controls>
-                                <source src="assets/img/projects/habitus/demo_habitus.mp4" type="video/mp4">
-                                Seu navegador não suporta o elemento de vídeo.
-                            </video>
-                        </div> -->
-                    </div>
-                </div>
-                <!-- END PROJECT HABITUS
-            ================================================== -->
-
-
-
-
-
-                <!-- PROJECT CHAMA ELA
-                    ================================================== -->
-                <!-- <div class="container-fluid" id="project_chama_ela">
-                    <div class="container" class="flex-container">
-                        
-                        <div class="projetct_title">Chama Ela!</div>
-
-                        <div class="project_skills_list">
-                            <div>
-                                <img src="assets/img/icons/android_icon.png" alt="Android icon" class="img_skills" />
-                                <p class="txt_card">Android</p>
-                            </div>
-                            <div>
-                                <img src="assets/img/icons/java_icon.jpg" alt="Java icon" class="img_skills" />
-                                <p class="txt_card">Java</p>
-                            </div>
-                        </div>
-
-                        <p class="paragraph">
-                            <p class="objetivo_content">
-                                <b>Chama Ela!</b> is an Android App focused on <b>help women in abusive relationships who have
-                                    no
-                                    source of income.</b>
-                            </p>
-                            <p>These women can <b>advertise their services for free </b> on the platform. </p>
-                        </p>
-
-                        <p> <b>💻Technology: </b> </p>
-                        <ul>
-
-                            <li> Android; </li>
-                            <li> Java; </li>
-                            <li> Arquitetura MVC; </li>
-                            <li> Firebase; </li>
-                            <li> UI/UX Concepts; </li>
-                            <li> Material Design; </li>
-                            <li> XML & Constraintlayout. </li>
-                            <li> Gradle; </li>
-                            <li> Android SDK. </li>
-                        </ul>
-
-                        <p> <b>🛠️Tools: </b> </p>
-                        <ul>
-                            <li> Trello; </li>
-                            <li> Git/Github; </li>
-                            <li> Android Studio. </li>
-                        </ul>
-
-                        <p> <b>⏱️Agile Methodology: </b> </p>
-                        <ul>
-                            <li> Kanban. </li>
-                        </ul>
-
-                        <div id="div_video_chama_ela" class="flex-container">
-                            <video id="video_chama_ela" width="100%" height="565px" controls>
-                                <source src="assets/img/projects/chama_ela/prototipo.MP4" type="video/mp4">
-                                Seu navegador não suporta o elemento de vídeo.
-                            </video>
-                        </div>
-                    </div>
-                </div> -->
-                <!-- END PROJECT CHAMA ELA
-            ================================================== -->
-            </div>
-
-            <!-- END PROJECTS SECTION
-            ================================================== -->
-
-            <!-- CLIENTS SECTION
-            ================================================== -->
-            <div class="container flex-container">
-                <div class="row justify-content-center">
-                    <div class="col-md-8 text-center">
-                        <div id="clients_title" class="title">Clients</div>
-                    </div>
-                </div>
-            </div>
-
-            <section id="clients_section">
-                <div class="container text-center">
-                    <div id="clients_list">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <img src="assets/img/icons/btg-branco.png" alt="BTG Pactual icon"
-                                    class="img_clients_btg" />
-                            </div>
-                            <div class="col-md-4">
-                                <img src="assets/img/icons/itau-logo.png" alt="Itau icon" class="img_clients_itau" />
-                            </div>
-                            <div class="col-md-4">
-                                <img src="assets/img/icons/banco-nordeste-logo.png" alt="Banco do Nordeste icon"
-                                    class="img_clients_banco_nordeste" />
-                            </div>
-                            <div class="col-md-4">
-                                <img src="assets/img/icons/accenture.png" alt="Accenture icon" class="img_accenture" />
-                            </div>
-                            <div class="col-md-4">
-                                <img src="assets/img/icons/telefonica.png" alt="Telefonica icon"
-                                    class="img_telefonica" />
-                            </div>
-                            <div class="col-md-4">
-                                <img src="assets/img/icons/tigre-logo.png" alt="Tigre icon" class="img_tigre" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- CLIENTS SECTION
-        ================================================== -->
-
-            <!-- FEEDBACKS SECTION
-            ================================================== -->
-            <section id="feedbacks_section">
-                <div class="container-fluid text-center">
-                    <div class="container flex-container">
-                        <div class="row justify-content-center">
-                            <div class="col-md-8 text-center">
-                                <div class="title">Feedbacks</div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                <div class="container text-center">
-                        <div>
-                            <iframe id="screenshot_links_pro" src="./assets/pdf/Reviews.pdf" width="100%"
-                                height="100%" style="border: none;"></iframe>
-                        </div>
-                </div>
-
-                    <!-- <div id="feedbacks_img">
-                        <div>
-                            <img src="assets/img/feedbacks/feedback_linkedin_0.png" class="img-responsive feedback_item"
-                                alt="print feedback linkedin">
-                        </div>
-                        <div>
-                            <img src="assets/img/feedbacks/feedback_linkedi_1.png" class="img-responsive feedback_item"
-                                alt="print feedback linkedin 1">
-                        </div>
-                        <div>
-                            <img src="assets/img/feedbacks/feedback_linkedin_2.png" class="img-responsive feedback_item"
-                                alt="print feedback linkedin 2">
-                        </div>
-                    </div> -->
-            </section>
-
-            <!-- END FEEDBACKS SECTION
-            ================================================== -->
-
-            <!-- WORKING WITH ME SECTION
-            ================================================== -->
-            <section id="about_me_section">
-                <div class="container">
-                    <div id="container_section" class="flex-container">
-                        <div id="about_me_description">
-                            <div class="conteudo-lado-a-lado">
-                                <img src="./assets/img/icons/yoshi.jpeg" alt="foto perfil" id="img_yoshi" />
-
-                                <div class="texto">
-                                    <p class="subtille"> ✨ How Does Look Like Working With Me? ✨</p>
-
-                                    <p>You send me a message explaining what you need. </p>
-
-                                    <p>I ask several questions to identify the problem, and what is the best technical
-                                        approach to use.</p>
-
-                                    <p>I evaluate the complexity of features x development time. </p>
-
-                                    <p>I send you the price and deadline for the project. </p>
-
-                                    <p>If you decide to move foward with me, I will send you the contract and request
-                                        the needed informations. </p>
-
-                                    <p>I send you the contract by email.</p>
-
-                                    <p>After all the signatures collected, you transfer me 50% of the contract value,
-                                        and I send you the first invoice. </p>
-
-                                    <p> I start the development of the app.</p>
-
-                                    <p>Every 3 business days I send you updates on the progress of the activities.</p>
-
-                                    <p>When the development is complete, I will send you the files via Google Drive or
-                                        upload the app to the Playstore</p>
-
-                                    <p>You pay me the remaining 50% of the contract value, and I send you the second
-                                        invoice.</p>
-
-                                    <p>👩🏻‍💻Do you want to transfom your idea into an app?
-                                    <p>
-                                        <a id="btn_orcamento" target="_blank"
-                                            href="https://wa.me/5581997207924?text=I want to transfom your idea into an app! [en]">
-                                            Click here!
-                                        </a>
-                                    </p>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- END WORKING WITH ME SECTION
-            ================================================== -->
-
-
-            <!-- SERVICES SECTION
-            ================================================== -->
-            <section id="services_section">
-
-                <div class="container flex-container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-8 text-center">
-                            <div class="title">Services</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Widget em linha do Calendly - início -->
-                <div class="calendly-inline-widget"
-                    data-url="https://calendly.com/laura-oliveira-tech/mentoria-linkedin-profissional"
-                    style="width:100%;height:700px;background-color: #0F1B40;">
-                </div>
-
-                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async>
-                </script>
-                <br />
-                <br />
-                <!-- Widget em linha do Calendly - fim  -->
-
-                <!-- SERVICES LIST
-                ================================================== -->
-
-
-                <!-- SERVICE ONLINE COURSE
-                ================================================== 
-                <div id="card_service_online_course">
-                    <div id="service_online_course">
-                        <div class="service_title"> ✨ Mentoria LinkedIn Profissional: Construindo uma Marca de Sucesso ✨
-                        </div>
-
-                        <div class="topics_course_list">
-                            <div class="course_item"> Mentoria </div>
-                            <div class="course_item"> Linkedin </div>
-                            <div class="course_item"> Presença Digital </div>
-                            <div class="course_item"> Networking </div>
-                        </div>
-
-                        <p class="paragraph">
-                            <b> Serviços Oferecidos </b>
-                        <p class="description_content">
-                        <ul>
-                            <li> Configuração de Perfil do Linkedin; </li>
-                            <li> Como Fazer Networking; </li>
-                            <li> Como ter Visibilidade no Linkedin. </li>
-                        </ul>
-                        </p>
-                        </p>
-
-                        <div id="paragraph_button_course">
-
-
-                            <a href="https://forms.gle/QMrZEXqHZHyJ2NvZ7" target="_blank" id="button_course">
-                                Inscreva-se Agora!
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                 END SERVICE ONLINE COURSE
-                ================================================== -->
-
-
-                <div class="service_card container-fluid">
-
-                    <!-- SERVICE FREELANCE
-                ================================================== -->
-                    <div class="container-fluid" id="service_freelance">
-                        <div class="container" class="flex-container">
-
-                            <div class="service_title">✨ Apps Development Project (Android & iOS) ✨</div>
-
-                            <div class="project_skills_list flex-container">
-                                <div>
-                                    <img src="assets/img/icons/android_icon.png" alt="Android icon"
-                                        class="img_skills" />
-                                    <p class="txt_card">Android</p>
-                                </div>
-                                <div>
-                                    <img src="assets/img/icons/apple.png" alt="Apple icon" class="img_skills"
-                                        style="width: 150px;" />
-                                    <p class="txt_card">iOS</p>
-                                </div>
-                            </div>
-
-                            <p class="paragraph">
-                            <p class="description_content">
-                                👩🏻‍💻 I develop <b>personalized and custom-made apps</b> for you or your business.
-                            </p>
-                            <p>🚀Make your ideas come true, into an app today! </p>
-                            <p>🔥<b>Send me a message!</b>
-                            </p>
-
-                            <div id="paragraph_button">
-                                <a href="https://wa.me/5581997207924?text=I want to transform my idea into an app! [en]"
-                                    target="_blank" id="button_orcamento_english">
-                                    Click Here!
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END SERVICE FREELANCE
-            ================================================== -->
-
-
-                    <!-- SERVICE MENTORIA
-            ================================================== -->
-                    <div class="container-fluid" id="service_mentoria">
-                        <div class="container" class="flex-container">
-                            <div class="service_title">✨ Mentoria Produção de Conteúdo para o LinkedIn ✨</div>
-
-                            <div class="topics_list">
-                                <div class="mentoring_item"> Mentoring Session </div>
-                                <div class="mentoring_item"> Content Creation </div>
-                                <div class="mentoring_item"> Creation of Editorial </div>
-                            </div>
-
-                            <p class="paragraph">
-                                <b> What you will lean: </b>
-                            <p class="description_content">
-                                Mentoring session focused on helping you to create content for Linkedin.
-                            </p>
-                            </p>
-
-                            <br />
-                            <br />
-                            <br />
-
-                            <div id="paragraph_button_mentoria">
-                                <a target="_blank" href="https://forms.gle/Bc1oGAb6vvDuePfBA"
-                                    id="button_mentoria_english">
-                                    Subscribe Now!
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- END SERVICE MENTORIA
-                ================================================== -->
-
-                <div id="div_ebook">
-                    <img src="assets/img/service/mentoria_producao_conteudo.jpg" width="300" height="300"
-                        id="img_ebook">
-                </div>
-
-                <div id="paragraph_ebook_button">
-                    <a href="https://forms.gle/ACkSMGhAxJexYpHh6" target="_blank" id="button_chama_probleminha">
-                        Buy E-book!
+            <div class="contact-buttons">
+                <div class="list_contacts">
+                    <a class="contact" target="_blank" href="https://linkedin.com/in/laura-oliveira-mobile">
+                        <img src="assets/img/icons/linkedin.svg" alt="Linkedin icon" />
                     </a>
+
+                    <a class="contact" target="_blank" href="https://github.com/Laura-Oliveira">
+                        <img src="assets/img/icons/github.svg" alt="Github icon" />
+                    </a>
+
+                    <a class="contact" target="_blank" href="mailto:laura.oliveira.tech@gmail.com">
+                        <img src="assets/img/icons/email.svg" alt="Email icon" />
+                    </a>
+
+                    <a class="contact-wpp" target="_blank"
+                        href="https://wa.me/5581997207924?text=Quero tirar minha ideia do papel! [pt]">
+                        <img class="normal" src="./assets/img/icons/wpp-icon.png" alt="WhatsApp icon" width="50"
+                            height="50" />
+                        <img class="hover" src="./assets/img/icons/wpp-dark.png" alt="WhatsApp icon" width="50"
+                            height="50" style="display: none;" />
+                    </a>
+                    <p id="email"> <b>laura.oliveira.tech@gmail.com </b> </p>
                 </div>
-            </section>
-            <!-- END SERVICES SECTION
-                ================================================== -->
+            </div>
+        </md-elevated-card>
+    </section>
+    <!-- Headline Intro -->
 
-            <script 
-                async 
-                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5528872139130815"
-                crossorigin="anonymous">
-            </script>
 
-        <script
-            async 
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5528872139130815"
-            crossorigin="anonymous">
-        </script> 
+    <!-- About me -->
+    <section id="about_me_section" aria-labelledby="about-me-title">
+        <div class="about-container">
 
-        <script 
-            async 
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5528872139130815"
-            crossorigin="anonymous">
-        </script>
+            <!-- Texto principal -->
+            <div class="about-text">
+                <h2 id="about-me-title">Laura Oliveira</h2>
 
-        <!-- <ins class="adsbygoogle"
-        style="display:block; text-align:center;"
-        data-ad-layout="in-article"
-        data-ad-format="fluid"
-        data-ad-client="ca-pub-5528872139130815"
-        data-ad-slot="8673245677"></ins>
-        <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-        </script> 
+                <p>
+                    Hello! I'm <strong>Laura Oliveira</strong>, a <strong>Mobile Developer</strong>
+                    with
+                    <strong>4+ years of experience</strong> helping startups and companies transform ideas into
+                    <strong>robust, scalable, and user-friendly
+                        applications.
+                </p>
 
-        <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-format="autorelaxed"
-        data-ad-client="ca-pub-5528872139130815"
-        data-ad-slot="5159669784"></ins>
-        <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-        </script> -->
+                <p>
+                    <strong>I've been working in technology since 2015</strong>, and I've launched projects that
+                    directly impacted
+                    users and
+                    businesses,
+                    delivering <strong>measurable results and reliable applications</strong> to the market.
+                </p>
 
-        <!-- [Square] Ads Display -->
-          <!--   <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-client="ca-pub-5528872139130815"
-        data-ad-slot="5474035561"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
-        <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-        </script> -->
+                <!-- Diferenciais -->
+                <div class="about-highlights">
+                    <div>
+                        <h3>🌎 International Experience</h3>
+                        <p>I lived in <strong>New Zealand</strong> (6 months) and <strong>Argentina</strong> (1 month),
+                            bringing
+                            a global vision and innovation to my projects.</p>
+                    </div>
+                    <div>
+                        <h3>🗣 Languages</h3>
+                        <ul>
+                            <li><strong>English:</strong> Fluent (C2)</li>
+                            <li><strong>Spanish:</strong> Intermediate (B2)</li>
+                            <li><strong>Portuguese:</strong> Native (C2)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p id="about-cta">
+                    🚀 I'm ready to transform your idea into a high-impact and reliable app.
+                    Let's talk!
+                </p>
+            </div>
+
+            <!-- Foto -->
+            <div class="about-photo">
+                <img src="./assets/img/selfie/foto_viagem.jpg"
+                    alt="Laura Oliveira sorrindo, desenvolvedora Mobile Android"
+                    style="border-radius: 20px; object-fit: cover;" />
+            </div>
+
+        </div>
+    </section>
+    <!-- About me -->
+
+    <!-- Skills -->
+    <section id="skills_section" aria-labelledby="skills-title" class="md3-section">
+
+        <div style="margin-top:5%; margin-left: 5rem; margin-right: 5rem">
+
+             <!-- Title -->
+            <h2 class="title">Tecnologias</h2>
+
+            <!-- Skill List -->
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; margin-top: 2rem;">
+
+                <!-- Card de Skill -->
+                <md-elevated-card class="skills-icon">
+                    <div style="padding: 1rem;">
+                        <img src="assets/img/icons/android-icon.png" alt="Android" style="width: 80px; height: 80px;" />
+                        <p class="skills-label">Android</p>
+                    </div>
+                </md-elevated-card>
+
+                <md-elevated-card class="skills-icon">
+                    <div style="padding: 1rem;">
+                        <img src="assets/img/icons/kotlin.png" alt="Kotlin" style="width: 80px; height: 80px;" />
+                        <p class="skills-label">Kotlin</p>
+                    </div>
+                </md-elevated-card>
+
+                <md-elevated-card class="skills-icon">
+                    <div style="padding: 1rem;">
+                        <img src="assets/img/icons/java.png" alt="Java" style="width: 80px; height: 80px;" />
+                        <p class="skills-label">Java</p>
+                    </div>
+                </md-elevated-card>
+
+                <md-elevated-card class="skills-icon">
+                    <div style="padding: 1rem;">
+                        <img src="assets/img/icons/google-play.png" alt="Google Play"
+                            style="width: 80px; height: 80px;" />
+                        <p class="skills-label">Google Play</p>
+                    </div>
+                </md-elevated-card>
+
+                <md-elevated-card class="skills-icon">
+                    <div style="padding: 1rem;">
+                        <img src="assets/img/icons/firebase_icon.svg" alt="Firebase"
+                            style="width: 80px; height: 80px;" />
+                        <p class="skills-label">Firebase</p>
+                    </div>
+                </md-elevated-card>
+
+                <md-elevated-card class="skills-icon">
+                    <div style="padding: 1rem;">
+                        <img src="assets/img/icons/rest-api.png" alt="Gradle" style="width: 80px; height: 80px;" />
+                        <p class="skills-label">REST APIs</p>
+                    </div>
+                </md-elevated-card>
+
+                <md-elevated-card class="skills-icon">
+                    <div style="padding: 1rem;">
+                        <img src="assets/img/icons/gradle_icon.png" alt="Gradle" style="width: 80px; height: 80px;" />
+                        <p class="skills-label">Gradle</p>
+                    </div>
+                </md-elevated-card>
+
+                <md-elevated-card class="skills-icon">
+                    <div style="padding: 1rem;">
+                        <img src="assets/img/icons/material_design_icon.jpg" alt="Material Design"
+                            style="width: 80px; height: 80px;" />
+                        <p class="skills-label">Material Design</p>
+                    </div>
+                </md-elevated-card>
+
+                <md-elevated-card class="skills-icon">
+                    <div style="padding: 1rem;">
+                        <img src="assets/img/icons/github_icon.png" alt="GitHub" style="width: 80px; height: 80px;" />
+                        <p class="skills-label">GitHub</p>
+                    </div>
+                </md-elevated-card>
+
+                <md-elevated-card class="skills-icon">
+                    <div style="padding: 1rem;">
+                        <img src="assets/img/icons/azure_devops_icon.png" alt="Azure Devops"
+                            style="width: 80px; height: 80px;" />
+                        <p class="skills-label">Azure DevOps</p>
+                    </div>
+                </md-elevated-card>
+
+                <md-elevated-card class="skills-icon">
+                    <div style="padding: 1rem;">
+                        <img src="assets/img/icons/scrum_icon.png" alt="Scrum" style="width: 80px; height: 80px;" />
+                        <p class="skills-label">Scrum</p>
+                    </div>
+                </md-elevated-card>
+
+                <md-elevated-card class="skills-icon">
+                    <div style="padding: 1rem;">
+                        <img src="assets/img/icons/kanban.png" alt="Kanban" style="width: 80px; height: 80px;" />
+                        <p class="skills-label">Kanban</p>
+                    </div>
+                </md-elevated-card>
+
+                <md-elevated-card class="skills-icon">
+                    <div style="padding: 1rem;">
+                        <img src="assets/img/icons/jira.png" alt="Scrum" style="width: 80px; height: 80px;" />
+                        <p class="skills-label">Jira</p>
+                    </div>
+                </md-elevated-card>
+
+                <md-elevated-card class="skills-icon">
+                    <div style="padding: 1rem;">
+                        <img src="assets/img/icons/mvvm.png" alt="MVVM" style="width: 80px; height: 80px;" />
+                        <p class="skills-label">MVVM Architecture</p>
+                    </div>
+                </md-elevated-card>
+            </div>
+            <!-- Skill List -->
+        </div>
+    </section>
+    <!-- Skills -->
+
+    <!-- Projects -->
+    <section id="projects_section" aria-labelledby="projects-title" class="md3-section">
+
+        <!-- Title -->
+        <md-top-app-bar-row class="center-title">
+            <md-top-app-bar-title style="padding-right: 6%;">Projects</md-top-app-bar-title>
+        </md-top-app-bar-row>
+
+        <!-- Grid -->
+        <div class="projects-grid">
+
+            <!-- Compostar App -->
+            <md-elevated-card class="project-card">
+                <div class="project-header" onclick="toggleProject(this)">
+                    <h3 class="project-title">♻️ Compostar App</h3>
+                    <div class="project-skills-list">
+                        <md-chip><img src="assets/img/icons/android-icon.png" width="30" height="30"></md-chip>
+                        <md-chip><img src="assets/img/icons/kotlin.png" width="30" height="30"></md-chip>
+                    </div>
+                </div>
+
+                <div class="project-body">
+                    <!-- Description -->
+                    <!-- <p>
+                        <b>Compostar App</b> is a cutting-edge Android app that I
+                        <b>developed entirely from scratch</b>,
+                        <b>designed to simplify organic waste management in Recife</b>,
+
+                        empowering eco-conscious initiatives and
+                        <b>promoting sustainability through intuitive features and robust technology.</b>
+                    </p> -->
+
+                    <p>
+                        <strong>Compostar App</strong> is a cutting-edge Android app that I
+                        <strong>developed entirely from scratch</strong>,
+                        <strong>designed to simplify organic waste management in Recife</strong>,
+                        empowering eco-conscious initiatives and
+                        <strong>promoting sustainability through intuitive features and robust technology.</strong>
+                    </p>
+
+                    <!-- Features -->
+                    <p><strong>✨ Features:</strong></p>
+                    <ul>
+                        <li>✔️ Dynamic Home Screen: Personalized introduction with the company logo.</li>
+                        <li>✔️ Green Island Management: Add and edit details such as school name, address, and
+                            environmental
+                            metrics.</li>
+                        <li>✔️ Data Tracking: Monitor collected waste, compost generated, and carbon offsets.</li>
+                        <li>✔️ Smart Filters: Filter by organics, compost, or decarbonization.</li>
+                        <li>✔️ Search Functionality: Quickly locate green islands.</li>
+                        <li>✔️ Map Integration: View the location of green islands via Open Maps.</li>
+                        <li>✔️ About Section: Credits and external links.</li>
+                    </ul>
+
+                    <!-- Technologies -->
+                    <p><b>💻 Tech:</b> Android, Kotlin, Firebase, Clean Architecture, MVVM, Material Design.</p>
+
+                    <!-- Tools -->
+                    <p><b>🛠️ Tools:</b> Android Studio, Git/Github.</p>
+
+                    <!-- Client -->
+                    <p>
+                        🤝 <b>Client:</b> Environmental Startup + Recife City Hall
+                    </p>
+
+                    <!-- Video -->
+                    <div class="project-video">
+                        <iframe width="100%" height="400" src="https://www.youtube.com/embed/wlg6qj-URA4"
+                            title="Compostar App Demo" frameborder="0" allowfullscreen
+                            style="border-radius: 30px; border: 1px solid  #0F1B40;"></iframe>
+                    </div>
+                </div>
+            </md-elevated-card>
+
+            <!-- Timer App -->
+            <md-elevated-card class="project-card">
+                <div class="project-header" onclick="toggleProject(this)">
+                    <h3 class="project-title">⏱️ Timer App</h3>
+                    <div class="project-skills-list">
+                        <md-chip><img src="assets/img/icons/android-icon.png" width="30" height="30"></md-chip>
+                        <md-chip><img src="assets/img/icons/kotlin.png" width="30" height="30"></md-chip>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <!-- Description -->
+                    <p>
+                        <b>Timer App</b> is an Android application that I <b>developed entirely from scratch</b>,
+                        allowing the user to activate multiple timers simultaneously for different activities,
+                        offering efficient control of logistic daily tasks.
+                    </p>
+
+                    <!-- Features -->
+                    <p><b>✨ Features:</b></p>
+                    <ul>
+                        <li>✔️ Dynamic Home Screen with logo.</li>
+                        <li>✔️ Activity Management: Easily add and remove activities.</li>
+                        <li>✔️ Time tracking via realtime timers.</li>
+                        <li>✔️ Clear and efficient Performance Graphs.</li>
+                    </ul>
+
+                    <p><b>✨ Principais Funcionalidades:</b></p>
+                    <ul>
+                        <li>✔️ Tela Inicial Dinâmica com logo.</li>
+                        <li>✔️ Gestão de Atividades: adicione e remova atividades facilmente.</li>
+                        <li>✔️ Acompanhamento de Tempo via gráficos.</li>
+                        <li>✔️ Gráficos de Desempenho claros e eficientes.</li>
+                    </ul>
+
+                    <!-- Technologies -->
+                    <p><b>💻 Tech:</b> Android, Kotlin, Firebase, MVC, Material Design.</p>
+
+                    <!-- Tools -->
+                    <p><b>🛠️ Tools:</b> Git/Github, Android Studio.</p>
+
+
+                    <!-- Client -->
+                    <p>
+                        🤝 <b>Client:</b> Industrial/Machine Maintenance Company.
+                    </p>
+
+                    <!-- Video -->
+                    <div class="project-video">
+                        <iframe width="100%" height="400" src="https://www.youtube.com/embed/4QeF8S3jBHQ"
+                            title="Timer App Demo" frameborder="0" allowfullscree
+                            style="border-radius: 30px; border: 1px solid  #0F1B40;"></iframe>
+                    </div>
+                </div>
+            </md-elevated-card>
+
+            <!-- QR Code Maker App -->
+            <md-elevated-card class="project-card">
+                <div class="project-header" onclick="toggleProject(this)">
+                    <h3 class="project-title">💼 QRCode Maker App</h3>
+                    <div class="project-skills-list">
+                        <md-chip><img src="assets/img/icons/android-icon.png" width="30" height="30"></md-chip>
+                        <md-chip><img src="assets/img/icons/kotlin.png" width="30" height="30"></md-chip>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <!-- Description -->
+                    <p>
+                        <b>QRCode Maker App</b> is an Android app that I <b>developed entirely from scratch</b>,
+                        focused on generating and saving QR codes for quick sharing contact information during events.
+                    </p>
+
+                    <!-- Features -->
+                    <p><b>✨ Features:</b></p>
+                    <ul>
+                        <li>✔️ Generate QR codes from any link.</li>
+                        <li>✔️ Business applications: campaigns, product sharing.</li>
+                        <li>✔️ Contact sharing via QR.</li>
+                        <li>✔️ Dynamic interface with Material Design principles.</li>
+                    </ul>
+
+                    <!-- Technologies -->
+                    <p><b>💻 Tech:</b> Android, Kotlin, Material Design, XML & ConstraintLayout.</p>
+
+                    <!-- Tools -->
+                    <p><b>🛠️ Tools:</b> Android Studio, Git/Github.</p>
+
+                    <!-- Client -->
+                    <p>
+                        🤝 <b>Client:</b> Michi_in Startup
+                    </p>
+
+                    <div class="project-video">
+                        <iframe width="100%" height="400" src="https://www.youtube.com/embed/nDz_QD-xhlo"
+                            title="QRCode Maker Demo" frameborder="0" allowfullscreen
+                            style="border-radius: 30px; border: 1px solid  #0F1B40;"></iframe>
+                    </div>
+                </div>
+            </md-elevated-card>
+
+            <!-- Links Pro App -->
+            <md-elevated-card class="project-card">
+                <div class="project-header" onclick="toggleProject(this)">
+                    <h3 class="project-title">🔗 Links Pro App</h3>
+                    <div class="project-skills-list">
+                        <md-chip><img src="assets/img/icons/android-icon.png" width="30" height="30"></md-chip>
+                        <md-chip><img src="assets/img/icons/kotlin.png" width="30" height="30"></md-chip>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <!-- Description -->
+                    <p>
+                        <b>Links Pro App</b> is an Android app that I <b>developed from scratch</b>,
+                        allowing you to share links directly via AWS Quick Share without opening the app.
+                    </p>
+
+                    <!-- Features -->
+                    <p><b>✨ Features:</b></p>
+                    <ul>
+                        <li>✔️ Automatic Link Sharing.</li>
+                        <li>✔️ Compatible with multiple sources: Instagram, Browser, Google Search.</li>
+                    </ul>
+
+                    <!-- Technologies -->
+                    <p><b>💻 Tech:</b> Android, Kotlin, MVC, Retrofit, Material Design.</p>
+
+                    <!-- Tools -->
+                    <p><b>🛠️ Tools:</b> Android Studio, Git/Github.</p>
+
+                    <!-- Client -->
+                    <p>
+                        🤝 <b>Client:</b>Individual (Carlos Aguni 顾宁) </b>
+                    </p>
+
+                    <button class="md3-button" id="feedback-btn">
+                        🗣️ Feedback
+                    </button>
+
+                    <div class="expandable" id="feedback-content">
+                        <img src="./assets/img/feedbacks/links-pro-app.png" alt="Feedback" style="width: 100%; 
+                    height: 30%;
+                    border-radius: 30px; ">
+                    </div>
+
+                    <!-- Video -->
+                    <div class="project-video">
+                        <video width="100%" height="400" controls
+                            style="border-radius: 30px; border: 1px solid  #0F1B40;">
+                            <source src="assets/img/projects/links-pro-app/links-pro-app.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </md-elevated-card>
+
+            <!-- Habitus App -->
+            <md-elevated-card class="project-card">
+                <div class="project-header" onclick="toggleProject(this)">
+                    <h3 class="project-title"> 👩🏻‍🏭 Habitus App </h3>
+                    <div class="project-skills-list-java">
+                        <md-chip><img src="assets/img/icons/android-icon.png" width="30" height="30"></md-chip>
+                        <md-chip><img src="assets/img/icons/kotlin.png" width="30" height="30"></md-chip>
+                        <md-chip><img src="assets/img/icons/java_icon.jpg" width="30" height="30"></md-chip>
+                    </div>
+                </div>
+
+                <div class="project-body">
+
+                    <!-- Description -->
+                    <p>
+                        <b>Habitus App</b> is a native Android application that is focused in assist professionals
+                        working in
+                        factories,
+                        monitoring their
+                        health
+                        while performing daily activities.
+                    </p>
+
+                    <p> <b>I worked on modernizing the code from Java
+                            to Kotlin</b>,
+                        <b> including new features and migrating communication methods</b> from Bluetooth to
+                        an internet connection with an AWS server.
+                    </p>
+
+                    <!-- Features -->
+                    <p><b>✨ Features:</b></p>
+                    <ul>
+                        <li>✔️ Migration of the Android codebase to AndroidX.</li>
+                        <li>✔️ Migration of Java code to Kotlin.</li>
+                        <li>✔️ UI redesign across six screens.</li>
+                        <li>✔️ Removal of Bluetooth communication</li>
+                        <li>✔️ Integration of internet communication with the AWS server.</li>
+                        <li>✔️ Performance Improvement with Material Design.</li>
+                    </ul>
+
+                    <!-- Technologies -->
+                    <p><b>💻 Tech:</b> Android, Java, Kotlin, Coroutines, Retrofit, API REST, Cloud Database (AWS),
+                        OkHttp3, GSON, Gradle, XML, ConstraintLayout, Material Design, AndroidSDK
+                    </p>
+
+                    <!-- Tools -->
+                    <p><b>🛠️ Tools:</b> Trello, Android Studio, Git/Github.</p>
+
+                    <!-- Client -->
+                    <p>
+                        🤝 <b>Client:</b>: Healthcare Startup </b>
+                    </p>
+
+                    <!-- Video -->
+                    <div class="project-video">
+                        <iframe width="100%" height="400" src="https://www.youtube.com/embed/mWCT57srmsc"
+                            title="Habitus App Demo" frameborder="0" allowfullscreen
+                            style="border-radius: 30px; border: 1px solid  #0F1B40;"></iframe>
+                    </div>
+                </div>
+            </md-elevated-card>
+
+            <!-- Genyo App -->
+            <md-elevated-card class="project-card">
+                <div class="project-header" onclick="toggleProject(this)">
+                    <h3 class="project-title"> ✅ Genyo App </h3>
+                    <div class="project-skills-list-java">
+                        <md-chip><img src="assets/img/icons/android-icon.png" width="30" height="30"></md-chip>
+                        <md-chip><img src="assets/img/icons/kotlin.png" width="30" height="30"></md-chip>
+                        <md-chip><img src="assets/img/icons/java_icon.jpg" width="30" height="30"></md-chip>
+                    </div>
+                </div>
+
+                <div class="project-body-genyo">
+
+                    <!-- Description -->
+                    <p>
+                        <b>Genyo App</b> is a comprehensive tool for HR departments to manage employee data
+                        and
+                        generate financial spreadsheets. I worked on implementing new features, fixing bugs, and
+                        optimizing the app for better performance, ensuring smooth operations for hundreds of
+                        users.
+                    </p>
+
+                    <!-- Features -->
+                    <p><b>✨ Main Features:</b></p>
+                    <ul>
+                        <li>✔️ Critical bug fixes to ensure stability.</li>
+                        <li>✔️ Implementation of new features to increase operational efficiency.</li>
+                        <li>✔️ App optimization for better performance and user experience.</li>
+                        <li>✔️ Employee check-in monitoring for monthly payroll generation.</li>
+                    </ul>
+
+                    <!-- Technologies -->
+                    <p><b>💻 Tech:</b> Android, Java, Kotlin, Retrofit, API REST, SQLite, Android SDK, XML,
+                        ConstraintLayout, Material Design.</p>
+
+                    <!-- Tools -->
+                    <p><b>🛠️ Tools:</b> Android Studio, Git/GitHub, Trello, Kanban.</p>
+
+                    <!-- Client -->
+                    <p>
+                        🤝 <b>Client:</b> HR Department / Companies and Startups.
+                    </p>
+
+                    <!-- Button Google Play-->
+                    <p>
+                        <a href="https://play.google.com/store/apps/details?id=br.com.genyo" target="_blank"
+                            class="md3-button">
+                            <img src="assets/img/icons/google-play.png" alt="Google Play" width="30" height="30" />
+                            Genyo App
+                        </a>
+                    </p>
+
+                    <p>
+                        <img src="assets/img/projects/genyo.png" alt="Genyo App Logo"
+                            style="width: 100%; height: 100%; border-radius: 20px; margin-top: 1rem;">
+                    </p>
+                </div>
+            </md-elevated-card>
+        </div>
+    </section>
+    <!-- Projects -->
+
+    <!-- Clients -->
+    <section id="clients_section" aria-labelledby="clients-title">
+        <!-- Title -->
+        <div style="text-align: center; margin-bottom: 2rem;">
+            <h2 id="clients-title" style="font-size: 2rem; font-weight: 700;">Clients Who Trust my Work</h2>
+            <p style="font-size: 1rem; max-width: 600px; margin: 0.5rem auto 0;">
+                Companies, startups, and individuals who trusted on my work and had their their ideas transformed into
+                robust, scalable applications
+                with excellent
+                user experience.
+            </p>
+        </div>
+
+        <!-- Logos -->
+        <div class="clients-logos">
+            <md-elevated-card class="client-card">
+                <img src="assets/img/icons/prefeitura.png" alt="Prefeitura do Recife">
+            </md-elevated-card>
+
+            <md-elevated-card class="client-card">
+                <img src="assets/img/icons/logo-banco-do-nordeste.png" alt="Banco do Nordeste">
+            </md-elevated-card>
+
+            <md-elevated-card class="client-card">
+                <img src="assets/img/icons/natura.png" alt="Natura">
+            </md-elevated-card>
+
+            <md-elevated-card class="client-card">
+                <img src="assets/img/icons/client.png" alt="Prefeitura do Recife">
+            </md-elevated-card>
+        </div>
+
+        <!-- CTA -->
+        <div class="feedback-cta">
+            <p id="paragraph" style="margin-bottom: 2%; font-size: 14pt;"> 🚀 Do you want your project at the same
+                level?</p>
+            <br />
+            <a id="clients_lets_talk" href="#contact_section" class="btn-primary">🗣️Let's Talk!</a>
+        </div>
+    </section>
+
+    <!-- Feedbacks -->
+    <section id="feedbacks_section" class="feedbacks-section">
+        <div class="container">
+            <!-- Título e Subtítulo -->
+            <h2 class="feedbacks-title">🌟 What Managers, Colleagues, Mentees, and Clients Say About My Work</h2>
+            <p class="feedbacks-subtitle">
+                Comments from those who have worked with me and the results delivered.
+            </p>
+
+            <!-- Feedbacks dos Gestores -->
+            <div class="feedback-group">
+                <h3>Managers</h3>
+                <div class="feedback-cards">
+                    <div class="feedback-card">
+                        <img src="assets/img/feedbacks/manager.png" alt="Print feedback gestor 1">
+                    </div>
+                    <div class="feedback-card">
+                        <img src="assets/img/feedbacks/manager-ibm.png" alt="Print feedback gestor 2">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feedbacks dos Colegas -->
+            <div class="feedback-group">
+                <h3>Colleagues</h3>
+                <div class="feedback-cards">
+                    <div class="feedback-card">
+                        <img src="assets/img/feedbacks/colleage.png" alt="Print feedback colega 1">
+                    </div>
+                    <div class="feedback-card">
+                        <img src="assets/img/feedbacks/colleague-1.png" alt="Print feedback colega 2">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feedbacks Mentorados -->
+            <div class="feedback-group">
+                <h3>Mentees</h3>
+                <div class="feedback-cards">
+                    <div class="feedback-card-big">
+                        <img src="assets/img/feedbacks/feedback-mentoria.png" alt="Print feedback colega 2">
+                    </div>
+                    <div class="feedback-card-big">
+                        <img src="assets/img/feedbacks/feedback-mentoria-paulo.png" alt="Print feedback colega 2">
+                    </div>
+                    <div class="feedback-card">
+                        <img src="assets/img/feedbacks/feedback-mentoria-gabriel.png" alt="Print feedback colega 1">
+                    </div>
+
+                    <div class="feedback-card">
+                        <img src="assets/img/feedbacks/feedback-mentoria-victor.png" alt="Print feedback colega 1">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feedbacks Clients -->
+            <div class="feedback-group">
+                <h3>Clients</h3>
+                <div class="feedback-cards">
+                    <div class="feedback-card-clients">
+                        <img src="assets/img/feedbacks/links-pro-app.png" alt="Print cliente app">
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="feedback-cta">
+                <p style="margin-bottom: 2%; font-size: 14pt;">Do you want similar results for your app? 🚀</p>
+                <br />
+                <a href="#contact_section" class="btn-primary">🗣️ Let's Talk!</a>
+            </div>
+        </div>
+    </section>
+    <!-- Feedbacks -->
+
+    <!-- Services -->
+    <section id="services_section" class="md3-section">
+
+        <!-- Title -->
+        <md-top-app-bar-row class="center-title">
+            <md-top-app-bar-title>Services</md-top-app-bar-title>
+        </md-top-app-bar-row>
+
+        <div class="carousel-container">
+
+            <!-- Card 1 -->
+            <md-elevated-card class="service-card">
+                <img src="assets/img/service/michi_in.jpg" alt="Android e iOS" class="service-image" />
+
+                <h3 class="service-title">🚀 Turn Your Idea into a Successful App</h3>
+
+                <div class="service-description">
+                    <p>
+                        📱 I develop <b>exclusive and 100% custom apps</b> for you or your
+                        company.
+                    </p>
+
+                    <p>
+                        💡 Imagine having an app that <b>attracts customers, increases sales, and strengthens your
+                            brand</b> — all
+                        without hassle.
+                    </p>
+
+                    <p>
+                        🏆 I have <b>+4 years of experience</b> creating high-performance apps, I guarantee your idea
+                        will
+                        come to life
+                        with professional quality.
+                    </p>
+                    <p>
+                        📊 I've delivered <b>6+ apps</b> for companies and entrepreneurs, helping to <b>increase user
+                            engagement</b> and <b>reduce operational costs</b> with <b>intelligent digital
+                            solutions.</b>
+                    </p>
+                </div>
+
+                <a href="https://wa.me/5581997207924?text=Quero tirar minha ideia do papel! [pt]" target="_blank"
+                    class="md-button">
+                    💡 I Want My App Now!
+                </a>
+
+                <!-- Toggle Feedback -->
+                <button class="feedback-toggle">🗣️ See Feedbacks</button>
+                <div class="feedback-content">
+                    <img src="./assets/img/feedbacks/links-pro-app.png" alt="Feedback" style="width: 100%; 
+                    height: 100%; border-radius: 20px; " />
+                </div>
+            </md-elevated-card>
+
+            <!-- Card 2 -->
+            <md-elevated-card class="service-card">
+                <img src="assets/img/service/mentoria.jpg" alt="Mentoria LinkedIn" class="service-image" />
+
+                <h3 class="service-title">🚀 Turn Your LinkedIn into an Opportunity Machine</h3>
+
+                <div class="service-description">
+                    <p>
+                        📢 In just a few sessions, you'll learn how to create <b>strategic content</b> that attracts the
+                        right connections,
+
+                        strengthens your authority, and opens doors to new opportunities.
+                    </p>
+
+                    <p>
+                        💡 You'll leave with a clear, ready-to-implement action plan, plus a professional and engaging
+                        feed that makes people want to talk to you.
+                    </p>
+
+                    <p>
+                        📊 I've helped clients <b>increase their reach</b> and receive invitations for
+                        partnerships, interviews, and job offers — all with smart positioning on
+                        LinkedIn.
+                    </p>
+
+                    <br />
+                </div>
+
+                <a href="https://forms.gle/Knsfx1fpoEG3H66U6" target="_blank" class="md-button">
+                    ✍️ Boost My LinkedIn!
+                </a>
+
+                <!-- Toggle Feedback -->
+                <button class="feedback-toggle">🗣️ See Feedbacks</button>
+                <div class="feedback-content">
+                    <img src="./assets/img/feedbacks/feedback-mentoria-paulo.png" alt="Feedback" style="width: 100%; 
+                    height: 100%; border-radius: 20px; " />
+                </div>
+            </md-elevated-card>
+
+            <!-- Card 3 -->
+            <md-elevated-card class="service-card">
+                <img src="assets/img/service/ebook.png" alt="E-book" class="service-image" />
+
+                <h3 class="service-title">📚 Gain Authority on LinkedIn and Generate Real Results</h3>
+
+                <div class="service-description">
+                    <p>
+                        💼 This e-book is the <b>shortcut you need</b> to transform your LinkedIn into an opportunity
+
+                        machine.
+                    </p>
+
+                    <p>
+                        📊 Learn the <b>same strategies</b> that have already helped professionals and entrepreneurs
+                        <b>multiply qualified connections</b>, form strategic partnerships, and generate new business.
+                    </p>
+
+                    <p>
+                        🚀 Straight-to-the-point content, with <b>practical step-by-step</b> to optimize your profile,
+                        create high-engagement posts, and strengthen your personal brand — even if you're starting
+                        from
+                        scratch.
+                    </p>
+
+                    <br />
+                </div>
+
+                <a href="https://forms.gle/WQLhC1b1WivEDyh5A" target="_blank" class="md-button">
+                    🛒 I Want My E-book Now!
+                </a>
+
+                <!-- Toggle Feedback -->
+                <button class="feedback-toggle">🗣️ See Feedbacks</button>
+                <div class="feedback-content">
+                    <img src="./assets/img/feedbacks/feedback-mentoria-gabriel.png" alt="Feedback" style="width: 100%; 
+                    height: 100%; border-radius: 20px; " />
+                </div>
+            </md-elevated-card>
+        </div>
+    </section>
+    <!-- Services -->
+
+    <!-- Contact -->
+    <section id="contact_section" class="contact-section">
+        <div class="contact-container">
+            <!-- Título e Subtexto -->
+            <h2 class="contact-title">🚀 Ready to Turn Your Idea into an App?</h2>
+            <p class="contact-subtext">
+                I have experience developing Android apps with a focus on
+                performance, modern design, and integration with services like Firebase and APIs.
+                If you have an idea or project in mind, get in touch and let's take the first step.
+            </p>
+
+            <!-- Formulário de Contato -->
+            <form id="contact-form" class="contact-form">
+                <input type="text" name="name" placeholder="Seu Nome" required />
+                <input type="email" name="email" placeholder="Seu E-mail" required />
+                <textarea name="message" rows="5" placeholder="Descreva brevemente sua ideia" required></textarea>
+                <input type="submit" value="📩 Send" id="submit-btn" class="btn-primary">
+                <!-- <button type="submit" class="btn-primary"> 📩 Solicitar Orçamento </button> -->
+            </form>
+
+            <!-- CTAs Alternativos -->
+            <div class="cta-alternatives">
+                <a href="https://wa.me/5581997207924" target="_blank" class="btn-whatsapp">
+                    📲 Talk Now on WhatsApp</a>
+                <a href="https://github.com/Laura-Oliveira" target="_blank" class="btn-secondary">
+                    💻 Check out my Code Work
+                </a>
+                <a href="https://www.linkedin.com/in/laura-oliveira-mobile/" target="_blank" class="btn-secondary">
+                    💼 LinkedIn
+                </a>
+            </div>
+
+            <!-- Prova Social -->
+            <div class="social-proof">
+                <p>⭐ “Excellent professional! Delivered the project on time.”</p>
+                <p>🚀 6+ apps developed for companies, startups, and individuals</p>
+                <div class="logos">
+                    <img src="assets/img/icons/prefeitura.png" alt="Cliente 1" />
+                    <img src="assets/img/icons/logo-banco-do-nordeste.png" alt="Cliente 2" />
+                    <img src="assets/img/icons/natura.png" alt="Cliente 3" />
+                    <img src="assets/img/icons/client.png" alt="Cliente 4" />
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Gatilho de Urgência -->
+        <p class="urgency">⚡ I only take on <strong>2 new projects per month</strong> to ensure quality.
+            Reserve your spot!</p>
+        </div>
+    </section>
+    <!-- Contact -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Nome e especialidade -->
+            <div class="profile-photo-footer">
+                <img src="assets/img/selfie/prof.jpg" alt="Laura Oliveira" width="10%"
+                    style="border-radius: 50%; border: 3px solid whitesmoke;" />
+            </div>
+            <h2 class="footer-name">Laura Oliveira</h2>
+            <p class="footer-tagline">Mobile Developer • Android • Kotlin</p>
+
+            <!-- Redes sociais -->
+            <div class="footer-social">
+                <a href="https://linkedin.com/in/seu-usuario" target="_blank" aria-label="LinkedIn">
+                    <img src="assets/img/icons/linkedin.svg" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/seu-usuario" target="_blank" aria-label="Github">
+                    <img src="assets/img/icons/github.svg" alt="Github">
+                </a>
+                <a href="mailto:seuemail@email.com" aria-label="E-mail">
+                    <img src="assets/img/icons/email.svg" alt="Email">
+                </a>
+                <a href="mailto:seuemail@email.com" aria-label="E-mail">
+                    <img src="assets/img/icons/phone.svg" alt="Email">
+                </a>
+            </div>
+
+            <!-- Créditos -->
+            <p class="footer-copy">© 2025 Laura Oliveira. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- FontAwesome para ícone de loading -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        emailjs.init("YxvxIpoEvVfEVUcpi"); // sua Public Key
+
+        window.onload = function () {
+            const form = document.getElementById('contact-form');
+            const submitBtn = document.getElementById('submit-btn');
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                // Desabilita botão e muda texto para carregando
+                submitBtn.disabled = true;
+                // submitBtn.innerHTML = `<i class="fas fa-spinner fa-spin"></i> Enviando Orçamento...`;
+
+                // 1️⃣ Envia para você (template principal)
+                emailjs.sendForm('service_78nb0lp', 'template_emwi24p', this)
+                    .then(() => {
+                        console.log('✅ Mensagem enviada para você!');
+
+                        // 2️⃣ Envia auto-reply para o usuário
+                        emailjs.sendForm('service_78nb0lp', 'template_omkp6fd', this)
+                            .then(() => {
+                                console.log('✅ Auto-reply enviado!');
+                                alert('Mensagem enviada com sucesso!');
+                                form.reset(); // Só reseta após ambos os envios
+                            })
+
+                    })
+                    .catch(err => console.log('❌ Falha no envio:', err));
+            });
+        }
+    </script>
+
+
+    <!-- SCRIPT: Toggle Language Menu -->
+    <script>
+        function toggleDropdown() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+    </script>
+
+    <!-- SCRIPT: Toggle menu mobile -->
+    <script>
+        const menuToggle = document.getElementById("menuToggle");
+        const navLinks = document.getElementById("navLinks");
+
+        menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+
+    <!-- SCRIPT: Load About Me Section -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const targets = document.querySelectorAll(
+                "#about_me_section .about-text, #about_me_section .about-photo"
+            );
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                        observer.unobserve(entry.target); // anima só uma vez
+                    }
+                });
+            }, { threshold: 0.2, rootMargin: "0px 0px -10% 0px" });
+
+            targets.forEach(el => observer.observe(el));
+        });
+    </script>
+
+    <!-- SCRIPT: Load Skills Section -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const skillsSection = document.querySelector("#skills_section");
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        skillsSection.classList.add("visible");
+                        observer.unobserve(skillsSection); // evita reanimar
+                    }
+                });
+            }, { threshold: 0.2 }); // 20% da section visível para ativar
+
+            observer.observe(skillsSection);
+        });
+    </script>
+
+    <!-- SCRIPT: Load Projects Section -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const projectsSection = document.querySelector("#projects_section");
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        projectsSection.classList.add("visible");
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            observer.observe(projectsSection);
+        });
+    </script>
+
+    <!-- SCRIPT: Toggle Project Description -->
+    <script>
+        function toggleProject(header) {
+            const card = header.closest('.project-card');
+            card.classList.toggle('expanded');
+        }
+
+        document.getElementById('feedback-btn').addEventListener('click', () => {
+            document.getElementById('feedback-content').classList.toggle('show');
+        });
+    </script>
+
+    <!-- SCRIPT: Toggle Feedback Image Project -->
+    <script>
+        function toggleProject(header) {
+            const card = header.closest('.project-card');
+            card.classList.toggle('expanded');
+
+            // habilita/desabilita botão de feedback
+            const feedbackBtn = card.querySelector('.feedback-btn');
+            feedbackBtn.disabled = !card.classList.contains('expanded');
+        }
+
+        // toggle de imagem de feedback
+        document.querySelectorAll('.feedback-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const card = btn.closest('.project-card');
+                if (!card.classList.contains('expanded')) return; // só abre se o projeto estiver expandido
+                card.querySelector('.feedback-content').classList.toggle('show');
+            });
+        });
+    </script>
+
+
+    <!-- SCRIPT: Load Clients Section -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const clientsSection = document.querySelector("#clients_section");
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        clientsSection.classList.add("visible");
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            observer.observe(clientsSection);
+        });
+    </script>
+
+    <!-- SCRIPT: Load Feedback Section -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const feedbacksSection = document.querySelector("#feedbacks_section");
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        feedbacksSection.classList.add("visible");
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            observer.observe(feedbacksSection);
+        });
+    </script>
+
+    <!-- SCRIPT: Load Services Section -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const servicesSection = document.querySelector("#services_section");
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        servicesSection.classList.add("visible");
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            observer.observe(servicesSection);
+        });
+    </script>
+
+    <!-- SCRIPT: Toggle Feedback Services Button -->
+    <script>
+        document.querySelectorAll(".feedback-toggle").forEach(button => {
+            button.addEventListener("click", () => {
+                const content = button.nextElementSibling;
+                content.style.display = content.style.display === "block" ? "none" : "block";
+                button.textContent = content.style.display === "block" ? "Ocultar Feedbacks" : "Ver Feedbacks";
+            });
+        });
+    </script>
 
 </body>
+
 </html>

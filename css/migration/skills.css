@@ -12,6 +12,15 @@
   transform: translateY(0);
 }
 
+.skkills-card
+{
+margin-top:5%; margin-left: 5rem; margin-right: 5rem
+}
+.skills-list
+{
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; margin-top: 2rem;
+}
+
 .title {
   text-align: center;
 }
@@ -38,6 +47,12 @@
 .skill-img {
   width: 50px;
   height: 50px;
+}
+
+.skills-label
+{
+  margin-top: 0.5rem;
+  color: whitesmoke;
 }
 
 /* ============================   END SKILLS   =========================== */
