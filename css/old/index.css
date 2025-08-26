@@ -1,0 +1,1503 @@
+@media screen and (min-width: 320px),
+(min-width: 600px),
+(min-width:801px),
+(min-width: 1080px),
+(min-width: 1920px),
+(min-width:2340px) 
+{
+    body {
+        background: #0F1B40 !important;
+        margin: 0;
+        padding-top: 0;
+    }
+
+    /* ============================   MODAL LANGUAGES   =========================== */
+    #modal_languages
+    {
+        width: 30%;
+        height: 28%;
+        border-radius: 10px;
+        position: fixed; 
+        padding-top: 2.5%; 
+        left: 0;
+        right:0; 
+        top: 0;
+        bottom: 0; 
+        background-color: rgb(0,0,0);
+        background:#0F1B40;
+        border: 3px solid white;
+        z-index: 9999; 
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 15pt;
+        font-weight: bold;
+    }
+
+    #modal_title
+    {
+        /* transform: translate(35%,35%); */
+        margin-bottom: 5%;
+        margin-top: 1%;
+    }
+
+    .btn_modal
+    {
+        width: 50%;
+        background-color: #F20574; 
+        color: #f2f2f2;
+        font-weight: bold;
+        border-radius: 10px;
+        margin-bottom: 3%;
+        /* margin-right: 2.5%; */
+        /* display: flexbox;
+        float: right; */
+    }
+    /* ============================   MENU   =========================== */
+    #menu 
+    {
+        background-color: #F20574;
+        position: fixed;
+        top: 0;
+        padding: 0;
+        width: 100%;
+        z-index: 3;
+        font-weight: bold;
+    }
+
+    #menu a 
+    {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    #menu li:hover 
+    {
+        background: #102040;
+        color: white;
+        text-decoration-line: none;
+    }
+
+    #menu button 
+    {
+        color: white;
+    }
+
+    #menu button:focus 
+    {
+        border: none;
+    }
+    /* ============================   END MENU   =========================== */
+
+
+    /* ============================   PRESENTATION SECTION   =========================== */
+    .title 
+    {
+        font-size: 20pt;
+        font-weight: bold;
+    }
+
+    .subtitle 
+    {
+        font-size: 16pt;
+        font-weight: bold;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+
+    #apresentation_section 
+    {
+        background-color: #0F1B40;
+        color: white;
+    }
+
+    #apresentation_section #div_img_profile 
+    {
+        display: block;
+        margin-top: 15%;
+        margin-bottom: 2%;
+        margin-top: 15%;
+        transform: rotate(0.02turn);
+    }
+
+    .img-circle 
+    {
+        border-radius: 50%;
+    }
+
+    #img_profile
+    {
+        width:300px;
+        height:300px;
+        transform: rotateZ(-7deg);
+    }
+
+    #apresentation_text_name {
+        display: block;
+        padding-right: 30%;
+        padding-left: 30%;
+        margin-bottom: 3%;
+    }
+
+    #apresentation_text_name hr {
+        border: 1px solid white;
+
+    }
+
+    .list_contacts 
+    {
+        margin-bottom: 1%;
+        text-align: center;
+    }
+
+    .contact 
+    {
+        width: 100%;
+        margin: 25px;
+    }
+
+    #email 
+    {
+        margin-top: 1.5%;
+        font-size: 14pt;
+    }
+    /* ============================   END PRESENTATION SECTION   =========================== */
+
+    /* ============================   ABOUT ME SECTION   =========================== */
+    #container_section 
+    {
+        display: flex;
+        margin: 0;
+        padding-bottom: 2.5%;
+        border-radius: 1%;
+        background-color: #f2f2f2;
+        color: black;
+    }
+
+    #about_me_section 
+    {
+        margin-top: 3%;
+        background-color: #0F1B40;
+        padding-top: 3%;
+        padding-bottom: 4%;
+        font-size: 14pt;
+    }
+
+    #about_me_description 
+    {
+        width: 100%;
+        padding-left: 3%;
+        margin-top: 30px;
+    }
+
+    .subtille 
+    {
+        font-size: 18pt;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    #name_profile_picture 
+    {
+        margin-bottom: 2%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #div_img_viagem 
+    {
+        margin-top: 6.3%;
+        margin-right: 3%;
+        margin-left: 3%;
+        margin-bottom: 3%;
+    }
+
+    #img_viagem
+    {
+        width:500px; 
+        height:500px;
+    }
+    /* ============================   END ABOUT ME SECTION   =========================== */
+
+    /* ============================   SKILLS SECTION   =========================== */
+    .skills_title
+    {
+        margin-bottom: 0px;
+        margin-top: 3%;
+    }
+
+    #skills_section 
+    {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        width: 100%;
+        padding-bottom: 3%;
+        background-color: #0F1B40;
+        font-size: 14pt;
+    }
+
+    #skills_list 
+    {
+        overflow: hidden;
+        text-align: center;
+        justify-content: center; 
+        align-items: center;
+        padding-left: 9%;
+        margin-top: 2%; 
+    }
+
+    #skills_list div 
+    {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    .img_skills 
+    {
+        width: 85px;
+        height: 85px;
+        color: white;
+        border-radius: 10px;
+    }
+
+    #skills_list .fa-mobile 
+    {
+        color: white;
+    }
+
+    .txt_card 
+    {
+        font-size: 14pt;
+        font-weight: bold;
+    }
+
+    #skills_list div a 
+    {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    /* ============================   END SKILLS SECTION   =========================== */
+
+    /* ============================   PROJECTS SECTION   =========================== */
+    /* Container principal dos projetos */
+    .container-fluid-projects
+     {
+        display: flex;
+        flex-wrap: wrap; /* Permite que os itens se organizem em linhas */
+        justify-content: space-between; /* Espaçamento igual entre os projetos */
+        gap: 20px; /* Espaçamento entre os projetos */
+    }
+
+    /* Box de cada projeto */
+    .container-projects
+    {
+        flex: 1 1 calc(33.333% - 20px); /* Define largura proporcional e com margem */
+        max-width: calc(33.333% - 20px); /* Limita a largura máxima */
+        min-width: 300px; /* Define uma largura mínima */
+        background-color: #f9f9f9; /* Cor de fundo do box (opcional) */
+        border: 1px solid #ddd; /* Borda do box (opcional) */
+        border-radius: 10px; /* Bordas arredondadas */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+        padding: 20px; /* Espaçamento interno */
+        display: flex;
+        flex-direction: column; /* Organização vertical */
+        justify-content: space-between; /* Espaçamento interno balanceado */
+        box-sizing: border-box;
+    }
+
+    /* Alinhamento de elementos dentro do box */
+    .flex-container-projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #projects_section 
+    {
+        padding-top: 3%;
+        padding-bottom: 1.5%;
+        background-color: #0F1B40;
+        color: white;
+        font-size: 14pt;
+        width: 100%;
+    }
+
+    .title
+    {
+        margin-bottom: 5%;
+        font-size: 20pt;
+    }
+
+    .projetct_title 
+    {
+        font-size: 16pt;
+        font-weight: bold;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        text-align: center;
+        background-color: #0F1B40;
+        color: white;
+    }
+
+    .paragraph 
+    {
+        margin-top: 2%;
+        text-align: justify;
+    }
+
+    .project_skills_list
+    {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        overflow: hidden;
+        width: 100%;
+        text-align: center;
+        padding-left: 3%;
+        margin-top: 2%;
+    }
+
+    .project_skills_list div 
+    {
+        /* float: right;
+        display: block; */
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    .objetivo_content 
+    {
+        text-align: justify;
+    }
+
+      /* .project_card 
+    {
+        margin: 0;
+        padding: 3%;
+        padding-top: 2%;
+        display: inline-flex;
+        font-size: 16pt;
+    } */
+
+    /* .project_card .objetivo_content p:last-child 
+    {
+        padding-top: 1px;
+    } */
+
+    /* .technologies_list div:first-child 
+    {
+        margin-left: 7%;
+    }
+
+    .technologies_list div:last-child 
+    {
+        margin-right: 5%;
+    }
+
+    .technologies_list div 
+    {
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 12pt;
+        padding: 10px;
+        margin-right: 10px;
+        background-color: #F20574;
+        border-radius: 10px;
+        font-weight: bold;
+        margin-bottom: 1.5%;
+    }
+    li {
+        list-style-type: none;
+      } */
+
+       /* ============================   PROJECT COMPOSTAR   =========================== */
+    #project_compostar
+    {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        background-color: #f2f2f2;
+        border-radius: 1%;
+        color: black;
+        padding: 1%;
+        width: 75%;
+        height: 50%;
+        margin-bottom: 3%;
+    }
+
+    #video_compostar iframe 
+    {
+        display: flex;
+        margin: 0;
+        margin-bottom: 3%;
+    }
+
+
+       /* ============================   PROJECT TIMER   =========================== */
+    #project_timer
+    {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        background-color: #f2f2f2;
+        border-radius: 1%;
+        color: black;
+        padding: 1%;
+        width: 75%;
+        height: 50%;
+        margin-bottom: 3%;
+    }
+
+    #video_timer iframe 
+    {
+        display: flex;
+        margin: 0;
+        margin-bottom: 3%;
+    }
+
+    /* .technologies_list_qrcode_maker
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-flow: wrap;
+    }
+
+    .project_item
+    {
+        flex-grow: 1;
+    }
+
+    .technologies_list_qrcode_maker div:first-child 
+    {
+        margin-left: 1%;
+    }
+
+    .technologies_list_qrcode_maker div 
+    {
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 12pt;
+        padding: 10px;
+        margin-right: 10px;
+        background-color: #F20574;
+        border-radius: 10px;
+        font-weight: bold;
+        margin-bottom: 3%;
+    } */
+
+    /* ============================   END PROJECT TIMER   =========================== */
+
+       /* ============================   PROJECT HABITUS   =========================== */
+    #project_habitus
+    {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        background-color: #f2f2f2;
+        border-radius: 1%;
+        color: black;
+        padding: 1%;
+        width: 75%;
+        height: 50%;
+    }
+
+    /* #project_habitus_teste
+    {
+        background-color: #f2f2f2;
+        border-radius: 1%;
+        color: black;
+        padding: 10%;
+        padding-top: 0.5%;
+        width: 100%;
+        height: 50%;
+        padding-bottom: 1%;
+        margin-top: 3%;
+    } */
+
+    #video_habitus iframe 
+    {
+        display: flex;
+        margin: 0;
+        margin-bottom: 3%;
+    }
+
+    #video_habitus 
+    {
+        background-color: #102040; /* Cor de fundo cinza desejada */
+        position: relative;
+        padding: 2%;
+    }
+    /* ============================   END PROJECT HABITUS   =========================== */
+
+    /* ============================   PROJECT QRCODE MAKER   =========================== */
+    #project_qrcode_maker 
+    {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        background-color: #f2f2f2;
+        border-radius: 1%;
+        color: black;
+        padding: 1%;
+        width: 75%;
+        height: 50%;
+     /*   margin-top: 3%; */
+    }
+
+    #video_qrcode_maker iframe 
+    {
+        display: flex;
+        margin: 0;
+        margin-bottom: 3%;
+    }
+
+    /* .technologies_list_qrcode_maker
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-flow: wrap;
+    }
+
+    .project_item
+    {
+        flex-grow: 1;
+    }
+
+    .technologies_list_qrcode_maker div:first-child 
+    {
+        margin-left: 1%;
+    }
+
+    .technologies_list_qrcode_maker div 
+    {
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 12pt;
+        padding: 10px;
+        margin-right: 10px;
+        background-color: #F20574;
+        border-radius: 10px;
+        font-weight: bold;
+        margin-bottom: 3%;
+    } */
+
+    /* ============================   END PROJECT QRCODE MAKER   =========================== */
+
+    /* ============================   PROJECT LINKS PRO   =========================== */
+    #project_links_pro 
+    {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        background-color: #f2f2f2;
+        border-radius: 1%;
+        color: black;
+        padding: 1%;
+        width: 75%;
+        height: 50%;
+        margin-top: 3%;
+    }
+
+    #screenshot_links_pro 
+    {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        width: 100%;
+        height: 545px;
+        margin-bottom: 3%;
+    }
+
+    .no-bullet-points 
+    {
+        list-style-type: none; /* Remove as bolinhas */
+        padding: 0; /* Remove o recuo padrão */
+        margin: 0; /* Remove margens extras */
+    }
+    
+    .no-bullet-points li 
+    {
+        margin-bottom: 10px; /* Adiciona espaçamento entre os itens da lista */
+    }
+    /* .technologies_list_links_pro
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-flow: wrap;
+    }
+
+    .project_item
+    {
+        flex-grow: 1;
+    }
+
+    .technologies_list_links_pro div:first-child 
+    {
+        margin-left: 1%;
+    }
+
+    .technologies_list_links_pro div 
+    {
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 12pt;
+        padding: 10px;
+        margin-right: 10px;
+        background-color: #F20574;
+        border-radius: 10px;
+        font-weight: bold;
+        margin-bottom: 3%;
+    } */
+
+    /* ============================   END PROJECT LINKS PRO   =========================== */
+
+
+      /* ============================   PROJECT CHAMA ELA!   =========================== */
+      #project_chama_ela 
+      {
+          display: flex;
+          justify-content: center; 
+          align-items: center;
+          background-color: #f2f2f2;
+          border-radius: 1%;
+          color: black;
+          padding: 1%;
+          width: 75%;
+          height: 50%;
+          margin-top: 3%;
+      }
+
+      #video_chama_ela iframe
+      {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        width: 100%;
+        height: 545px;
+        margin-bottom: 3%;
+      }
+  
+      #video_chama_ela iframe:focus 
+      { 
+          outline: none;
+      }
+        
+      #video_chama_ela iframe[seamless] 
+      { 
+          display: block;
+      }
+
+      #video_chama_ela {
+        background-color: #102040; /* Cor de fundo cinza desejada */
+        position: relative;
+        padding: 2%;
+    }
+  
+      /* .technologies_list_chama_ela
+      {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          flex-flow: wrap;
+      }
+  
+      .project_item
+      {
+          flex-grow: 1;
+      }
+  
+      .technologies_list_chama_ela div:first-child 
+      {
+          margin-left: 2%;
+      }
+  
+      .technologies_list_chama_ela div 
+      {
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 12pt;
+          padding: 10px;
+          margin-right: 10px;
+          background-color: #F20574;
+          border-radius: 10px;
+          font-weight: bold;
+          margin-bottom: 3%;
+      }
+   */
+
+      /* ============================   END PROJECT CHAMA ELA   =========================== */  
+
+    /* ============================   END PROJECTS SECTION   =========================== */
+
+    /* ============================   CLIENTS SECTION   =========================== */
+    
+    #clients_title
+    {
+        margin-top: 15%;
+    }
+
+    #clients_section
+    {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        width: 89%;
+        background-color: #0F1B40;
+        font-size: 14pt;
+        margin-bottom: 10%;
+    }
+
+    #clients_list 
+    {
+        overflow: hidden;
+        text-align: center;
+        justify-content: center; 
+        align-items: center;
+        width: 130%;
+    }
+
+    #clients_list div 
+    {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        margin-top: 3%;
+    }
+
+    .img_clients
+    {
+        width: 200px;
+        height: 55px;
+        margin-top: 10%;
+        color: white;
+        border-radius: 10px;
+    }
+
+    .img_clients_itau 
+    {
+        width: 85px;
+        height: 85px;
+        margin-top: 10%;
+        color: white;
+        border-radius: 10px;
+    }
+
+    .img_clients_btg
+    {
+        width: 200px;
+        height: 85px;
+        margin-top: 10%;
+        color: white;
+        border-radius: 10px;
+    }
+
+    .img_clients_banco_nordeste
+    {
+        width: 180px;
+        height: 150px;
+        color: white;
+        border-radius: 10px;
+    }
+
+    .img_accenture
+    {
+        width: 200px;
+        height: 55px;
+        margin-top: 10%;
+        color: white;
+        border-radius: 10px;
+        margin-top: 15%;
+    }
+
+    .img_telefonica
+    {
+        width: 200px;
+        height: 55px;
+        margin-top: 10%;
+        color: white;
+        border-radius: 10px;
+        margin-top: 15%;
+    }
+
+    .img_tigre
+    {
+        width: 200px;
+        height: 55px;
+        margin-top: 10%;
+        color: white;
+        border-radius: 10px;
+        margin-top: 16%;
+    }
+
+    /* ============================   END CLIENTS SECTION   =========================== */
+
+    /* ============================   FEEDBACKS   =========================== */
+    #feedbacks_section 
+    {
+        margin-top: 4%;
+        background-color: #0F1B40;
+        padding-bottom: 4%;
+    }
+
+    #title_feedback 
+    {
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+
+    #feedbacks_img
+    {
+        display: inline-block;
+    }
+
+    .feedback_item
+    {
+        margin-bottom: 3%;
+    }
+    /* ============================   END FEEDBACKS   =========================== */
+
+       /* ============================   WORKING WITH ME SECTION   =========================== */
+       .conteudo-lado-a-lado 
+       {
+           display: flex; 
+           gap: 20px; 
+       }
+   
+       #img_yoshi
+       {
+           width: 50%;
+           height: 100%;
+           margin-top: 2%;
+       }
+       
+       .texto 
+       {
+           padding: 1%;
+       }
+   
+       #btn_orcamento
+       {
+           background-color: #D81B60; 
+           color: #f2f2f2;
+           font-weight: bold;
+           border-radius: 5px;
+           padding: 1%;  
+       }
+   
+       #btn_orcamento:hover
+       {
+           background-color: #0F1B40;
+           color: white;
+       }
+   
+       /* ============================   END WORKING WITH ME SECTION   =========================== */
+
+
+    /* ============================   SERVICES SECTION   =========================== */
+    #services_section
+    {
+        padding-top: 3%;
+        padding-bottom: 1.5%;
+        background-color: #0F1B40;
+        color: white;
+        font-size: 14pt;
+        width: 100%;
+    }
+
+    .service_title 
+    {
+        font-size: 16pt;
+        font-weight: bold;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        text-align: center;
+        background-color: #0F1B40;
+        color: white;
+    }
+
+    .service_card 
+    {
+        margin: 0;
+        padding: 3%;
+        padding-top: 1%;
+        display: inline-flex;
+        font-size: 14pt;
+    }
+
+    .service_card .objetivo_content p:last-child 
+    {
+        padding-top: 1px;
+    }
+
+    .description_content 
+    {
+        text-align: justify;
+    }
+
+    .technologies_list div:first-child 
+    {
+        margin-left: 7%;
+    }
+
+    .technologies_list div:last-child 
+    {
+        margin-right: 5%;
+    }
+
+    .technologies_list div 
+    {
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 12pt;
+        padding: 10px;
+        margin-right: 10px;
+        background-color: #D81B60;
+        border-radius: 10px;
+        font-weight: bold;
+        margin-bottom: 1.5%;
+    }
+    /* ============================   SERVICE MENTORIA CALENDLY   =========================== */
+    .calendly-inline-widget
+    {
+        width: 100%;
+        height: 100%;
+        background-color: #0F1B40;
+    } 
+
+     #card_service_online_course
+    {
+        margin-top: 2%;
+        margin-bottom: 1%;
+        padding: 1%;
+        /* display: flex; 
+        justify-content: center; */
+
+     
+    }
+
+    #service_online_course
+    {
+        background-color: #f2f2f2;
+        border-radius: 1%;
+        color: black;
+        padding: 1%;
+        width: 50%;
+        height: 50%;
+    }
+/*
+    .topics_course_list
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-flow: wrap;
+    }
+
+    .course_item
+    {
+        flex-grow: 1;
+    }
+
+    .topics_course_list div:first-child 
+    {
+        margin-left: 2%;
+    }
+
+    .topics_course_list div 
+    {
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 12pt;
+        padding: 10px;
+        margin-right: 10px;
+        background-color: #D81B60;
+        border-radius: 10px;
+        font-weight: bold;
+        margin-bottom: 1.5%;
+    }
+
+    #paragraph_button_course
+    {
+        width: 100%;
+        margin-top: 3%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #button_course
+    {
+        width: 100%;
+        background-color: #FF5722;
+        color: #f2f2f2;
+        font-weight: bold;
+        border-radius: 10px;
+        padding-left: 2%;
+        padding-top: 13px;
+        padding-bottom: 2%;
+        margin-bottom: 50%;
+    }
+ 
+    #button_course:hover
+    {
+        background-color: #FF8A65;
+    } 
+
+    #button_course_english
+    {
+        width: 30%;
+        background-color: #FF5722;
+        color: #f2f2f2;
+        font-weight: bold;
+        border-radius: 10px;
+        padding-left: 2.5%;
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
+ 
+    #button_course_english:hover
+    {
+        background-color: #FF8A65;
+    } 
+
+    #button_course_spanish
+    {
+        width: 35%;
+        background-color: #FF5722; 
+        color: #f2f2f2;
+        font-weight: bold;
+        border-radius: 10px;
+        padding-left: 15px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
+
+    #button_course_spanish:hover
+    {
+        background-color: #FF8A65;
+    }
+     /* ============================   END SERVICE ONLINE COURSE   =========================== */
+
+    /* ============================   SERVICE FREELANCE   =========================== */
+    #service_freelance 
+    {
+        background-color: #f2f2f2;
+        border-radius: 1%;
+        color: black;
+        padding: 20px;
+        padding-top: 0;
+        width: 50%;
+        height: 50%;
+        padding-bottom: 1%;
+    }
+    
+    .service_title 
+    {
+        font-size: 16pt;
+        font-weight: bold;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        text-align: center;
+        background-color: #0F1B40;
+        color: white;
+    }
+
+    .technologies_list
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-flow: wrap;
+    }
+
+    .technology_item
+    {
+        flex-grow: 1;
+    }
+
+    #paragraph_button
+    {
+        display: flex;
+        justify-content: center; 
+        width: 100%;
+        margin-top: 7%;
+    }
+
+    #paragraph_button_pt
+    {
+        display: flex;
+        justify-content: center; 
+        width: 100%;
+        margin-top: 9.8%;
+    }
+
+    #button_orcamento
+    {
+        width: 24%; 
+        background-color: #D81B60; 
+        color: #f2f2f2;
+        font-weight: bold;
+        border-radius: 10px;
+        padding-left: 3%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    #button_orcamento:hover
+    {
+        background-color: #102040;
+    }
+    /* ============================   END SERVICE FREELANCE   =========================== */
+
+    /* ============================   SERVICE MENTORIA   =========================== */
+    #service_mentoria
+    {
+        display: block;
+        float: right;
+        background-color: #f2f2f2;
+        border-radius: 1%;
+        color: black;
+        padding: 20px;
+        padding-top: 0;
+        margin-left: 1%;
+        width: 50%;
+        height: 50%;
+    }
+
+    .topics_list
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-flow: wrap;
+        /* justify-content: center;  */
+        /* align-items: center; */
+    }
+
+    .mentoring_item
+    {
+        flex-grow: 1;
+    }
+
+    .topics_list div 
+    {
+        color: #f2f2f2;
+        text-align: center;
+        align-self: center;
+        justify-content: center; 
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 12pt;
+        padding: 10px;
+        margin-right: 10px;
+        background-color: #D81B60;
+        border-radius: 10px;
+        font-weight: bold;
+        margin-bottom: 3%;
+    }
+
+    .topics_list div:first-child
+    {
+        margin-left: 2.5%;
+    }
+
+    #paragraph_button_mentoria
+    {
+        width: 100%;
+        margin-top: 15.5%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #button_mentoria
+    {
+        width: 32%;
+        background-color: #D81B60; 
+        color: #f2f2f2;
+        font-weight: bold;
+        border-radius: 10px;
+        padding-left: 3%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    #button_mentoria:hover
+    {
+        background-color: #102040;
+    }
+      /* ============================   E-BOOK MODELOS DE POSTAGENS SECTION   =========================== */
+    #div_ebook
+    {
+        width: 100%;
+        height: 100%    ;
+        background-color: #0F1B40;
+        /* display: flex;
+        flex-direction: column; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1%;
+    }
+
+    #img_ebook
+    {
+        width: 50%;
+        height: 50%;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        margin-top: 1%;
+    }
+
+    #paragraph_ebook_button
+    {
+        width: 100%;
+        background-color: #0F1B40;
+        display: flex;
+        justify-content: center;
+    }
+
+    #button_chama_probleminha
+    {
+        background-color: #D81B60; 
+        color: #f2f2f2;
+        font-weight: bold;
+        border-radius: 10px;
+        padding-left: 18px;
+        padding-right: 18px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        margin-bottom: 1%;
+    }
+
+    #button_chama_probleminha:hover
+    {
+        background-color: #f2f2f2;
+        color: #102040;
+    }
+    /* ============================   END SERVICES SECTION   =========================== */
+    
+    /*==========================   MEDIA SCREEN  ==========================*/
+    @media (max-width: 320px),
+    (min-width: 321px) and (max-width: 375px),
+    (min-width: 376px) and (max-width: 414px),
+    (min-width: 415px) and (max-width: 768px),
+    (min-width: 569px) and (max-width: 767px)
+    {
+        #img_viagem
+        {
+            width:100%;
+            height:100%;
+        }
+
+        #apresentation_section #div_img_profile 
+        {
+            display: block;
+            margin-top: 20%;
+            margin-bottom: 2%;
+            /*margin-right: 10%; */
+            transform: rotate(0.02turn);
+        }
+
+        .conteudo-lado-a-lado 
+        {
+            display: flex; 
+            flex-direction: column; /* Altera a direção para coluna em telas pequenas */
+            gap: 20px; 
+        }
+        
+        #img_yoshi 
+        {
+            width: 100%; /* Garante que a imagem ocupe a largura total do contêiner */
+            height: auto; /* Garante a proporção da imagem */
+            margin-top: 2%;
+            margin-right: 3%;
+            padding-right: 3%;
+        }
+
+        #feedbacks_img
+        {
+            flex-direction: column;
+        }
+
+        /* ============================   ABOUT ME SECTION   =========================== */
+
+        .flex-container 
+        {
+            flex-direction: column; /* Altera para uma coluna quando a largura for menor que 767px */
+        /* flex-direction: row; */
+            flex-wrap: wrap;
+        }
+
+        #about_me_description 
+        {
+            padding-right: 0; /* Remove o espaçamento para ocupar toda a largura */
+            margin-bottom: 7%; /* Adiciona margem inferior para separar do próximo bloco */
+        }
+
+        /* ============================   PROJECT LINKS PRO   =========================== */
+        .project_card 
+        {
+            flex-direction: column; 
+        }
+
+        #project_links_pro
+        {
+            margin-top: 7%;
+        }
+
+        .project_card:first-child
+        {
+            margin-bottom: 7%; 
+        }
+    /* 
+        #project_links_pro 
+        {
+            flex-direction: column; 
+            margin-top: 7%; 
+            margin-bottom: 7%; 
+        } */
+
+        #screenshot
+        {
+            width: 100%;
+            flex-direction: column;
+        }
+
+        /* ============================   PROJECT QRCODE MAKER   =========================== */
+        #container_section_qrcode_maker 
+        {
+            flex-direction: column;
+        }
+
+        /* ============================   PROJECT CHAMA ELA   =========================== */
+        #video_chama_ela iframe
+        {
+        display: flex;
+        width: 50%;
+        margin-bottom: 3%;
+        }
+
+        /* ============================   SERVICES SECTION   =========================== */
+        .service_card
+        {
+            flex-direction: column;
+        }
+
+        .service_card :first-child
+        {
+            margin-top: 7%;
+            margin-bottom: 7%;
+        }
+
+        /* .technologies_list div 
+        {
+            flex-direction: column;
+            margin-right: 5%;
+        } */
+
+        #service_freelance
+        {
+            width: 100%;
+        }
+
+        #service_mentoria
+        {
+            width: 100%;
+        }
+
+        #button_orcamento
+        {
+            width: 180px;
+            padding: 7%;
+        }
+
+        #button_mentoria
+        {
+            width: 200px;
+            padding: 7%;
+        }
+
+        #div_ebook
+        {
+            flex-direction: column;
+        }
+    }
+
+
+    /* ============================== MIN SIZE SCREEN MOBILE PHONE /* ============================== */
+    @media(max-width: 320px)
+    {
+        #img_viagem
+        {
+            width:100%;
+            height:100%;
+        }
+
+        #paragraph_button, #paragraph_button_mentoria
+        {
+            /* display: flex;
+            justify-content: center;  */
+            width: 100%;
+            /* margin-top: 7%; */
+        }
+
+        #clients_section
+        {
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            width: 100%;
+            background-color: #0F1B40;
+            font-size: 14pt;
+            margin-bottom: 10%;
+        }
+
+        /* #button_orcamento
+        {
+            width: 70%;
+            padding: 7%;
+        }
+
+        #button_mentoria
+        {
+            width: 71%;
+            padding: 7%;
+        } */
+    }
+}
