@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="utf-8" />
-    <title>Laura Oliveira - Portfólio</title>
+    <title>✨ Laura Oliveira - Portfólio ✨</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Estilos personalizados Material Design 3 - Migration -->
-    <link rel="stylesheet" href="css/migration/index-migration.css" />
+    <link rel="stylesheet" href="css/migration/index.css" />
     <link rel="stylesheet" href="css/migration/about.css" />
     <link rel="stylesheet" href="css/migration/clients.css" />
     <link rel="stylesheet" href="css/migration/contact.css" />
@@ -139,9 +139,7 @@
             <!-- Links do menu -->
             <div class="nav-links" id="navLinks">
                 <a href="#apresentation_section" class="nav-link">Laura Oliveira</a>
-                <hr
-                    style="height: 1px; background-color: black; border: none;  transform: rotate(90deg); transform-origin: left;">
-                <!-- <a href="#apresentation_section" class="nav-link">Página Inicial</a> -->
+                <hr class="nav-hr">
                 <a href="#about_me_section" class="nav-link">Sobre</a>
                 <a href="#skills_section" class="nav-link">Tecnologias</a>
                 <a href="#projects_section" class="nav-link">Projetos</a>
@@ -151,22 +149,25 @@
                 <a href="#contact_section" class="nav-link">Contato</a>
 
                 <!-- Dropdown de idiomas -->
-                <!-- <li class="dropdown">
-                    <button class="dropbtn" onclick="toggleDropdown()">🌐 Idioma</button>
+                <li class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown()">
+                        <img src="assets/img/icons/google-translate.png" alt="Language" width="40" height="20">
+                        Language
+                    </button>
                     <ul id="myDropdown" class="dropdown-content">
-                        <li><a href="https://laura-oliveira.github.io/index.html?lang=en">🇬🇧 English</a></li>
-                        <li><a href="https://laura-oliveira.github.io/portuguese_page.html?lang=pt">🇧🇷 Português</a>
+                        <li><a href="https://laura-oliveira.github.io/english_page.html?lang=en">🇬🇧 English</a></li>
+                        <li><a href="https://laura-oliveira.github.io/index.html?lang=pt">🇧🇷 Português</a>
                         </li>
-                        <li><a href="https://laura-oliveira.github.io/spanish_page.html?lang=es">🇪🇸 Español</a></li>
+                        <!-- <li><a href="https://laura-oliveira.github.io/spanish_page.html?lang=es">🇪🇸 Español</a></li> -->
                     </ul>
-                </li> -->
+                </li>
             </div>
         </nav>
     </header>
 
-    <!-- Headline Intro -->
-    <section id="apresentation_section" style="padding: 2rem;width: 50%;">
-        <md-elevated-card class="apresentation-card" style="text-align: center;">
+    <!-- Intro -->
+    <section id="intro_section">
+        <md-elevated-card class="intro-card" style="text-align: center;">
             <div class="profile-photo">
                 <img src="assets/img/selfie/prof.jpg" alt="Laura Oliveira" width="45%"
                     style="border-radius: 50%; border: 3px solid whitesmoke; margin-top: 7%;" />
@@ -252,7 +253,7 @@
                     </div>
                 </div>
 
-                <p style="margin-top: 1.5rem; font-weight: 600; color: whitesmoke;">
+                <p id="about-cta">
                     🚀 Estou pronta para transformar sua ideia em um aplicativo de alto impacto e confiável.
                     Vamos conversar!
                 </p>
@@ -271,121 +272,123 @@
 
     <!-- Skills -->
     <section id="skills_section" aria-labelledby="skills-title" class="md3-section">
-        <div style="margin-top:5%; margin-left: 5rem; margin-right: 5rem">
+        
+        <div id="skills-card">
+
+             <!-- Title -->
             <h2 class="title">Tecnologias</h2>
 
-            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; margin-top: 2rem;">
+            <!-- Skill List -->
+            <div id="skills-list">
 
                 <!-- Card de Skill -->
                 <md-elevated-card class="skills-icon">
                     <div style="padding: 1rem;">
-                        <img src="assets/img/icons/android-icon.png" alt="Android" style="width: 50px; height: 50px;" />
-                        <p style="margin-top: 0.5rem;color: whitesmoke;">Android</p>
+                        <img src="assets/img/icons/android-icon.png" alt="Android" style="width: 80px; height: 80px;" />
+                        <p class="skills-label">Android</p>
                     </div>
                 </md-elevated-card>
 
                 <md-elevated-card class="skills-icon">
                     <div style="padding: 1rem;">
-                        <img src="assets/img/icons/kotlin.png" alt="Kotlin" style="width: 50px; height: 50px;" />
-                        <p style="margin-top: 0.5rem;color: whitesmoke;">Kotlin</p>
+                        <img src="assets/img/icons/kotlin.png" alt="Kotlin" style="width: 80px; height: 80px;" />
+                        <p class="skills-label">Kotlin</p>
                     </div>
                 </md-elevated-card>
 
                 <md-elevated-card class="skills-icon">
                     <div style="padding: 1rem;">
-                        <img src="assets/img/icons/java.png" alt="Java" style="width: 50px; height: 50px;" />
-                        <p style="margin-top: 0.5rem;color: whitesmoke;">Java</p>
+                        <img src="assets/img/icons/java.png" alt="Java" style="width: 80px; height: 80px;" />
+                        <p class="skills-label">Java</p>
                     </div>
                 </md-elevated-card>
 
                 <md-elevated-card class="skills-icon">
                     <div style="padding: 1rem;">
-                        <img src="assets/img/icons/google-play.png" alt="Google Play"
-                            style="width: 50px; height: 50px;" />
-                        <p style="margin-top: 0.5rem;color: whitesmoke;">Google Play</p>
+                        <img src="assets/img/icons/google-play.png" alt="Google Play" style="width: 80px; height: 80px;" />
+                        <p class="skills-label">Google Play</p>
                     </div>
                 </md-elevated-card>
 
                 <md-elevated-card class="skills-icon">
                     <div style="padding: 1rem;">
-                        <img src="assets/img/icons/firebase_icon.svg" alt="Firebase"
-                            style="width: 50px; height: 50px;" />
-                        <p style="margin-top: 0.5rem;color: whitesmoke;">Firebase</p>
+                        <img src="assets/img/icons/firebase_icon.svg" alt="Firebase" style="width: 80px; height: 80px;" />
+                        <p class="skills-label">Firebase</p>
                     </div>
                 </md-elevated-card>
 
                 <md-elevated-card class="skills-icon">
                     <div style="padding: 1rem;">
-                        <img src="assets/img/icons/rest-api.png" alt="Gradle" style="width: 50px; height: 50px;" />
-                        <p style="margin-top: 0.5rem;color: whitesmoke;">REST APIs</p>
+                        <img src="assets/img/icons/rest-api.png" alt="Gradle" style="width: 80px; height: 80px;" />
+                        <p class="skills-label">REST APIs</p>
                     </div>
                 </md-elevated-card>
 
                 <md-elevated-card class="skills-icon">
                     <div style="padding: 1rem;">
-                        <img src="assets/img/icons/gradle_icon.png" alt="Gradle" style="width: 50px; height: 50px;" />
-                        <p style="margin-top: 0.5rem;color: whitesmoke;">Gradle</p>
+                        <img src="assets/img/icons/gradle_icon.png" alt="Gradle" style="width: 80px; height: 80px;" />
+                        <p class="skills-label">Gradle</p>
                     </div>
                 </md-elevated-card>
 
                 <md-elevated-card class="skills-icon">
                     <div style="padding: 1rem;">
-                        <img src="assets/img/icons/material_design_icon.jpg" alt="Material Design"
-                            style="width: 50px; height: 50px;" />
-                        <p style="margin-top: 0.5rem;color: whitesmoke;">Material Design</p>
+                        <img src="assets/img/icons/material_design_icon.jpg" alt="Material Design" style="width: 80px; height: 80px;" />
+                        <p class="skills-label">Material Design</p>
                     </div>
                 </md-elevated-card>
 
                 <md-elevated-card class="skills-icon">
                     <div style="padding: 1rem;">
-                        <img src="assets/img/icons/github_icon.png" alt="GitHub" style="width: 50px; height: 50px;" />
-                        <p style="margin-top: 0.5rem;color: whitesmoke;">GitHub</p>
+                        <img src="assets/img/icons/github_icon.png" alt="GitHub" style="width: 80px; height: 80px;" />
+                        <p class="skills-label">GitHub</p>
                     </div>
                 </md-elevated-card>
 
                 <md-elevated-card class="skills-icon">
                     <div style="padding: 1rem;">
-                        <img src="assets/img/icons/azure_devops_icon.png" alt="Azure Devops"
-                            style="width: 50px; height: 50px;" />
-                        <p style="margin-top: 0.5rem;color: whitesmoke;">Azure DevOps</p>
+                        <img src="assets/img/icons/azure_devops_icon.png" alt="Azure Devops" style="width: 80px; height: 80px;"/>
+                        <p class="skills-label">Azure DevOps</p>
                     </div>
                 </md-elevated-card>
 
                 <md-elevated-card class="skills-icon">
                     <div style="padding: 1rem;">
-                        <img src="assets/img/icons/scrum_icon.png" alt="Scrum" style="width: 50px; height: 50px;" />
-                        <p style="margin-top: 0.5rem;color: whitesmoke;">Scrum</p>
+                        <img src="assets/img/icons/scrum_icon.png" alt="Scrum" style="width: 80px; height: 80px;" />
+                        <p class="skills-label">Scrum</p>
                     </div>
                 </md-elevated-card>
 
                 <md-elevated-card class="skills-icon">
                     <div style="padding: 1rem;">
-                        <img src="assets/img/icons/kanban.png" alt="Kanban" style="width: 50px; height: 50px;" />
-                        <p style="margin-top: 0.5rem;color: whitesmoke;">Kanban</p>
+                        <img src="assets/img/icons/kanban.png" alt="Kanban" style="width: 80px; height: 80px;" />
+                        <p class="skills-label">Kanban</p>
                     </div>
                 </md-elevated-card>
 
                 <md-elevated-card class="skills-icon">
                     <div style="padding: 1rem;">
-                        <img src="assets/img/icons/jira.png" alt="Scrum" style="width: 50px; height: 50px;" />
-                        <p style="margin-top: 0.5rem;color: whitesmoke;">Jira</p>
+                        <img src="assets/img/icons/jira.png" alt="Scrum" style="width: 80px; height: 80px;" />
+                        <p class="skills-label">Jira</p>
                     </div>
                 </md-elevated-card>
 
                 <md-elevated-card class="skills-icon">
                     <div style="padding: 1rem;">
-                        <img src="assets/img/icons/mvvm.png" alt="MVVM" style="width: 50px; height: 50px;" />
-                        <p style="margin-top: 0.5rem;color: whitesmoke;">Arquitetura MVVM</p>
+                        <img src="assets/img/icons/mvvm.png" alt="MVVM" style="width: 80px; height: 80px;" />
+                        <p class="skills-label">Arquitetura MVVM</p>
                     </div>
                 </md-elevated-card>
             </div>
+             <!-- Skill List -->
         </div>
     </section>
     <!-- Skills -->
 
     <!-- Projects -->
-    <section id="projects_section" aria-labelledby="projects-title" class="md3-section"
-        style="width: 80%;margin-top:5%">
+    <section id="projects_section" aria-labelledby="projects-title" class="md3-section">
+
+        <!-- Title -->
         <md-top-app-bar-row class="center-title">
             <md-top-app-bar-title style="padding-right: 6%;">Projetos</md-top-app-bar-title>
         </md-top-app-bar-row>
@@ -469,7 +472,7 @@
                     <ul>
                         <li>✔️ Tela Inicial Dinâmica com logo.</li>
                         <li>✔️ Gestão de Atividades: adicione e remova atividades facilmente.</li>
-                        <li>✔️ Acompanhamento de Tempo via gráficos.</li>
+                        <li>✔️ Acompanhamento de Tempo via timers em tempo real.</li>
                         <li>✔️ Gráficos de Desempenho claros e eficientes.</li>
                     </ul>
 
@@ -622,9 +625,6 @@
                         conexão via
                         internet com servidor AWS.
                     </p>
-
-                    <p>
-                        O objetivo do aplicativo era a
 
                         <!-- Features -->
                     <p><b>✨ Principais Funcionalidades:</b></p>
@@ -779,7 +779,7 @@
             <!-- Título e Subtítulo -->
             <h2 class="feedbacks-title">🌟 O que Gestores, Colegas, Mentorados e Clientes Dizem Sobre meu Trabalho</h2>
             <p class="feedbacks-subtitle">
-                Veja comentários reais de quem já trabalhou comigo e os resultados entregues.
+                 Comentários de quem já trabalhou comigo e os resultados entregues.
             </p>
 
             <!-- Feedbacks dos Gestores -->
@@ -842,7 +842,7 @@
             <div class="feedback-cta">
                 <p style="margin-bottom: 2%; font-size: 14pt;">Quer resultados semelhantes para seu app? 🚀</p>
                 <br />
-                <a href="#contact_section" class="btn-primary">Vamos Conversar</a>
+                <a href="#contact_section" class="btn-primary">🗣️ Vamos Conversar!</a>
             </div>
         </div>
     </section>
@@ -877,7 +877,7 @@
                     </p>
 
                     <p>
-                        🏆 Com <b>4 anos de experiência</b> criando apps de alto desempenho, garanto que sua ideia sairá
+                        🏆 Com <b>+4 anos de experiência</b> criando apps de alto desempenho, garanto que sua ideia sairá
                         do
                         papel com qualidade profissional.
                     </p>
