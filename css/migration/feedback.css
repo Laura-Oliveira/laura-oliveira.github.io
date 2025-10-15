@@ -82,6 +82,27 @@
   border-radius: 15px;
 }
 
+.feedback-card-big-english
+{
+  background-color: #1A2B60;
+  border-radius: 20px;
+  padding: 0.5rem;
+  /* max-width: 300px; */
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.feedback-card-big-english:hover {
+  transform: scale(1.05);
+}
+
+.feedback-card-big-english img {
+  width: 650px;
+  height: 330px;
+  border-radius: 15px;
+}
+
 .feedback-card-clients
 {
    background-color: #1A2B60;
