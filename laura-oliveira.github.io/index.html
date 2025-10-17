@@ -1,89 +1,1317 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/12.4.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/12.4.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/12.4.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/12.4.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/12.4.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/12.4.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/12.4.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/12.4.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/12.4.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/12.4.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<head>
+    <meta charset="utf-8" />
+    <title>✨ Laura Oliveira - Portfolio ✨</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+    <!-- Estilos personalizados Material Design 3 - Migration -->
+    <link rel="stylesheet" href="css/migration/index.css" />
+    <link rel="stylesheet" href="css/migration/about.css" />
+    <link rel="stylesheet" href="css/migration/clients.css" />
+    <link rel="stylesheet" href="css/migration/contact.css" />
+    <link rel="stylesheet" href="css/migration/feedback.css" />
+    <link rel="stylesheet" href="css/migration/footer.css" />
+    <link rel="stylesheet" href="css/migration/header.css" />
+    <link rel="stylesheet" href="css/migration/intro.css" />
+    <link rel="stylesheet" href="css/migration/projects.css" />
+    <link rel="stylesheet" href="css/migration/services.css" />
+    <link rel="stylesheet" href="css/migration/skills.css" />
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <!-- Fonte para os ícones -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
+    <!-- Import Material Design 3 -->
+    <script type="module" src="https://unpkg.com/@material/web/all.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@material/web/styles/typography.css">
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@material/web/all.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <!-- Importação JS Files -->
+    <script type="module" src="js/index.js"></script>
+
+    <!-- EmailJS CDN -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <!-- Seu arquivo JS -->
+    <script src="js/migration/index-migration.js"></script>
+
+
+    <!-- Importação dos Web Components via JS -->
+    <script type="module">
+        import '@material/web/button/filled-button.js';
+        import '@material/web/icon/icon.js';
+        import '@material/web/iconbutton/icon-button.js';
+        import '@material/web/card/elevated-card.js';
+        import '@material/web/card/card.js';
+        import '@material/web/elevation/elevation.js';
+        import '@material/web/typography/typography.js';
+        import '@material/web/checkbox/checkbox.js';
+        import '@material/web/checkbox/checkbox.js';
+        import '@material/web/checkbox/checkbox.js';
+        import '@material/web/checkbox/checkbox.js';
+        import '@material/web/checkbox/checkbox.js';
+        import '@material/web/checkbox/checkbox.js';
+        import '@material/web/checkbox/checkbox.js';
+        import '@material/web/checkbox/checkbox.js';                
     </script>
-  </body>
+
+    <style>
+        header {
+            background-color: #F20574;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 0 16px;
+        }
+
+        nav {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /* margin: 0; */
+            height: 64px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: whitesmoke;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            margin-top: 1%;
+            background-color: #102040;
+        }
+
+
+        .menu-button {
+            display: none;
+            color: black;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background: #F20574;
+                position: absolute;
+                top: 64px;
+                left: 0;
+                right: 0;
+                padding: 16px;
+                z-index: 9999;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .menu-button {
+                display: block;
+            }
+
+            .nav-link {
+                color: whitesmoke;
+                padding: 3%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Menu -->
+    <header>
+        <nav>
+            <md-icon-button class="menu-button" id="menuToggle">
+                <md-icon class="material-symbols-outlined">menu</md-icon>
+            </md-icon-button>
+
+            <!-- Links do menu -->
+            <div class="nav-links" id="navLinks">
+                <a href="#apresentation_section" class="nav-link">Laura Oliveira</a>
+                <hr class="nav-hr">
+                <a href="#about_me_section" class="nav-link">About</a>
+                <a href="#skills_section" class="nav-link">Technology</a>
+                <a href="#projects_section" class="nav-link">Projects</a>
+                <a href="#clients_section" class="nav-link">Clients</a>
+                <a href="#feedbacks_section" class="nav-link">Feedbacks</a>
+                <a href="#services_section" class="nav-link">Services</a>
+                <a href="#contact_section" class="nav-link">Contact</a>
+
+                <!-- Dropdown de idiomas -->
+                <li class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown()">
+                        <img src="assets/img/icons/google-translate.png" alt="Language" width="40" height="20">
+                        Language
+                    </button>
+                    <ul id="myDropdown" class="dropdown-content">
+                        <li><a href="https://laura-oliveira.github.io/english_page.html?lang=en">🇬🇧 English</a></li>
+                        <li><a href="https://laura-oliveira.github.io/index.html?lang=pt">🇧🇷 Português</a>
+                        </li>
+                        <!-- <li><a href="https://laura-oliveira.github.io/spanish_page.html?lang=es">🇪🇸 Español</a></li> -->
+                    </ul>
+                </li>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Headline Intro -->
+    <section id="intro_section">
+        <md-elevated-card class="intro-card" style="text-align: center;">
+            <div class="profile-photo">
+                <img src="assets/img/selfie/prof.jpg" alt="Laura Oliveira" width="25%"
+                    style="border-radius: 50%; border: 3px solid whitesmoke; margin-top: 7%;" />
+            </div>
+
+            <div class="profile-info">
+                <h1 class="profile-name">Laura Oliveira</h1>
+                <hr style="width: 20%;">
+                <h2 class="profile-title">Mobile Developer</h2>
+                <p class="profile-headline">
+                    👩🏻‍💻 Impactful Apps. Robust. Scalable. Secure
+                </p>
+            </div>
+
+            <div class="contact-buttons">
+                <div class="list_contacts">
+                    <a class="contact" target="_blank" href="https://linkedin.com/in/laura-oliveira-mobile">
+                        <img src="assets/img/icons/linkedin.svg" alt="Linkedin icon" />
+                    </a>
+
+                    <a class="contact" target="_blank" href="https://github.com/Laura-Oliveira">
+                        <img src="assets/img/icons/github.svg" alt="Github icon" />
+                    </a>
+
+                    <a class="contact" target="_blank" href="mailto:laura.oliveira.tech@gmail.com">
+                        <img src="assets/img/icons/email.svg" alt="Email icon" />
+                    </a>
+
+                    <a class="contact-wpp" target="_blank"
+                        href="https://wa.me/5581997207924?text=Quero tirar minha ideia do papel! [pt]">
+                        <img class="normal" src="./assets/img/icons/wpp-icon.png" alt="WhatsApp icon" width="50"
+                            height="50" />
+                        <img class="hover" src="./assets/img/icons/wpp-dark.png" alt="WhatsApp icon" width="50"
+                            height="50" style="display: none;" />
+                    </a>
+                    <p id="email"> <b>laura.oliveira.tech@gmail.com </b> </p>
+                </div>
+            </div>
+        </md-elevated-card>
+    </section>
+    <!-- Headline Intro -->
+
+
+    <!-- About me -->
+    <section id="about_me_section" aria-labelledby="about-me-title">
+        <div class="about-container">
+
+            <!-- Texto principal -->
+            <div class="about-text">
+                <h2 id="about-me-title">Laura Oliveira</h2>
+
+                <p>
+                    Hello! I'm <strong>Laura Oliveira</strong>, a <strong>Mobile Developer</strong>
+                    with
+                    <strong>4+ years of experience</strong> helping startups and companies transform ideas into
+                    <strong>robust, scalable, and user-friendly
+                        applications.
+                </p>
+
+                <p>
+                    <strong>I've been working in technology since 2015</strong>, and I've launched projects that
+                    directly impacted
+                    users and
+                    businesses,
+                    delivering <strong>measurable results and reliable applications</strong> to the market.
+                </p>
+
+                <!-- Diferenciais -->
+                <div class="about-highlights">
+                    <div>
+                        <h3>🌎 International Experience</h3>
+                        <p>I lived in <strong>New Zealand</strong> (6 months) and <strong>Argentina</strong> (1 month),
+                            bringing
+                            a global vision and innovation to my projects.</p>
+                    </div>
+                    <div>
+                        <h3>🗣 Languages</h3>
+                        <ul>
+                            <li><strong>English:</strong> Fluent (C2)</li>
+                            <li><strong>Spanish:</strong> Intermediate (B2)</li>
+                            <li><strong>Portuguese:</strong> Native (C2)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p id="about-cta">
+                    🚀 I'm ready to transform your idea into a high-impact and reliable app.
+                    Let's talk!
+                </p>
+            </div>
+
+            <!-- Foto -->
+            <div class="about-photo">
+                <img src="./assets/img/selfie/photo-1.jpeg" alt="Laura Oliveira sorrindo, desenvolvedora Mobile Android"
+                    style="border-radius: 20px; object-fit: cover;" />
+            </div>
+
+        </div>
+    </section>
+    <!-- About me -->
+
+    <!-- Skills -->
+    <section id="skills_section" aria-labelledby="skills-title" class="md3-section">
+
+        <div style="margin-top:5%; margin-left: 5rem; margin-right: 5rem">
+
+            <!-- Title -->
+            <h2 class="title">Tecnologias</h2>
+
+            <!-- Skill List -->
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; margin-top: 2rem;">
+
+                <!-- Card de Skill -->
+                <md-elevated-card class="skills-icon">
+                    <div style="padding: 1rem;">
+                        <img src="assets/img/icons/android-icon.png" alt="Android" style="width: 80px; height: 80px;" />
+                        <p class="skills-label">Android</p>
+                    </div>
+                </md-elevated-card>
+
+                <md-elevated-card class="skills-icon">
+                    <div style="padding: 1rem;">
+                        <img src="assets/img/icons/kotlin.png" alt="Kotlin" style="width: 80px; height: 80px;" />
+                        <p class="skills-label">Kotlin</p>
+                    </div>
+                </md-elevated-card>
+
+                <md-elevated-card class="skills-icon">
+                    <div style="padding: 1rem;">
+                        <img src="assets/img/icons/java.png" alt="Java" style="width: 80px; height: 80px;" />
+                        <p class="skills-label">Java</p>
+                    </div>
+                </md-elevated-card>
+
+                <md-elevated-card class="skills-icon">
+                    <div style="padding: 1rem;">
+                        <img src="assets/img/icons/google-play.png" alt="Google Play"
+                            style="width: 80px; height: 80px;" />
+                        <p class="skills-label">Google Play</p>
+                    </div>
+                </md-elevated-card>
+
+                <md-elevated-card class="skills-icon">
+                    <div style="padding: 1rem;">
+                        <img src="assets/img/icons/firebase_icon.svg" alt="Firebase"
+                            style="width: 80px; height: 80px;" />
+                        <p class="skills-label">Firebase</p>
+                    </div>
+                </md-elevated-card>
+
+                <md-elevated-card class="skills-icon">
+                    <div style="padding: 1rem;">
+                        <img src="assets/img/icons/rest-api.png" alt="Gradle" style="width: 80px; height: 80px;" />
+                        <p class="skills-label">REST APIs</p>
+                    </div>
+                </md-elevated-card>
+
+                <md-elevated-card class="skills-icon">
+                    <div style="padding: 1rem;">
+                        <img src="assets/img/icons/gradle_icon.png" alt="Gradle" style="width: 80px; height: 80px;" />
+                        <p class="skills-label">Gradle</p>
+                    </div>
+                </md-elevated-card>
+
+                <md-elevated-card class="skills-icon">
+                    <div style="padding: 1rem;">
+                        <img src="assets/img/icons/material_design_icon.jpg" alt="Material Design"
+                            style="width: 80px; height: 80px;" />
+                        <p class="skills-label">Material Design</p>
+                    </div>
+                </md-elevated-card>
+
+                <md-elevated-card class="skills-icon">
+                    <div style="padding: 1rem;">
+                        <img src="assets/img/icons/github_icon.png" alt="GitHub" style="width: 80px; height: 80px;" />
+                        <p class="skills-label">GitHub</p>
+                    </div>
+                </md-elevated-card>
+
+                <md-elevated-card class="skills-icon">
+                    <div style="padding: 1rem;">
+                        <img src="assets/img/icons/azure_devops_icon.png" alt="Azure Devops"
+                            style="width: 80px; height: 80px;" />
+                        <p class="skills-label">Azure DevOps</p>
+                    </div>
+                </md-elevated-card>
+
+                <md-elevated-card class="skills-icon">
+                    <div style="padding: 1rem;">
+                        <img src="assets/img/icons/scrum_icon.png" alt="Scrum" style="width: 80px; height: 80px;" />
+                        <p class="skills-label">Scrum</p>
+                    </div>
+                </md-elevated-card>
+
+                <md-elevated-card class="skills-icon">
+                    <div style="padding: 1rem;">
+                        <img src="assets/img/icons/kanban.png" alt="Kanban" style="width: 80px; height: 80px;" />
+                        <p class="skills-label">Kanban</p>
+                    </div>
+                </md-elevated-card>
+
+                <md-elevated-card class="skills-icon">
+                    <div style="padding: 1rem;">
+                        <img src="assets/img/icons/jira.png" alt="Scrum" style="width: 80px; height: 80px;" />
+                        <p class="skills-label">Jira</p>
+                    </div>
+                </md-elevated-card>
+
+                <md-elevated-card class="skills-icon">
+                    <div style="padding: 1rem;">
+                        <img src="assets/img/icons/mvvm.png" alt="MVVM" style="width: 80px; height: 80px;" />
+                        <p class="skills-label">MVVM Architecture</p>
+                    </div>
+                </md-elevated-card>
+            </div>
+            <!-- Skill List -->
+        </div>
+    </section>
+    <!-- Skills -->
+
+    <!-- Projects -->
+    <section id="projects_section" aria-labelledby="projects-title" class="md3-section">
+
+        <!-- Title -->
+        <md-top-app-bar-row class="center-title">
+            <md-top-app-bar-title style="padding-right: 6%;">Projects</md-top-app-bar-title>
+        </md-top-app-bar-row>
+
+        <!-- Grid -->
+        <div class="projects-grid">
+
+            <!-- Compostar App -->
+            <md-elevated-card class="project-card">
+                <div class="project-header" onclick="toggleProject(this)">
+                    <h3 class="project-title">♻️ Compostar App</h3>
+                    <div class="project-skills-list">
+                        <md-chip><img src="assets/img/icons/android-icon.png" width="30" height="30"></md-chip>
+                        <md-chip><img src="assets/img/icons/kotlin.png" width="30" height="30"></md-chip>
+                    </div>
+                </div>
+
+                <div class="project-body">
+                    <!-- Description -->
+                    <!-- <p>
+                        <b>Compostar App</b> is a cutting-edge Android app that I
+                        <b>developed entirely from scratch</b>,
+                        <b>designed to simplify organic waste management in Recife</b>,
+
+                        empowering eco-conscious initiatives and
+                        <b>promoting sustainability through intuitive features and robust technology.</b>
+                    </p> -->
+
+                    <p>
+                        <strong>Compostar App</strong> is a cutting-edge Android app that I
+                        <strong>developed entirely from scratch</strong>,
+                        <strong>designed to simplify organic waste management in Recife</strong>,
+                        empowering eco-conscious initiatives and
+                        <strong>promoting sustainability through intuitive features and robust technology.</strong>
+                    </p>
+
+                    <!-- Features -->
+                    <p><strong>✨ Features:</strong></p>
+                    <ul>
+                        <li>✔️ Dynamic Home Screen: Personalized introduction with the company logo.</li>
+                        <li>✔️ Green Island Management: Add and edit details such as school name, address, and
+                            environmental
+                            metrics.</li>
+                        <li>✔️ Data Tracking: Monitor collected waste, compost generated, and carbon offsets.</li>
+                        <li>✔️ Smart Filters: Filter by organics, compost, or decarbonization.</li>
+                        <li>✔️ Search Functionality: Quickly locate green islands.</li>
+                        <li>✔️ Map Integration: View the location of green islands via Open Maps.</li>
+                        <li>✔️ About Section: Credits and external links.</li>
+                    </ul>
+
+                    <!-- Technologies -->
+                    <p><b>💻 Tech:</b> Android, Kotlin, Firebase, Clean Architecture, MVVM, Material Design.</p>
+
+                    <!-- Tools -->
+                    <p><b>🛠️ Tools:</b> Android Studio, Git/Github.</p>
+
+                    <!-- Client -->
+                    <p>
+                        🤝 <b>Client:</b> Environmental Startup + Recife City Hall
+                    </p>
+
+                    <!-- Video -->
+                    <div class="project-video">
+                        <iframe width="100%" height="400" src="https://www.youtube.com/embed/wlg6qj-URA4"
+                            title="Compostar App Demo" frameborder="0" allowfullscreen
+                            style="border-radius: 30px; border: 1px solid  #0F1B40;"></iframe>
+                    </div>
+                </div>
+            </md-elevated-card>
+
+            <!-- Timer App -->
+            <md-elevated-card class="project-card">
+                <div class="project-header" onclick="toggleProject(this)">
+                    <h3 class="project-title">⏱️ Timer App</h3>
+                    <div class="project-skills-list">
+                        <md-chip><img src="assets/img/icons/android-icon.png" width="30" height="30"></md-chip>
+                        <md-chip><img src="assets/img/icons/kotlin.png" width="30" height="30"></md-chip>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <!-- Description -->
+                    <p>
+                        <b>Timer App</b> is an Android application that I <b>developed entirely from scratch</b>,
+                        allowing the user to activate multiple timers simultaneously for different activities,
+                        offering efficient control of logistic daily tasks.
+                    </p>
+
+                    <!-- Features -->
+                    <p><b>✨ Features:</b></p>
+                    <ul>
+                        <li>✔️ Dynamic Home Screen with logo.</li>
+                        <li>✔️ Activity Management: Easily add and remove activities.</li>
+                        <li>✔️ Time tracking via realtime timers.</li>
+                        <li>✔️ Clear and efficient Performance Graphs.</li>
+                    </ul>
+
+                    <p><b>✨ Principais Funcionalidades:</b></p>
+                    <ul>
+                        <li>✔️ Tela Inicial Dinâmica com logo.</li>
+                        <li>✔️ Gestão de Atividades: adicione e remova atividades facilmente.</li>
+                        <li>✔️ Acompanhamento de Tempo via gráficos.</li>
+                        <li>✔️ Gráficos de Desempenho claros e eficientes.</li>
+                    </ul>
+
+                    <!-- Technologies -->
+                    <p><b>💻 Tech:</b> Android, Kotlin, Firebase, MVC, Material Design.</p>
+
+                    <!-- Tools -->
+                    <p><b>🛠️ Tools:</b> Git/Github, Android Studio.</p>
+
+
+                    <!-- Client -->
+                    <p>
+                        🤝 <b>Client:</b> Industrial/Machine Maintenance Company.
+                    </p>
+
+                    <!-- Video -->
+                    <div class="project-video">
+                        <iframe width="100%" height="400" src="https://www.youtube.com/embed/4QeF8S3jBHQ"
+                            title="Timer App Demo" frameborder="0" allowfullscree
+                            style="border-radius: 30px; border: 1px solid  #0F1B40;"></iframe>
+                    </div>
+                </div>
+            </md-elevated-card>
+
+            <!-- QR Code Maker App -->
+            <md-elevated-card class="project-card">
+                <div class="project-header" onclick="toggleProject(this)">
+                    <h3 class="project-title">💼 QRCode Maker App</h3>
+                    <div class="project-skills-list">
+                        <md-chip><img src="assets/img/icons/android-icon.png" width="30" height="30"></md-chip>
+                        <md-chip><img src="assets/img/icons/kotlin.png" width="30" height="30"></md-chip>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <!-- Description -->
+                    <p>
+                        <b>QRCode Maker App</b> is an Android app that I <b>developed entirely from scratch</b>,
+                        focused on generating and saving QR codes for quick sharing contact information during events.
+                    </p>
+
+                    <!-- Features -->
+                    <p><b>✨ Features:</b></p>
+                    <ul>
+                        <li>✔️ Generate QR codes from any link.</li>
+                        <li>✔️ Business applications: campaigns, product sharing.</li>
+                        <li>✔️ Contact sharing via QR.</li>
+                        <li>✔️ Dynamic interface with Material Design principles.</li>
+                    </ul>
+
+                    <!-- Technologies -->
+                    <p><b>💻 Tech:</b> Android, Kotlin, Material Design, XML & ConstraintLayout.</p>
+
+                    <!-- Tools -->
+                    <p><b>🛠️ Tools:</b> Android Studio, Git/Github.</p>
+
+                    <!-- Client -->
+                    <p>
+                        🤝 <b>Client:</b> Michi_in Startup
+                    </p>
+
+                    <div class="project-video">
+                        <iframe width="100%" height="400" src="https://www.youtube.com/embed/nDz_QD-xhlo"
+                            title="QRCode Maker Demo" frameborder="0" allowfullscreen
+                            style="border-radius: 30px; border: 1px solid  #0F1B40;"></iframe>
+                    </div>
+                </div>
+            </md-elevated-card>
+
+            <!-- Links Pro App -->
+            <md-elevated-card class="project-card">
+                <div class="project-header" onclick="toggleProject(this)">
+                    <h3 class="project-title">🔗 Links Pro App</h3>
+                    <div class="project-skills-list">
+                        <md-chip><img src="assets/img/icons/android-icon.png" width="30" height="30"></md-chip>
+                        <md-chip><img src="assets/img/icons/kotlin.png" width="30" height="30"></md-chip>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <!-- Description -->
+                    <p>
+                        <b>Links Pro App</b> is an Android app that I <b>developed from scratch</b>,
+                        allowing you to share links directly via AWS Quick Share without opening the app.
+                    </p>
+
+                    <!-- Features -->
+                    <p><b>✨ Features:</b></p>
+                    <ul>
+                        <li>✔️ Automatic Link Sharing.</li>
+                        <li>✔️ Compatible with multiple sources: Instagram, Browser, Google Search.</li>
+                    </ul>
+
+                    <!-- Technologies -->
+                    <p><b>💻 Tech:</b> Android, Kotlin, MVC, Retrofit, Material Design.</p>
+
+                    <!-- Tools -->
+                    <p><b>🛠️ Tools:</b> Android Studio, Git/Github.</p>
+
+                    <!-- Client -->
+                    <p>
+                        🤝 <b>Client:</b>Individual (Carlos Aguni 顾宁) </b>
+                    </p>
+
+                    <button class="md3-button" id="feedback-btn">
+                        🗣️ Feedback
+                    </button>
+
+                    <div class="expandable" id="feedback-content">
+                        <img src="./assets/img/feedbacks/links-pro-app.png" alt="Feedback" style="width: 100%; 
+                    height: 30%;
+                    border-radius: 30px; ">
+                    </div>
+
+                    <!-- Video -->
+                    <div class="project-video">
+                        <video width="100%" height="400" controls
+                            style="border-radius: 30px; border: 1px solid  #0F1B40;">
+                            <source src="assets/img/projects/links-pro-app/links-pro-app.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </md-elevated-card>
+
+            <!-- Habitus App -->
+            <md-elevated-card class="project-card">
+                <div class="project-header" onclick="toggleProject(this)">
+                    <h3 class="project-title"> 👩🏻‍🏭 Habitus App </h3>
+                    <div class="project-skills-list-java">
+                        <md-chip><img src="assets/img/icons/android-icon.png" width="30" height="30"></md-chip>
+                        <md-chip><img src="assets/img/icons/kotlin.png" width="30" height="30"></md-chip>
+                        <md-chip><img src="assets/img/icons/java_icon.jpg" width="30" height="30"></md-chip>
+                    </div>
+                </div>
+
+                <div class="project-body">
+
+                    <!-- Description -->
+                    <p>
+                        <b>Habitus App</b> is a native Android application that is focused in assist professionals
+                        working in
+                        factories,
+                        monitoring their
+                        health
+                        while performing daily activities.
+                    </p>
+
+                    <p> <b>I worked on modernizing the code from Java
+                            to Kotlin</b>,
+                        <b> including new features and migrating communication methods</b> from Bluetooth to
+                        an internet connection with an AWS server.
+                    </p>
+
+                    <!-- Features -->
+                    <p><b>✨ Features:</b></p>
+                    <ul>
+                        <li>✔️ Migration of the Android codebase to AndroidX.</li>
+                        <li>✔️ Migration of Java code to Kotlin.</li>
+                        <li>✔️ UI redesign across six screens.</li>
+                        <li>✔️ Removal of Bluetooth communication</li>
+                        <li>✔️ Integration of internet communication with the AWS server.</li>
+                        <li>✔️ Performance Improvement with Material Design.</li>
+                    </ul>
+
+                    <!-- Technologies -->
+                    <p><b>💻 Tech:</b> Android, Java, Kotlin, Coroutines, Retrofit, API REST, Cloud Database (AWS),
+                        OkHttp3, GSON, Gradle, XML, ConstraintLayout, Material Design, AndroidSDK
+                    </p>
+
+                    <!-- Tools -->
+                    <p><b>🛠️ Tools:</b> Trello, Android Studio, Git/Github.</p>
+
+                    <!-- Client -->
+                    <p>
+                        🤝 <b>Client:</b>: Healthcare Startup </b>
+                    </p>
+
+                    <!-- Video -->
+                    <div class="project-video">
+                        <iframe width="100%" height="400" src="https://www.youtube.com/embed/mWCT57srmsc"
+                            title="Habitus App Demo" frameborder="0" allowfullscreen
+                            style="border-radius: 30px; border: 1px solid  #0F1B40;"></iframe>
+                    </div>
+                </div>
+            </md-elevated-card>
+
+            <!-- Genyo App -->
+            <md-elevated-card class="project-card">
+                <div class="project-header" onclick="toggleProject(this)">
+                    <h3 class="project-title"> ✅ Genyo App </h3>
+                    <div class="project-skills-list-java">
+                        <md-chip><img src="assets/img/icons/android-icon.png" width="30" height="30"></md-chip>
+                        <md-chip><img src="assets/img/icons/kotlin.png" width="30" height="30"></md-chip>
+                        <md-chip><img src="assets/img/icons/java_icon.jpg" width="30" height="30"></md-chip>
+                    </div>
+                </div>
+
+                <div class="project-body-genyo">
+
+                    <!-- Description -->
+                    <p>
+                        <b>Genyo App</b> is a comprehensive tool for HR departments to manage employee data
+                        and
+                        generate financial spreadsheets. I worked on implementing new features, fixing bugs, and
+                        optimizing the app for better performance, ensuring smooth operations for hundreds of
+                        users.
+                    </p>
+
+                    <!-- Features -->
+                    <p><b>✨ Main Features:</b></p>
+                    <ul>
+                        <li>✔️ Critical bug fixes to ensure stability.</li>
+                        <li>✔️ Implementation of new features to increase operational efficiency.</li>
+                        <li>✔️ App optimization for better performance and user experience.</li>
+                        <li>✔️ Employee check-in monitoring for monthly payroll generation.</li>
+                    </ul>
+
+                    <!-- Technologies -->
+                    <p><b>💻 Tech:</b> Android, Java, Kotlin, Retrofit, API REST, SQLite, Android SDK, XML,
+                        ConstraintLayout, Material Design.</p>
+
+                    <!-- Tools -->
+                    <p><b>🛠️ Tools:</b> Android Studio, Git/GitHub, Trello, Kanban.</p>
+
+                    <!-- Client -->
+                    <p>
+                        🤝 <b>Client:</b> HR Department / Companies and Startups.
+                    </p>
+
+                    <!-- Button Google Play-->
+                    <p>
+                        <a href="https://play.google.com/store/apps/details?id=br.com.genyo" target="_blank"
+                            class="md3-button">
+                            <img src="assets/img/icons/google-play.png" alt="Google Play" width="30" height="30" />
+                            Genyo App
+                        </a>
+                    </p>
+
+                    <p>
+                        <img src="assets/img/projects/genyo.png" alt="Genyo App Logo"
+                            style="width: 100%; height: 100%; border-radius: 20px; margin-top: 1rem;">
+                    </p>
+                </div>
+            </md-elevated-card>
+        </div>
+    </section>
+    <!-- Projects -->
+
+    <!-- Clients -->
+    <section id="clients_section" aria-labelledby="clients-title">
+        <!-- Title -->
+        <div style="text-align: center; margin-bottom: 2rem;">
+            <h2 id="clients-title" style="font-size: 2rem; font-weight: 700;">Clients Who Trust my Work</h2>
+            <p style="font-size: 1rem; max-width: 600px; margin: 0.5rem auto 0;">
+                Companies, startups, and individuals who trusted on my work and had their their ideas transformed into
+                robust, scalable applications
+                with excellent
+                user experience.
+            </p>
+        </div>
+
+        <!-- Logos -->
+        <div class="clients-logos">
+            <md-elevated-card class="client-card">
+                <img src="assets/img/icons/prefeitura.png" alt="Prefeitura do Recife">
+            </md-elevated-card>
+
+            <md-elevated-card class="client-card">
+                <img src="assets/img/icons/logo-banco-do-nordeste.png" alt="Banco do Nordeste">
+            </md-elevated-card>
+
+            <md-elevated-card class="client-card">
+                <img src="assets/img/icons/natura.png" alt="Natura">
+            </md-elevated-card>
+
+            <md-elevated-card class="client-card">
+                <img src="assets/img/icons/client.png" alt="Prefeitura do Recife">
+            </md-elevated-card>
+        </div>
+
+        <!-- CTA -->
+        <div class="feedback-cta">
+            <p id="paragraph" style="margin-bottom: 2%; font-size: 14pt;"> 🚀 Do you want your project at the same
+                level?</p>
+            <br />
+            <a id="clients_lets_talk" href="#contact_section" class="btn-primary">🗣️Let's Talk!</a>
+        </div>
+    </section>
+
+    <!-- Feedbacks -->
+    <section id="feedbacks_section" class="feedbacks-section">
+        <div class="container">
+            <!-- Título e Subtítulo -->
+            <h2 class="feedbacks-title">🌟 What Clients, Mentees, Managers and Colleagues Say About My Work</h2>
+            <p class="feedbacks-subtitle">
+                Comments from those who have worked with me and the results delivered.
+            </p>
+
+            <!-- Feedbacks Clients -->
+            <div class="feedback-group">
+                <h3>Clients</h3>
+                <div class="feedback-cards">
+                    <div class="feedback-card-clients">
+                        <img src="assets/img/feedbacks/links-pro-app.png" alt="Print cliente app">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feedbacks Mentorados -->
+            <div class="feedback-group">
+                <h3>Mentees</h3>
+                <div class="feedback-cards">
+                    <div class="feedback-card-big-english">
+                        <img src="assets/img/feedbacks/english/mentee.png" alt="Print feedback colega 2">
+                    </div>
+                    <div class="feedback-card-big-english">
+                        <img src="assets/img/feedbacks/english/mentee1.png" alt="Print feedback colega 2">
+                    </div>
+                    <div class="feedback-card">
+                        <img src="assets/img/feedbacks/english/mentee2.png" alt="Print feedback colega 1">
+                    </div>
+
+                    <div class="feedback-card">
+                        <img src="assets/img/feedbacks/english/mentee3.png" alt="Print feedback colega 1">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feedbacks dos Gestores -->
+            <div class="feedback-group">
+                <h3>Managers</h3>
+                <div class="feedback-cards">
+                    <div class="feedback-card">
+                        <img src="assets/img/feedbacks/manager-ibm.png" alt="Print feedback gestor 1">
+                    </div>
+                    <div class="feedback-card">
+                        <img src="assets/img/feedbacks/english/manager.png" alt="Print feedback gestor 2">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feedbacks dos Colegas -->
+            <div class="feedback-group">
+                <h3>Colleagues</h3>
+                <div class="feedback-cards">
+                    <div class="feedback-card">
+                        <img src="assets/img/feedbacks/english/colleague.png" alt="Print feedback colega 1">
+                    </div>
+                    <div class="feedback-card">
+                        <img src="assets/img/feedbacks/english/colleage1.png" alt="Print feedback colega 2">
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="feedback-cta">
+                <p style="margin-bottom: 2%; font-size: 14pt;">Do you want similar results for your app? 🚀</p>
+                <br />
+                <a href="#contact_section" class="btn-primary">🗣️ Let's Talk!</a>
+            </div>
+        </div>
+    </section>
+    <!-- Feedbacks -->
+
+    <!-- Services -->
+    <section id="services_section" class="md3-section">
+
+        <!-- Title -->
+        <md-top-app-bar-row class="center-title">
+            <md-top-app-bar-title>Services</md-top-app-bar-title>
+        </md-top-app-bar-row>
+
+        <div class="carousel-container">
+
+            <!-- Card 1 -->
+            <md-elevated-card class="service-card">
+                <img src="assets/img/service/michi_in.jpg" alt="Android e iOS" class="service-image" />
+
+                <h3 class="service-title">🚀 Turn Your Idea into a Successful App</h3>
+
+                <div class="service-description">
+                    <p>
+                        📱 I develop <b>exclusive and 100% custom apps</b> for you or your
+                        company.
+                    </p>
+
+                    <p>
+                        💡 Imagine having an app that <b>attracts customers, increases sales, and strengthens your
+                            brand</b> — all
+                        without hassle.
+                    </p>
+
+                    <p>
+                        🏆 I have <b>+4 years of experience</b> creating high-performance apps, I guarantee your idea
+                        will
+                        come to life
+                        with professional quality.
+                    </p>
+                    <p>
+                        📊 I've delivered <b>6+ apps</b> for companies and entrepreneurs, helping to <b>increase user
+                            engagement</b> and <b>reduce operational costs</b> with <b>intelligent digital
+                            solutions.</b>
+                    </p>
+                </div>
+
+                <a href="https://wa.me/5581997207924?text=Quero tirar minha ideia do papel! [pt]" target="_blank"
+                    class="md-button">
+                    💡 I Want My App Now!
+                </a>
+
+                <!-- Toggle Feedback -->
+                <button class="feedback-toggle">🗣️ See Feedbacks</button>
+                <div class="feedback-content">
+                    <img src="./assets/img/feedbacks/links-pro-app.png" alt="Feedback" style="width: 100%; 
+                    height: 100%; border-radius: 20px; " />
+                </div>
+            </md-elevated-card>
+
+            <!-- Card 2 -->
+            <md-elevated-card class="service-card">
+                <img src="assets/img/service/mentoria.jpg" alt="Mentoria LinkedIn" class="service-image" />
+
+                <h3 class="service-title">🚀 Turn Your LinkedIn into an Opportunity Machine</h3>
+
+                <div class="service-description">
+                    <p>
+                        📢 In just a few sessions, you'll learn how to create <b>strategic content</b> that attracts the
+                        right connections,
+
+                        strengthens your authority, and opens doors to new opportunities.
+                    </p>
+
+                    <p>
+                        💡 You'll leave with a clear, ready-to-implement action plan, plus a professional and engaging
+                        feed that makes people want to talk to you.
+                    </p>
+
+                    <p>
+                        📊 I've helped clients <b>increase their reach</b> and receive invitations for
+                        partnerships, interviews, and job offers — all with smart positioning on
+                        LinkedIn.
+                    </p>
+
+                    <br />
+                </div>
+
+                <a href="https://forms.gle/Knsfx1fpoEG3H66U6" target="_blank" class="md-button">
+                    ✍️ Boost My LinkedIn!
+                </a>
+
+                <!-- Toggle Feedback -->
+                <button class="feedback-toggle">🗣️ See Feedbacks</button>
+                <div class="feedback-content">
+                    <img src="./assets/img/feedbacks/feedback-mentoria-paulo.png" alt="Feedback" style="width: 100%; 
+                    height: 100%; border-radius: 20px; " />
+                </div>
+            </md-elevated-card>
+
+            <!-- Card 3 -->
+            <md-elevated-card class="service-card">
+                <img src="assets/img/service/ebook.png" alt="E-book" class="service-image" />
+
+                <h3 class="service-title">📚 Gain Authority on LinkedIn and Generate Real Results</h3>
+
+                <div class="service-description">
+                    <p>
+                        💼 This e-book is the <b>shortcut you need</b> to transform your LinkedIn into an opportunity
+
+                        machine.
+                    </p>
+
+                    <p>
+                        📊 Learn the <b>same strategies</b> that have already helped professionals and entrepreneurs
+                        <b>multiply qualified connections</b>, form strategic partnerships, and generate new business.
+                    </p>
+
+                    <p>
+                        🚀 Straight-to-the-point content, with <b>practical step-by-step</b> to optimize your profile,
+                        create high-engagement posts, and strengthen your personal brand — even if you're starting
+                        from
+                        scratch.
+                    </p>
+
+                    <br />
+                </div>
+
+                <a href="https://forms.gle/WQLhC1b1WivEDyh5A" target="_blank" class="md-button">
+                    🛒 I Want My E-book Now!
+                </a>
+
+                <!-- Toggle Feedback -->
+                <button class="feedback-toggle">🗣️ See Feedbacks</button>
+                <div class="feedback-content">
+                    <img src="./assets/img/feedbacks/feedback-mentoria-gabriel.png" alt="Feedback" style="width: 100%; 
+                    height: 100%; border-radius: 20px; " />
+                </div>
+            </md-elevated-card>
+        </div>
+    </section>
+    <!-- Services -->
+
+    <!-- Contact -->
+    <section id="contact_section" class="contact-section">
+        <div class="contact-container">
+            <!-- Título e Subtexto -->
+            <h2 class="contact-title">🚀 Ready to Turn Your Idea into an App?</h2>
+            <p class="contact-subtext">
+                I have experience developing Android apps with a focus on
+                performance, modern design, and integration with services like Firebase and APIs.
+                If you have an idea or project in mind, get in touch and let's take the first step.
+            </p>
+
+            <!-- Formulário de Contato -->
+            <form id="contact-form" class="contact-form">
+                <input type="text" name="name" placeholder="Seu Nome" required />
+                <input type="email" name="email" placeholder="Seu E-mail" required />
+                <textarea name="message" rows="5" placeholder="Descreva brevemente sua ideia" required></textarea>
+                <input type="submit" value="📩 Send" id="submit-btn" class="btn-primary">
+                <!-- <button type="submit" class="btn-primary"> 📩 Solicitar Orçamento </button> -->
+            </form>
+
+            <!-- CTAs Alternativos -->
+            <div class="cta-alternatives">
+                <a href="https://wa.me/5581997207924" target="_blank" class="btn-whatsapp">
+                    📲 Talk Now on WhatsApp</a>
+                <a href="https://github.com/Laura-Oliveira" target="_blank" class="btn-secondary">
+                    💻 Check out my Code Work
+                </a>
+                <a href="https://www.linkedin.com/in/laura-oliveira-mobile/" target="_blank" class="btn-secondary">
+                    💼 LinkedIn
+                </a>
+            </div>
+
+            <!-- Prova Social -->
+            <div class="social-proof">
+                <p>⭐ “Excellent professional! Delivered the project on time.”</p>
+                <p>🚀 6+ apps developed for companies, startups, and individuals</p>
+                <div class="logos">
+                    <img src="assets/img/icons/prefeitura.png" alt="Cliente 1" />
+                    <img src="assets/img/icons/logo-banco-do-nordeste.png" alt="Cliente 2" />
+                    <img src="assets/img/icons/natura.png" alt="Cliente 3" />
+                    <img src="assets/img/icons/client.png" alt="Cliente 4" />
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Gatilho de Urgência -->
+        <p class="urgency">⚡ I only take on <strong>2 new projects per month</strong> to ensure quality.
+            Reserve your spot!</p>
+        </div>
+    </section>
+    <!-- Contact -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Nome e especialidade -->
+            <div class="profile-photo-footer">
+                <img src="assets/img/selfie/prof.jpg" alt="Laura Oliveira" width="10%"
+                    style="border-radius: 50%; border: 3px solid whitesmoke;" />
+            </div>
+            <h2 class="footer-name">Laura Oliveira</h2>
+            <p class="footer-tagline">Mobile Developer • Android • Kotlin</p>
+
+            <!-- Redes sociais -->
+            <div class="footer-social">
+                <a href="https://linkedin.com/in/seu-usuario" target="_blank" aria-label="LinkedIn">
+                    <img src="assets/img/icons/linkedin.svg" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/seu-usuario" target="_blank" aria-label="Github">
+                    <img src="assets/img/icons/github.svg" alt="Github">
+                </a>
+                <a href="mailto:seuemail@email.com" aria-label="E-mail">
+                    <img src="assets/img/icons/email.svg" alt="Email">
+                </a>
+                <a href="mailto:seuemail@email.com" aria-label="E-mail">
+                    <img src="assets/img/icons/phone.svg" alt="Email">
+                </a>
+            </div>
+
+            <!-- Créditos -->
+            <p class="footer-copy">© 2025 Laura Oliveira. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- Firebase Hosting -->
+    <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDLX6jLb6kVLOprFlbp3YeRe2f3ZslvDGs",
+    authDomain: "laura-oliveira-portfolio.firebaseapp.com",
+    projectId: "laura-oliveira-portfolio",
+    storageBucket: "laura-oliveira-portfolio.firebasestorage.app",
+    messagingSenderId: "1041181358307",
+    appId: "1:1041181358307:web:3e30b4a658f69dc670edd6",
+    measurementId: "G-E87XXCZS0N"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+
+    <!-- FontAwesome para ícone de loading -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        emailjs.init("YxvxIpoEvVfEVUcpi"); // sua Public Key
+
+        window.onload = function () {
+            const form = document.getElementById('contact-form');
+            const submitBtn = document.getElementById('submit-btn');
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                // Desabilita botão e muda texto para carregando
+                submitBtn.disabled = true;
+                // submitBtn.innerHTML = `<i class="fas fa-spinner fa-spin"></i> Enviando Orçamento...`;
+
+                // 1️⃣ Envia para você (template principal)
+                emailjs.sendForm('service_78nb0lp', 'template_emwi24p', this)
+                    .then(() => {
+                        console.log('✅ Mensagem enviada para você!');
+
+                        // 2️⃣ Envia auto-reply para o usuário
+                        emailjs.sendForm('service_78nb0lp', 'template_omkp6fd', this)
+                            .then(() => {
+                                console.log('✅ Auto-reply enviado!');
+                                alert('Mensagem enviada com sucesso!');
+                                form.reset(); // Só reseta após ambos os envios
+                            })
+
+                    })
+                    .catch(err => console.log('❌ Falha no envio:', err));
+            });
+        }
+    </script>
+
+
+    <!-- SCRIPT: Toggle Language Menu -->
+    <script>
+        function toggleDropdown() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+    </script>
+
+    <!-- SCRIPT: Toggle menu mobile -->
+    <script>
+        const menuToggle = document.getElementById("menuToggle");
+        const navLinks = document.getElementById("navLinks");
+
+        menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+
+    <!-- SCRIPT: Load About Me Section -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const targets = document.querySelectorAll(
+                "#about_me_section .about-text, #about_me_section .about-photo"
+            );
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                        observer.unobserve(entry.target); // anima só uma vez
+                    }
+                });
+            }, { threshold: 0.2, rootMargin: "0px 0px -10% 0px" });
+
+            targets.forEach(el => observer.observe(el));
+        });
+    </script>
+
+    <!-- SCRIPT: Load Skills Section -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const skillsSection = document.querySelector("#skills_section");
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        skillsSection.classList.add("visible");
+                        observer.unobserve(skillsSection); // evita reanimar
+                    }
+                });
+            }, { threshold: 0.2 }); // 20% da section visível para ativar
+
+            observer.observe(skillsSection);
+        });
+    </script>
+
+    <!-- SCRIPT: Load Projects Section -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const projectsSection = document.querySelector("#projects_section");
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        projectsSection.classList.add("visible");
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            observer.observe(projectsSection);
+        });
+    </script>
+
+    <!-- SCRIPT: Toggle Project Description -->
+    <script>
+        function toggleProject(header) {
+            const card = header.closest('.project-card');
+            card.classList.toggle('expanded');
+        }
+
+        document.getElementById('feedback-btn').addEventListener('click', () => {
+            document.getElementById('feedback-content').classList.toggle('show');
+        });
+    </script>
+
+    <!-- SCRIPT: Toggle Feedback Image Project -->
+    <script>
+        function toggleProject(header) {
+            const card = header.closest('.project-card');
+            card.classList.toggle('expanded');
+
+            // habilita/desabilita botão de feedback
+            const feedbackBtn = card.querySelector('.feedback-btn');
+            feedbackBtn.disabled = !card.classList.contains('expanded');
+        }
+
+        // toggle de imagem de feedback
+        document.querySelectorAll('.feedback-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const card = btn.closest('.project-card');
+                if (!card.classList.contains('expanded')) return; // só abre se o projeto estiver expandido
+                card.querySelector('.feedback-content').classList.toggle('show');
+            });
+        });
+    </script>
+
+
+    <!-- SCRIPT: Load Clients Section -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const clientsSection = document.querySelector("#clients_section");
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        clientsSection.classList.add("visible");
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            observer.observe(clientsSection);
+        });
+    </script>
+
+    <!-- SCRIPT: Load Feedback Section -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const feedbacksSection = document.querySelector("#feedbacks_section");
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        feedbacksSection.classList.add("visible");
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            observer.observe(feedbacksSection);
+        });
+    </script>
+
+    <!-- SCRIPT: Load Services Section -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const servicesSection = document.querySelector("#services_section");
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        servicesSection.classList.add("visible");
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            observer.observe(servicesSection);
+        });
+    </script>
+
+    <!-- SCRIPT: Toggle Feedback Services Button -->
+    <script>
+        document.querySelectorAll(".feedback-toggle").forEach(button => {
+            button.addEventListener("click", () => {
+                const content = button.nextElementSibling;
+                content.style.display = content.style.display === "block" ? "none" : "block";
+                button.textContent = content.style.display === "block" ? "Ocultar Feedbacks" : "Ver Feedbacks";
+            });
+        });
+    </script>
+
+</body>
+
 </html>
