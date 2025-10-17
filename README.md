@@ -1,6 +1,6 @@
 <!-- Banner de Apresentação -->
 <p align="center">
-  <img src="https://via.placeholder.com/1000x250/6A1B9A/FFFFFF?text=Laura+Oliveira+%7C+Android+Mobile+Developer" alt="Banner - Laura Oliveira | Android Mobile Developer" />
+  <img src="https://media.licdn.com/dms/image/v2/D4D03AQFOXbt5U3Slig/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1709545079989?e=1762387200&v=beta&t=Pt2wLqnV_w7MwjAUOHhgmQko3ZYddOcQi6QDyCugdws" alt="Banner - Laura Oliveira | Android Mobile Developer" />
 </p>
 
 <!-- Badges -->
